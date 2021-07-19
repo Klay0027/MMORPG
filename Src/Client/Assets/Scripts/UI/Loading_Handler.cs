@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Services;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,13 @@ public class Loading_Handler : MonoBehaviour
 
     private void Start()
     {
+        log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo("log4net.xml"));
+        UnityLogger.Init();
+        Common.Log.Init("Unity");
+        Common.Log.Info("LoadingManager start");
+
+        StartCoroutine(DataManager.Instance.LoadData());//读取json信息
+
         Loading_Fill.fillAmount = 0;
         isLoading = false;
         Start_Bg.SetActive(true);
@@ -29,6 +37,9 @@ public class Loading_Handler : MonoBehaviour
         Loading_Group.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         isLoading = true;
+
+        //Init basic services
+        UserServices.Instance.Init();
     }
 
     private void Update()
@@ -40,10 +51,9 @@ public class Loading_Handler : MonoBehaviour
     {
         if (isLoading)
         {
-
             if (Loading_Fill.fillAmount < 1)
             {
-                Loading_Fill.fillAmount += Time.deltaTime / 3f;
+                Loading_Fill.fillAmount += Time.deltaTime / 2.5f;
             }
             else
             {              

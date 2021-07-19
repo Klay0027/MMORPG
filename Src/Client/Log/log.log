@@ -1,0 +1,23 @@
+2021-07-19 14:00:36,474 [ 1] INFO  Unity: LoadingManager start
+2021-07-19 14:00:36,492 [ 1] INFO  Unity: DataManager > DataManager()
+2021-07-19 14:00:48,450 [ 1] INFO  Unity: 请确认您已阅读过用户协议
+2021-07-19 14:00:54,928 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-07-19 14:00:54,935 [ 1] INFO  Unity: ConnectToServer Start
+2021-07-19 14:00:54,936 [ 1] INFO  Unity: DoConnect
+2021-07-19 14:00:54,938 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-07-19 14:00:54,939 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2021-07-19 14:00:54,946 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-07-19 14:00:55,173 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-07-19 14:00:56,135 [ 1] INFO  Unity: LoadLevel: Start
+2021-07-19 14:00:56,266 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-07-19 14:00:57,368 [ 1] INFO  Unity: UserGameEnterRequest::characterId :3
+2021-07-19 14:00:57,411 [ 1] INFO  Unity: OnGameEnter:Success [Success!]
+2021-07-19 14:00:59,216 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-07-19 14:00:59,651 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-07-19 14:01:48,222 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-07-19 14:01:48,222 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+

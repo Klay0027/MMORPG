@@ -9,6 +9,7 @@ using System.Configuration;
 using System.Threading;
 using Network;
 using GameServer.Services;
+using GameServer.Managers;
 
 namespace GameServer
 {
@@ -24,6 +25,9 @@ namespace GameServer
             network.Init(8000);
             DBService.Instance.Init();
             UserService.Instance.Init();
+            DataManager.Instance.Load();
+            MapManager.Instance.Init();
+            CharacterManager.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
 
             return true;

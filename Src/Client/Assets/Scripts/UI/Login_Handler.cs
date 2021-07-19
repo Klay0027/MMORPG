@@ -29,7 +29,17 @@ public class Login_Handler : MonoBehaviour
 
     private void OnLogin(SkillBridge.Message.Result result, string msg)
     {
-        MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));  
+        MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));
+        if (result == SkillBridge.Message.Result.Success)
+        {
+            StartCoroutine(Load());
+        }
+    }
+
+    private IEnumerator Load()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.Instance.LoadScene("Start");
     }
 
     /// <summary>

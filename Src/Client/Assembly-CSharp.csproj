@@ -65,15 +65,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Entities\Character.cs" />
+    <Compile Include="Assets\Scripts\Entities\Entity.cs" />
+    <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />
+    <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
+    <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Services\UserServices.cs" />
+    <Compile Include="Assets\Scripts\UI\CharacterInfo.cs" />
+    <Compile Include="Assets\Scripts\UI\CharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\Loading_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Login_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Register_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Resloader.cs" />
+    <Compile Include="Assets\Scripts\UI\Start_Handler.cs" />
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />

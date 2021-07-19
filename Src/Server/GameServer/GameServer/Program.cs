@@ -14,6 +14,7 @@ namespace GameServer
     {
         static void Main(string[] args)
         {
+            Console.Title = "GameServer";
             //创建文件对象 导入 log for net 配置
             FileInfo fi = new System.IO.FileInfo("log4net.xml");
             log4net.Config.XmlConfigurator.ConfigureAndWatch(fi);

@@ -13,6 +13,8 @@ namespace Services
     {
         public UnityEngine.Events.UnityAction<Result, string> OnRegister;
         public UnityEngine.Events.UnityAction<Result, string> OnLogin;
+        public UnityEngine.Events.UnityAction<Result, string> OnCreateChar;
+        public UnityEngine.Events.UnityAction<Result, string> OnGameEnter;
 
         NetMessage pendingMessage = null;
         bool connected = true;
@@ -23,6 +25,8 @@ namespace Services
             NetClient.Instance.OnDisconnect += OnGameServerDisconnect;
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);          
+            MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnCreateCharacter);
+            MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnEnterGame);
         }
 
         /// <summary>
@@ -30,12 +34,17 @@ namespace Services
         /// </summary>
         public void Dispose()
         {
-            MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
-            MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
+            MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
+            MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
+            MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnCreateCharacter);
+            MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnEnterGame);
         }
 
+        /// <summary>
+        /// 初始化
+        /// </summary>
         public void Init()
         { 
         
@@ -53,7 +62,7 @@ namespace Services
 
         private void OnGameServerConnect(int result, string reason)
         {
-            //Log.InfoFormat("LoadingMesager::OnGameServerConnect :{0} reason:{1}", result, reason);
+            Log.InfoFormat("LoadingMesager::OnGameServerConnect :{0} reason:{1}", result, reason);
             //检查连接状态
             if (NetClient.Instance.Connected)
             {
@@ -90,6 +99,20 @@ namespace Services
                         this.OnRegister(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
                     }
                 }
+                else if (this.pendingMessage.Request.userRegister != null)
+                {
+                    if (this.OnRegister != null)
+                    {
+                        this.OnRegister(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
+                else
+                {
+                    if (this.OnCreateChar != null)
+                    {
+                        this.OnCreateChar(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
                 return true;
             }
             return false;     
@@ -121,6 +144,21 @@ namespace Services
             }
         }
 
+        //用户注册
+        private void OnUserRegister(object sender, UserRegisterResponse response)
+        {
+            Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (this.OnRegister != null)
+            {
+                this.OnRegister(response.Result, response.Errormsg);
+            }
+        }
+        /// <summary>
+        /// 发送登录请求
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="psw"></param>
         public void SendLogin(string user, string psw)
         {
             Debug.LogFormat("UserLoginRequest::user :{0} psw:{1}", user, psw);
@@ -142,24 +180,99 @@ namespace Services
             }
         }
 
-
-        private void OnUserRegister(object sender, UserRegisterResponse response)
-        {
-            Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
-
-            if (this.OnRegister != null)
-            {
-                this.OnRegister(response.Result, response.Errormsg);
-            }
-        }
-
+        /// <summary>
+        /// 收到登录请求的响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
         private void OnUserLogin(object sender, UserLoginResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
 
+            if (response.Result == Result.Success)
+            {
+                Models.User.Instance.SetupUserInfo(response.Userinfo);
+            }
+
             if (this.OnLogin != null)
             {
                 this.OnLogin(response.Result, response.Errormsg);
+            }
+        }
+
+        /// <summary>
+        /// 发送创建角色的请求给服务器
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="character"></param>
+        public void SendCreateCharacter(string name, CharacterClass character)
+        {
+            Debug.LogFormat("CreateCharacterRequest::name :{0} character:{1}", name, character);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.createChar = new UserCreateCharacterRequest();
+            message.Request.createChar.Name = name;
+            message.Request.createChar.Class = character;
+
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
+
+        /// <summary>
+        /// 收到服务器传回创建角色的响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
+        private void OnCreateCharacter(object sender, UserCreateCharacterResponse response)
+        {
+            Debug.LogFormat("OnCreateCharacter:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {
+                Models.User.Instance.Info.Player.Characters.Clear();
+                Models.User.Instance.Info.Player.Characters.AddRange(response.Characters);
+            }
+
+            if (this.OnCreateChar != null)
+            {
+                this.OnCreateChar(response.Result, response.Errormsg);
+            }
+        }
+
+        /// <summary>
+        /// 向服务端发送进入游戏的请求
+        /// </summary>
+        /// <param name="characterIdx">当前玩家角色的ID</param>
+        public void SendEnterGame(int characterIdx)
+        {
+            Debug.LogFormat("UserGameEnterRequest::characterId :{0}", characterIdx);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameEnter = new UserGameEnterRequest();
+            message.Request.gameEnter.characterIdx = characterIdx;
+            NetClient.Instance.SendMessage(message);
+        }
+
+        private void OnEnterGame(object sender, UserGameEnterResponse response)
+        {
+            Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {
+
+            }
+
+            if (this.OnGameEnter != null)
+            {
+                this.OnGameEnter(response.Result, response.Errormsg);
             }
         }
     }

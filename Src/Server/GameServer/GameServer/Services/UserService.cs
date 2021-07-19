@@ -7,6 +7,7 @@ using Common;
 using Network;
 using SkillBridge.Message;
 using GameServer.Entities;
+using GameServer.Managers;
 
 namespace GameServer.Services
 {
@@ -16,6 +17,8 @@ namespace GameServer.Services
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserGameEnterRequest>(this.OnGameEnter);
         }
 
         public void Init()
@@ -23,6 +26,11 @@ namespace GameServer.Services
 
         }
 
+        /// <summary>
+        /// 用户注册
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="request"></param>
         private void OnRegister(NetConnection<NetSession> sender, UserRegisterRequest request)
         {
             Log.InfoFormat("UserRegisterRequest: User:{0}  Pass:{1}", request.User, request.Passward);
@@ -40,7 +48,7 @@ namespace GameServer.Services
             else
             {
                 TPlayer player = DBService.Instance.Entities.Players.Add(new TPlayer());
-                DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player });
+                DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player, RegisterDate = DateTime.Now });
                 DBService.Instance.Entities.SaveChanges();
                 message.Response.userRegister.Result = Result.Success;
                 message.Response.userRegister.Errormsg = "注册成功！";
@@ -50,6 +58,11 @@ namespace GameServer.Services
             sender.SendData(data, 0, data.Length);
         }
 
+        /// <summary>
+        /// 用户登录
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="request"></param>
         private void OnLogin(NetConnection<NetSession> sender, UserLoginRequest request)
         {
             Log.InfoFormat("UserLoginRequest: User:{0}  Pass:{1}", request.User, request.Passward);
@@ -62,8 +75,23 @@ namespace GameServer.Services
             {
                 if (user.Password == request.Passward)
                 {
+                    sender.Session.User = user;
                     message.Response.userLogin.Result = Result.Success;
                     message.Response.userLogin.Errormsg = "登录成功，欢迎来到声闻世界！";
+                    message.Response.userLogin.Userinfo = new NUserInfo();
+                    message.Response.userLogin.Userinfo.Id = 1;
+                    message.Response.userLogin.Userinfo.Player = new NPlayerInfo();
+                    message.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
+
+                    foreach (var character in user.Player.Characters)
+                    {
+                        NCharacterInfo info = new NCharacterInfo();
+                        info.Id = character.ID;
+                        info.Name = character.Name;
+                        info.Class = (CharacterClass)character.Class;
+                        message.Response.userLogin.Userinfo.Player.Characters.Add(info);
+                    }
+                    
                 }
                 else 
                 {
@@ -80,6 +108,73 @@ namespace GameServer.Services
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
         }
-    }
 
+        /// <summary>
+        /// 创建角色
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="request"></param>
+        private void OnCreateCharacter(NetConnection<NetSession> sender, UserCreateCharacterRequest request)
+        {
+            Log.InfoFormat("CreateCharacter: Name:{0}  Class:{1}", request.Name, request.Class);
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.createChar = new UserCreateCharacterResponse();
+
+            //创建角色对象
+            TCharacter character = new TCharacter();
+            character.Class = (int)request.Class;
+            character.Name = request.Name;
+            character.TID = (int)request.Class;
+            character.MapID = 1;
+            character.MapPosX = 5000;
+            character.MapPosY = 4000;
+            character.MapPosZ = 820;
+
+            //调用数据库服务新增角色存储到数据库
+            DBService.Instance.Entities.Characters.Add(character);
+            sender.Session.User.Player.Characters.Add(character); //添加角色session
+            DBService.Instance.Entities.SaveChanges(); //保存数据
+
+            //遍历当前玩家有哪些角色
+            foreach (var item in sender.Session.User.Player.Characters)
+            {
+                NCharacterInfo info = new NCharacterInfo();
+                info.Id = item.ID;
+                info.Name = item.Name;
+                info.Class = (CharacterClass)item.Class;
+                message.Response.createChar.Characters.Add(info);
+            }
+            message.Response.createChar.Result = Result.Success;
+            message.Response.createChar.Errormsg = "添加角色成功！";
+            
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
+        }
+
+        /// <summary>
+        /// 进入游戏
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="request"></param>
+        private void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest request)
+        {
+            TCharacter dbchar = sender.Session.User.Player.Characters.ElementAt(request.characterIdx);
+
+            Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
+
+            Character character = CharacterManager.Instance.AddCharacter(dbchar);
+
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.gameEnter = new UserGameEnterResponse();
+            message.Response.gameEnter.Result = Result.Success;
+            message.Response.gameEnter.Errormsg = "Success!";
+
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
+            sender.Session.Character = character;
+            MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
+        }
+    }
 }
