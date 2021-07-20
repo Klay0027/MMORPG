@@ -40,6 +40,7 @@ public class Loading_Handler : MonoBehaviour
 
         //Init basic services
         UserServices.Instance.Init();
+        MapService.Instance.Init();
     }
 
     private void Update()

@@ -275,5 +275,22 @@ namespace Services
                 this.OnGameEnter(response.Result, response.Errormsg);
             }
         }
+
+        /// <summary>
+        /// 向服务端发送离开游戏的请求
+        /// </summary>
+        public void SendLeaveGame()
+        {
+            Debug.Log("UserGameLeaveRequest");
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameLeave = new UserGameLeaveRequest();
+            NetClient.Instance.SendMessage(message);
+        }
+
+        private void OnLeaveGame(object sender, UserGameLeaveResponse response)
+        {
+            Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+        }
     }
 }

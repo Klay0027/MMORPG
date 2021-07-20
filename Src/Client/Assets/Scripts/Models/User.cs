@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Common.Data;
+using UnityEngine;
 
 namespace Models
 {
@@ -23,5 +25,8 @@ namespace Models
 
         public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
 
+        public MapDefine CurrentMapData { get; set; }
+
+        public GameObject CurrentCharacterObject { get; set; }
     }
 }
