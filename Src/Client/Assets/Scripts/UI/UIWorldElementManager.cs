@@ -30,7 +30,6 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager>
         {
             Destroy(this.elements[owner]);
             this.elements.Remove(owner);
-        }
-    
+        } 
     }
 }

@@ -6,7 +6,6 @@ using Common;
 using Network;
 using UnityEngine;
 using UnityEngine.Events;
-
 using Entities;
 using SkillBridge.Message;
 
@@ -14,7 +13,7 @@ namespace Managers
 {
     class CharacterManager : Singleton<CharacterManager>, IDisposable
     {
-        public Dictionary<int, Character> Characters = new Dictionary<int, Character>();
+        public Dictionary<int, Character> Characters = new Dictionary<int, Character>(); //用字典存储所有的角色
 
 
         public UnityAction<Character> OnCharacterEnter;

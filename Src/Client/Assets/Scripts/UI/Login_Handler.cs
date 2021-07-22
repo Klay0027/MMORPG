@@ -39,6 +39,7 @@ public class Login_Handler : MonoBehaviour
     private IEnumerator Load()
     {
         yield return new WaitForSeconds(1);
+        Login_Panel.SetActive(false);
         SceneManager.Instance.LoadScene("Start");
     }
 

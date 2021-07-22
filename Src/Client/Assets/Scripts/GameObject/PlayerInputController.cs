@@ -51,7 +51,7 @@ public class PlayerInputController : MonoBehaviour
             return;
         }
 
-        float v = Input.GetAxis("Vertical");
+        float v = Input.GetAxis("Vertical"); //垂直
 
         if (v > 0.01)
         {
@@ -89,7 +89,7 @@ public class PlayerInputController : MonoBehaviour
             this.SendEntityEvent(EntityEvent.Jump);
         }
 
-        float h = Input.GetAxis("Horizontal");
+        float h = Input.GetAxis("Horizontal"); //水平
 
         if (h < -0.1 || h > 0.1)
         {

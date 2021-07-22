@@ -270,10 +270,10 @@ namespace Services
 
             }
 
-            if (this.OnGameEnter != null)
-            {
-                this.OnGameEnter(response.Result, response.Errormsg);
-            }
+            //if (this.OnGameEnter != null)
+            //{
+            //    this.OnGameEnter(response.Result, response.Errormsg);
+            //}
         }
 
         /// <summary>

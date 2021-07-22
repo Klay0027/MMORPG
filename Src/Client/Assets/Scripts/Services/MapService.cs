@@ -16,7 +16,6 @@ namespace Services
         {
             MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
-
         }
 
         public void Dispose()
@@ -38,15 +37,15 @@ namespace Services
             {
                 if (User.Instance.CurrentCharacter.Id == cha.Id)
                 {
-                    User.Instance.CurrentCharacter = cha;
+                    User.Instance.CurrentCharacter = cha; //刷新一遍角色数据
                 }
 
-                CharacterManager.Instance.AddCharacter(cha);
+                CharacterManager.Instance.AddCharacter(cha); //遍历当前地图所有角色 交给角色管理器
 
                 if (CurrentMapId != response.mapId)
                 {
-                    this.EnterMap(response.mapId);
-                    this.CurrentMapId = response.mapId;
+                    this.EnterMap(response.mapId); //进入新地图
+                    this.CurrentMapId = response.mapId; //更新当前所在地图的地图编号
                 }
             }
         }
@@ -58,11 +57,11 @@ namespace Services
 
         private void EnterMap(int mapId)
         {
-            if (DataManager.Instance.Maps.ContainsKey(mapId))
+            if (DataManager.Instance.Maps.ContainsKey(mapId)) //判断传来的地图编号是否存在
             {
                 MapDefine map = DataManager.Instance.Maps[mapId];
                 User.Instance.CurrentMapData = map;
-                SceneManager.Instance.LoadScene(map.Resource);
+                SceneManager.Instance.LoadScene(map.Resource); //跳转场景
             }
             else
             {

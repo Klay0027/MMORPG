@@ -16,7 +16,7 @@ namespace GameServer.Services
     {
         public MapService()
         {
-            //  MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<MapCharacterEnterRequest>(this.OnMapCharacterEnter);
+            //MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<MapCharacterEnterRequest>(this.OnMapCharacterEnter);
 
         }
 

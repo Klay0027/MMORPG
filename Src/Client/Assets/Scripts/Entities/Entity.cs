@@ -11,12 +11,12 @@ namespace Entities
     {
         public int entityId;
 
-
+        //参与运算
         public Vector3Int position;
         public Vector3Int direction;
         public int speed;
 
-
+        //保存数据
         private NEntity entityData;
         public NEntity EntityData
         {
@@ -38,6 +38,7 @@ namespace Entities
 
         public virtual void OnUpdate(float delta)
         {
+            //移动
             if (this.speed != 0)
             {
                 Vector3 dir = this.direction;

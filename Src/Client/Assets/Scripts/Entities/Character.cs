@@ -35,30 +35,47 @@ namespace Entities
             this.Define = DataManager.Instance.Characters[info.Tid];
         }
 
+        /// <summary>
+        /// 向前移动
+        /// </summary>
         public void MoveForward()
         {
             Debug.LogFormat("MoveForward");
             this.speed = this.Define.Speed;
         }
 
+        /// <summary>
+        /// 向后移动
+        /// </summary>
         public void MoveBack()
         {
             Debug.LogFormat("MoveBack");
             this.speed = -this.Define.Speed;
         }
 
+        /// <summary>
+        /// 停止移动
+        /// </summary>
         public void Stop()
         {
             Debug.LogFormat("Stop");
             this.speed = 0;
         }
 
+        /// <summary>
+        /// 设置方向
+        /// </summary>
+        /// <param name="direction"></param>
         public void SetDirection(Vector3Int direction)
         {
             Debug.LogFormat("SetDirection:{0}", direction);
             this.direction = direction;
         }
 
+        /// <summary>
+        /// 设置位置
+        /// </summary>
+        /// <param name="position"></param>
         public void SetPosition(Vector3Int position)
         {
             Debug.LogFormat("SetPosition:{0}", position);

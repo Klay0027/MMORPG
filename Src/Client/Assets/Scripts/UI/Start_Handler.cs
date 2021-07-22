@@ -18,7 +18,7 @@ public class Start_Handler : MonoBehaviour
     public Button createBtn, back2Create;
     public InputField nickNameInput;//角色昵称输入框
     public Image[] occupationImages;//角色职业显示图片
-    public Button[] occupationBtns;//切换职业按钮
+    public Button[] occupationBtns;// 创建角色--切换职业按钮
     public Text characterDescText;//角色描述文本
     //select character panel
     public Button back2CreateBtn, startBtn;
@@ -65,6 +65,8 @@ public class Start_Handler : MonoBehaviour
                 uiChars.Add(game);
             }
         }
+
+        //OnSelectCharacter(0);
     }
 
     /// <summary>
@@ -192,6 +194,7 @@ public class Start_Handler : MonoBehaviour
     private void OnClickStart()
     {
         //MessageBox.Show("进入游戏", "进入游戏", MessageBoxType.Confirm);
+        //selectPanel.SetActive(false);
         if (selectCharacterIdx >= 0)
         {
             UserServices.Instance.SendEnterGame(selectCharacterIdx);

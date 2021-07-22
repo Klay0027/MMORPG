@@ -1,20 +1,273 @@
-2021-07-18 15:12:13,016 [ 1] INFO  Unity: LoadingManager start
-2021-07-18 15:12:13,025 [ 1] INFO  Unity: DataManager > DataManager()
-2021-07-18 15:12:26,356 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-07-18 15:12:26,358 [ 1] INFO  Unity: ConnectToServer Start
-2021-07-18 15:12:26,359 [ 1] INFO  Unity: DoConnect
-2021-07-18 15:12:26,366 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-07-18 15:12:26,368 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-07-22 17:02:55,267 [ 1] INFO  Unity: LoadingManager start
+2021-07-22 17:02:55,284 [ 1] INFO  Unity: DataManager > DataManager()
+2021-07-22 17:03:07,216 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-07-22 17:03:07,225 [ 1] INFO  Unity: ConnectToServer Start
+2021-07-22 17:03:07,226 [ 1] INFO  Unity: DoConnect
+2021-07-22 17:03:07,227 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-07-22 17:03:07,229 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-07-18 15:12:26,371 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-07-18 15:12:28,682 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-07-18 15:12:29,660 [ 1] INFO  Unity: LoadLevel: Start
-2021-07-18 15:12:29,739 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-07-18 15:12:29,748 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Start_Handler.Start () (at Assets/Scripts/UI/Start_Handler.cs:34)
+2021-07-22 17:03:07,238 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-07-22 17:03:09,544 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-07-22 17:03:10,511 [ 1] INFO  Unity: LoadLevel: Start
+2021-07-22 17:03:10,628 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-07-22 17:03:12,014 [ 1] INFO  Unity: UserGameEnterRequest::characterId :3
+2021-07-22 17:03:12,058 [ 1] INFO  Unity: OnGameEnter:Success [Success!]
+2021-07-22 17:03:12,059 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2021-07-22 17:03:12,066 [ 1] INFO  Unity: AddCharacter:4:牛牛牛 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-07-22 17:03:12,074 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-07-22 17:03:12,457 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-07-22 17:04:22,325 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
 }</args></log4net.Error>
-2021-07-18 15:12:35,015 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-07-18 15:12:35,016 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-07-22 17:04:26,987 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:28,030 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:29,028 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:29,624 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:29,930 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:30,129 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:30,336 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:30,568 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:47,938 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:47,969 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:47,986 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,003 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,020 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,037 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,054 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,070 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,088 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,104 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,122 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,138 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,155 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,171 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,188 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,205 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,222 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,239 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,256 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,273 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,290 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,306 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,323 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,340 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,357 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,373 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,391 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,407 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,424 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,441 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,458 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,475 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,492 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,509 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,525 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,542 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,559 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,576 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,593 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,610 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,626 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,643 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,660 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,677 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,694 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,711 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,728 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,745 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,761 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,778 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,795 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,811 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,828 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,845 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,862 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,879 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,896 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,913 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,930 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,946 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,963 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,980 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:48,997 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,014 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,031 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,048 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,065 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,082 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,099 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,116 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,163 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,180 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,197 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,214 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:24)
+}</args></log4net.Error>
+2021-07-22 17:04:49,245 [ 1] INFO  Unity: Character_4_牛牛牛 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2021-07-22 17:04:49,247 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-07-22 17:04:49,248 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

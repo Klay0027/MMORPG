@@ -14,7 +14,7 @@ public class GameObjectManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(InitGameObjects());
-        CharacterManager.Instance.OnCharacterEnter = OnCharacterEnter;
+        CharacterManager.Instance.OnCharacterEnter = OnCharacterEnter; //添加角色进入事件
     }
 
     private void OnDestroy()
@@ -39,9 +39,9 @@ public class GameObjectManager : MonoBehaviour
 
     private void CreateCharacterObject(Character character)
     {
-        if (!Characters.ContainsKey(character.Info.Id) || Characters[character.Info.Id] == null)
+        if (!Characters.ContainsKey(character.Info.Id) || Characters[character.Info.Id] == null) //当前编号的角色不存在或者角色对象为空时才可以创建
         {
-            Object obj = Resloader.Load<Object>(character.Define.Resource);
+            Object obj = Resloader.Load<Object>(character.Define.Resource); //character.Define.Resource 读取配置表中的资源路径
 
             if (obj == null)
             {
@@ -49,26 +49,26 @@ public class GameObjectManager : MonoBehaviour
                 return;
             }
 
-            GameObject go = (GameObject)Instantiate(obj);
-            go.name = "Character_" + character.Info.Id + "_" + character.Info.Name;
-            go.transform.position = GameObjectTool.LogicToWorld(character.position);
-            go.transform.forward = GameObjectTool.LogicToWorld(character.direction);
+            GameObject go = (GameObject)Instantiate(obj); //实例化角色对象
+            go.name = "Character_" + character.Info.Id + "_" + character.Info.Name; //为角色对象添加名字
+            go.transform.position = GameObjectTool.LogicToWorld(character.position); //转换为世界坐标
+            go.transform.forward = GameObjectTool.LogicToWorld(character.direction); 
 
             Characters[character.Info.Id] = go;
 
-            EntityController ec = go.GetComponent<EntityController>();
+            EntityController ec = go.GetComponent<EntityController>(); //获取当前角色的实体控制脚本
 
-            if (ec != null)
+            if (ec != null) //如果实体脚本不为空
             {
-                ec.entity = character;
-                ec.isPlayer = character.IsPlayer;
+                ec.entity = character; //将当前角色 赋值 给实体脚本中的角色
+                ec.isPlayer = character.IsPlayer; //
             }
 
-            PlayerInputController pc = go.GetComponent<PlayerInputController>();
+            PlayerInputController pc = go.GetComponent<PlayerInputController>(); //获取当前角色的控制脚本
+
             if (pc != null)
             {
-
-                if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id)
+                if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id) //如果是当前选择的对象
                 {
                     User.Instance.CurrentCharacterObject = go;
                     MainPlayerCamera.Instance.player = go;

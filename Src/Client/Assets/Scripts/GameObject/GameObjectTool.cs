@@ -38,7 +38,7 @@ public class GameObjectTool
     }
 
     /// <summary>
-    /// 世界坐标转UI坐标1
+    /// 世界坐标转逻辑坐标
     /// </summary>
     /// <param name="val"></param>
     /// <returns></returns>
@@ -48,7 +48,7 @@ public class GameObjectTool
     }
 
     /// <summary>
-    /// 世界坐标转UI坐标2
+    /// 世界坐标转逻辑坐标2
     /// </summary>
     /// <param name="vector"></param>
     /// <returns></returns>
@@ -63,7 +63,7 @@ public class GameObjectTool
     }
 
     /// <summary>
-    /// 世界坐标转UI坐标3
+    /// 世界坐标转逻辑坐标3
     /// </summary>
     /// <param name="vector"></param>
     /// <returns></returns>

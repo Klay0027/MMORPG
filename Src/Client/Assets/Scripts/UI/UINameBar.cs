@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UINameBar : MonoBehaviour
 {
-    public Text avaverName;
+    public Text avaverName, avaverLevel;
 
     public Character character;
 
@@ -28,10 +28,12 @@ public class UINameBar : MonoBehaviour
     {
         if (this.character != null)
         {
-            string name = this.character.Name + " Lv." + this.character.Info.Level;
+            string name = this.character.Name;
+            string level = " Lv." + this.character.Info.Level;
             if (name != this.avaverName.text)
             {
                 this.avaverName.text = name;
+                this.avaverLevel.text = level;
             }
         }
     
