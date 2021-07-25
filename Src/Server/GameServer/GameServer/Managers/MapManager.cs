@@ -30,7 +30,6 @@ namespace GameServer.Managers
             }
         }
 
-
         public void Update()
         {
             foreach(var map in this.Maps.Values)
