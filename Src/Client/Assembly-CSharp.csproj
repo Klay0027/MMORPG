@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\UI\Login_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox_Handler.cs" />
+    <Compile Include="Assets\Scripts\UI\MiniMap.cs" />
     <Compile Include="Assets\Scripts\UI\Register_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Resloader.cs" />
     <Compile Include="Assets\Scripts\UI\Start_Handler.cs" />

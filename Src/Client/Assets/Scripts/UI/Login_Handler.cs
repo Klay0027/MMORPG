@@ -17,7 +17,6 @@ public class Login_Handler : MonoBehaviour
     {
         Login_Btn.onClick.AddListener(OnLoginClick);
         Register_Btn.onClick.AddListener(OnRegisterClick);
-
         UserServices.Instance.OnLogin = this.OnLogin;
 
     }
@@ -29,10 +28,13 @@ public class Login_Handler : MonoBehaviour
 
     private void OnLogin(SkillBridge.Message.Result result, string msg)
     {
-        MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));
         if (result == SkillBridge.Message.Result.Success)
         {
             StartCoroutine(Load());
+        }
+        else
+        {
+            MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));
         }
     }
 
@@ -64,7 +66,7 @@ public class Login_Handler : MonoBehaviour
             }
             UserServices.Instance.SendLogin(userName, password);
         }
-        else 
+        else
         {
             MessageBox.Show("请确认您已阅读过用户协议！");
             Debug.Log("请确认您已阅读过用户协议");

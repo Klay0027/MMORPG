@@ -25,8 +25,14 @@ namespace Models
 
         public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
 
+        /// <summary>
+        /// 当前地图的信息
+        /// </summary>
         public MapDefine CurrentMapData { get; set; }
 
+        /// <summary>
+        /// 当前角色的游戏对象
+        /// </summary>
         public GameObject CurrentCharacterObject { get; set; }
     }
 }

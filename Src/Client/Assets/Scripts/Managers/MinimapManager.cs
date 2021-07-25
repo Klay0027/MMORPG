@@ -7,9 +7,9 @@ namespace Managers
 {
     class MinimapManager : Singleton<MinimapManager>
     {
-        //public Sprite LoadCurrentMinimap()
-        //{
-        //    //return Resloader.Load<Sprite>("UI/Minimap/" + User.Instance.CurrentMapData.MiniMap);
-        //}
+        public Sprite LoadCurrentMinimap()
+        {
+            return Resloader.Load<Sprite>("UI/MainCity/MiniMap/" + User.Instance.CurrentMapData.MiniMap);
+        }
     }
 }
