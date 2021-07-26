@@ -15,6 +15,7 @@ namespace Services
         public UnityEngine.Events.UnityAction<Result, string> OnLogin;
         public UnityEngine.Events.UnityAction<Result, string> OnCreateChar;
         public UnityEngine.Events.UnityAction<Result, string> OnGameEnter;
+        public UnityEngine.Events.UnityAction<Result, string> OnGameLeave;
 
         NetMessage pendingMessage = null;
         bool connected = true;
@@ -27,6 +28,7 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);          
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnEnterGame);
+            MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnLeaveGame);
         }
 
         /// <summary>
@@ -40,6 +42,7 @@ namespace Services
             MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnCreateCharacter);
             MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnEnterGame);
+            MessageDistributer.Instance.Unsubscribe<UserGameLeaveResponse>(this.OnLeaveGame);
         }
 
         /// <summary>
@@ -263,17 +266,12 @@ namespace Services
 
         private void OnEnterGame(object sender, UserGameEnterResponse response)
         {
-            Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
+            Debug.LogFormat("OnEnterGame:{0} [{1}]", response.Result, response.Errormsg);
 
             if (response.Result == Result.Success)
             {
 
             }
-
-            //if (this.OnGameEnter != null)
-            //{
-            //    this.OnGameEnter(response.Result, response.Errormsg);
-            //}
         }
 
         /// <summary>
@@ -290,7 +288,11 @@ namespace Services
 
         private void OnLeaveGame(object sender, UserGameLeaveResponse response)
         {
-            Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+            Debug.LogFormat("OnLeaveGame:{0} [{1}]", response.Result, response.Errormsg);
+            if (this.OnGameLeave != null)
+            {
+                this.OnGameLeave(response.Result, response.Errormsg);
+            }
         }
     }
 }

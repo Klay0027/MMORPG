@@ -7,20 +7,27 @@ using SkillBridge.Message;
 using Models;
 using Managers;
 
-public class GameObjectManager : MonoBehaviour 
+public class GameObjectManager : MonoSingleton<GameObjectManager> 
 {
     Dictionary<int, GameObject> Characters = new Dictionary<int, GameObject>();
 
-    private void Start()
+    protected override void OnStart()
     {
         StartCoroutine(InitGameObjects());
-        CharacterManager.Instance.OnCharacterEnter = OnCharacterEnter; //添加角色进入事件
+        CharacterManager.Instance.OnCharacterEnter += OnCharacterEnter; //添加角色进入事件
+        CharacterManager.Instance.OnCharacterLeave += OnCharacterLeave; //添加角色离开事件
     }
 
     private void OnDestroy()
     {
-        CharacterManager.Instance.OnCharacterEnter = null;
+        CharacterManager.Instance.OnCharacterEnter -= OnCharacterEnter; //添加角色进入事件
+        CharacterManager.Instance.OnCharacterLeave -= OnCharacterLeave; //添加角色进入事件
     }
+
+    //private void OnDestroy()
+    //{
+    //    CharacterManager.Instance.OnCharacterEnter = null;
+    //}
 
     IEnumerator InitGameObjects()
     {
@@ -36,10 +43,24 @@ public class GameObjectManager : MonoBehaviour
         CreateCharacterObject(cha);
     }
 
+    private void OnCharacterLeave(Character character)
+    {
+        if (!Characters.ContainsKey(character.entityId))
+        {
+            return;
+        }
+
+        if (Characters[character.entityId] != null)
+        {
+            Destroy(Characters[character.entityId]);
+            this.Characters.Remove(character.entityId);
+        }
+    }
+
 
     private void CreateCharacterObject(Character character)
     {
-        if (!Characters.ContainsKey(character.Info.Id) || Characters[character.Info.Id] == null) //当前编号的角色不存在或者角色对象为空时才可以创建
+        if (!Characters.ContainsKey(character.entityId) || Characters[character.entityId] == null) //当前编号的角色不存在或者角色对象为空时才可以创建
         {
             Object obj = Resloader.Load<Object>(character.Define.Resource); //character.Define.Resource 读取配置表中的资源路径
 
@@ -49,41 +70,44 @@ public class GameObjectManager : MonoBehaviour
                 return;
             }
 
-            GameObject go = (GameObject)Instantiate(obj); //实例化角色对象
-            go.name = "Character_" + character.Info.Id + "_" + character.Info.Name; //为角色对象添加名字
-            go.transform.position = GameObjectTool.LogicToWorld(character.position); //转换为世界坐标
-            go.transform.forward = GameObjectTool.LogicToWorld(character.direction); 
-
-            Characters[character.Info.Id] = go;
-
-            EntityController ec = go.GetComponent<EntityController>(); //获取当前角色的实体控制脚本
-
-            if (ec != null) //如果实体脚本不为空
-            {
-                ec.entity = character; //将当前角色 赋值 给实体脚本中的角色
-                ec.isPlayer = character.IsPlayer; //
-            }
-
-            PlayerInputController pc = go.GetComponent<PlayerInputController>(); //获取当前角色的控制脚本
-
-            if (pc != null)
-            {
-                if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id) //如果是当前选择的对象
-                {
-                    User.Instance.CurrentCharacterObject = go;
-                    MainPlayerCamera.Instance.player = go;
-                    pc.enabled = true;
-                    pc.character = character;
-                    pc.entityController = ec;
-                }
-                else
-                {
-                    pc.enabled = false;
-                }
-            }
+            GameObject go = (GameObject)Instantiate(obj, this.transform); //实例化角色对象
+            go.name = "Character_" + character.entityId + "_" + character.Info.Name; //为角色对象添加名字           
+            Characters[character.entityId] = go;   
+            
             //添加显示角色名称和等级的UI
             UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
         }
     
+    }
+
+    private void InitGameObject(GameObject go, Character character)
+    {
+        go.transform.position = GameObjectTool.LogicToWorld(character.position); //转换为世界坐标
+        go.transform.forward = GameObjectTool.LogicToWorld(character.direction);
+        EntityController ec = go.GetComponent<EntityController>(); //获取当前角色的实体控制脚本
+
+        if (ec != null) //如果实体脚本不为空
+        {
+            ec.entity = character; //将当前角色 赋值 给实体脚本中的角色
+            ec.isPlayer = character.IsPlayer; //
+        }
+
+        PlayerInputController pc = go.GetComponent<PlayerInputController>(); //获取当前角色的控制脚本
+
+        if (pc != null)
+        {
+            if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id) //如果是当前选择的对象
+            {
+                User.Instance.CurrentCharacterObject = go;
+                MainPlayerCamera.Instance.player = go;
+                pc.enabled = true;
+                pc.character = character;
+                pc.entityController = ec;
+            }
+            else
+            {
+                pc.enabled = false;
+            }
+        }
     }
 }

@@ -65,8 +65,6 @@ public class Start_Handler : MonoBehaviour
                 uiChars.Add(game);
             }
         }
-
-        //OnSelectCharacter(0);
     }
 
     /// <summary>

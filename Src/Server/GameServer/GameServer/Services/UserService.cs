@@ -144,6 +144,7 @@ namespace GameServer.Services
                 info.Id = item.ID;
                 info.Name = item.Name;
                 info.Class = (CharacterClass)item.Class;
+                info.Tid = item.TID;
                 message.Response.createChar.Characters.Add(info);
             }
             message.Response.createChar.Result = Result.Success;
@@ -175,6 +176,7 @@ namespace GameServer.Services
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
             sender.Session.Character = character;
+
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
 
@@ -183,10 +185,21 @@ namespace GameServer.Services
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="message"></param>
-        private void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest message)
+        private void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)
         {
+            Character character = sender.Session.Character;
+            Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
+            CharacterManager.Instance.RemoveCharacter(character.Id); //根据角色ID在管理器中移除
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character.Info);
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.gameLeave = new UserGameLeaveResponse();
+            message.Response.gameLeave.Result = Result.Success;
+            message.Response.gameLeave.Errormsg = "None";
 
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
         }
     }
 }

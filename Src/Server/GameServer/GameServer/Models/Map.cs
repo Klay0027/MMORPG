@@ -75,6 +75,11 @@ namespace GameServer.Models
             conn.SendData(data, 0, data.Length);
         }
 
+        /// <summary>
+        /// 发送通知其他玩家有新玩家进入
+        /// </summary>
+        /// <param name="conn"></param>
+        /// <param name="character"></param>
         void SendCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
         {
             NetMessage message = new NetMessage();
@@ -83,6 +88,39 @@ namespace GameServer.Models
             message.Response.mapCharacterEnter = new MapCharacterEnterResponse();
             message.Response.mapCharacterEnter.mapId = this.Define.ID;
             message.Response.mapCharacterEnter.Characters.Add(character);
+
+            byte[] data = PackageHandler.PackMessage(message);
+            conn.SendData(data, 0, data.Length);
+        }
+
+        /// <summary>
+        /// 角色离开地图
+        /// </summary>
+        /// <param name="nCharacter"></param>
+        internal void CharacterLeave(NCharacterInfo nCharacter)
+        {
+            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, nCharacter.Id);
+
+            this.MapCharacters.Remove(nCharacter.Id);
+
+            foreach (var kv in this.MapCharacters)
+            {
+                this.SendCharacterLeaveMap(kv.Value.connection, nCharacter);
+            }
+        }
+
+        /// <summary>
+        /// 发送通知其他玩家有新玩家离开
+        /// </summary>
+        /// <param name="conn"></param>
+        /// <param name="character"></param>
+        private void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        {
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+
+            message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            message.Response.mapCharacterLeave.characterId = character.Id;
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);

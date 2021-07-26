@@ -31,6 +31,10 @@ public class MiniMap : MonoBehaviour
 
     private void Update()
     {
+        if (MinimapBoundingBox == null || playerTransfrom == null)
+        {
+            return;
+        }
         //获取当前地图的宽和高
         float realWidth = MinimapBoundingBox.bounds.size.x;
         float realHeight = MinimapBoundingBox.bounds.size.z;
