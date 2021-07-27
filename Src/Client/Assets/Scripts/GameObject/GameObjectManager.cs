@@ -24,11 +24,6 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         CharacterManager.Instance.OnCharacterLeave -= OnCharacterLeave; //添加角色进入事件
     }
 
-    //private void OnDestroy()
-    //{
-    //    CharacterManager.Instance.OnCharacterEnter = null;
-    //}
-
     IEnumerator InitGameObjects()
     {
         foreach (var cha in CharacterManager.Instance.Characters.Values)
@@ -77,7 +72,8 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             //添加显示角色名称和等级的UI
             UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
         }
-    
+
+        this.InitGameObject(Characters[character.entityId], character);
     }
 
     private void InitGameObject(GameObject go, Character character)
