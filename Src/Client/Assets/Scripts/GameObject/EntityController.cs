@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using Entities;
 using SkillBridge.Message;
+using Managers;
 
-public class EntityController : MonoBehaviour
+public class EntityController : MonoBehaviour, IEntityNotify
 {
     public Animator anim;
     public Rigidbody rb;
@@ -27,6 +28,7 @@ public class EntityController : MonoBehaviour
     {
         if (entity != null)
         {
+            EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
             this.UpdateTransform();
         }
 
@@ -94,5 +96,22 @@ public class EntityController : MonoBehaviour
                 break;
         }
 
+    }
+
+    //当收到角色删除时
+    public void OnEntityRemoved()
+    {
+        if (UIWorldElementManager.Instance != null)
+        {
+            //删除血条
+            UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
+        }
+        //销毁自己
+        Destroy(this.gameObject);
+    }
+
+    public void OnEntityChanged(Entity entity)
+    {
+        
     }
 }

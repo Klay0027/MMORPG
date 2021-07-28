@@ -27,6 +27,7 @@ public class MainCity : MonoBehaviour
 
     private void BackToSelect()
     {
+        SceneManager.Instance.LoadScene("Start");
         UserServices.Instance.SendLeaveGame();
     }
 
@@ -34,7 +35,7 @@ public class MainCity : MonoBehaviour
     {
         if (result == Result.Success)
         {
-            SceneManager.Instance.LoadScene("Start");
+            
             Debug.Log("已经正常离开游戏");
         }
         else

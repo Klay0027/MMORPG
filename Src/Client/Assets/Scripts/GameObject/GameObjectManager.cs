@@ -40,6 +40,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
 
     private void OnCharacterLeave(Character character)
     {
+        //判断角色是否存在
         if (!Characters.ContainsKey(character.entityId))
         {
             return;
@@ -66,7 +67,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             }
 
             GameObject go = (GameObject)Instantiate(obj, this.transform); //实例化角色对象
-            go.name = "Character_" + character.entityId + "_" + character.Info.Name; //为角色对象添加名字           
+            go.name = "Character_" + character.Info.Id + "_" + character.Info.Name; //为角色对象添加名字           
             Characters[character.entityId] = go;   
             
             //添加显示角色名称和等级的UI

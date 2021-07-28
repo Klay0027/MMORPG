@@ -9,7 +9,8 @@ namespace Entities
 {
     public class Entity
     {
-        public int entityId;
+        public int entityId; //标识角色唯一性的ID
+
 
         //参与运算
         public Vector3Int position;

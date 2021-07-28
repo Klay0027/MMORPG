@@ -288,11 +288,9 @@ namespace Services
 
         private void OnLeaveGame(object sender, UserGameLeaveResponse response)
         {
+            MapService.Instance.CurrentMapId = 0;
             Debug.LogFormat("OnLeaveGame:{0} [{1}]", response.Result, response.Errormsg);
-            if (this.OnGameLeave != null)
-            {
-                this.OnGameLeave(response.Result, response.Errormsg);
-            }
+
         }
     }
 }

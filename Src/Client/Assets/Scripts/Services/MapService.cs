@@ -16,6 +16,7 @@ namespace Services
         {
             MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
+            MessageDistributer.Instance.Subscribe<MapEntitySyncResponse>(this.OnMapEntitySync);
         }
 
         public void Dispose()
@@ -52,7 +53,7 @@ namespace Services
 
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
-            Debug.LogFormat("OnMapCharacterLeave:Map:{0} Count:{1}", response.characterId);
+            Debug.LogFormat("OnMapCharacterLeave:CharID:{0}", response.characterId);
 
             if (response.characterId != User.Instance.CurrentCharacter.Id)
             {
@@ -76,6 +77,36 @@ namespace Services
             {
                 Debug.LogErrorFormat("EnterMap: Map {0} not existed", mapId);
             }
+        }
+
+        public void SendMapEntitySync(EntityEvent entityEvent, NEntity entity)
+        {
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapEntitySync = new MapEntitySyncRequest();
+            message.Request.mapEntitySync.entitySync = new NEntitySync()
+            {
+                Id = entity.Id,
+                Event = entityEvent,
+                Entity = entity
+            };
+            NetClient.Instance.SendMessage(message);
+        }
+
+        private void OnMapEntitySync(object sender, MapEntitySyncResponse responce)
+        {
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.AppendFormat("MapEntitySyncResponse: Entity:{0}", responce.entitySyncs.Count);
+            sb.AppendLine();
+
+            foreach (var entity in responce.entitySyncs)
+            {
+                Managers.EntityManager.Instance.OnEntitySync(entity);
+
+                sb.AppendFormat("[{0}evt:{1} entity:{2}]", entity.Id, entity.Event, entity.Entity.String());
+                sb.AppendLine();
+            }
+            Debug.Log(sb.ToString());
         }
     }
 }

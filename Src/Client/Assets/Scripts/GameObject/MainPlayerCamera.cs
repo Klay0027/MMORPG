@@ -16,7 +16,13 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
             player = User.Instance.CurrentCharacterObject;
         }
 
+        if (player == null)
+        {
+            return;
+        }
+
         this.transform.position = player.transform.position;
         this.transform.rotation = player.transform.rotation;
+
     }
 }
