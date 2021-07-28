@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SkillBridge.Message;
-
 using Common;
 using Common.Data;
-
 using Network;
 using GameServer.Managers;
 using GameServer.Entities;
+using GameServer.Services;
 
 namespace GameServer.Models
 {
@@ -40,6 +39,24 @@ namespace GameServer.Models
         internal Map(MapDefine define)
         {
             this.Define = define;
+        }
+
+        internal void UpdateEntity(NEntitySync entity)
+        {
+            foreach (var item in this.MapCharacters)
+            {
+                if (item.Value.character.entityId == entity.Id)
+                {
+                    item.Value.character.Position = entity.Entity.Position;
+                    item.Value.character.Speed = entity.Entity.Speed;
+                    item.Value.character.Direction = entity.Entity.Direction;
+                }
+                else
+                {
+                    MapService.Instance.SendEntityUpdate(item.Value.connection, entity);
+                }
+            }
+
         }
 
         internal void Update()

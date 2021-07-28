@@ -118,9 +118,6 @@ namespace GameServer.Services
         private void OnCreateCharacter(NetConnection<NetSession> sender, UserCreateCharacterRequest request)
         {
             Log.InfoFormat("CreateCharacter: Name:{0}  Class:{1}", request.Name, request.Class);
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
-            message.Response.createChar = new UserCreateCharacterResponse();
 
             //创建角色对象
             TCharacter character = new TCharacter();
@@ -133,10 +130,15 @@ namespace GameServer.Services
             character.MapPosZ = 820;
 
             //调用数据库服务新增角色存储到数据库
-            DBService.Instance.Entities.Characters.Add(character);
+            character = DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character); //添加角色session
             DBService.Instance.Entities.SaveChanges(); //保存数据
 
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.createChar = new UserCreateCharacterResponse();
+            message.Response.createChar.Result = Result.Success;
+            message.Response.createChar.Errormsg = "添加角色成功！";
             //遍历当前玩家有哪些角色
             foreach (var item in sender.Session.User.Player.Characters)
             {
@@ -147,8 +149,6 @@ namespace GameServer.Services
                 info.Tid = item.TID;
                 message.Response.createChar.Characters.Add(info);
             }
-            message.Response.createChar.Result = Result.Success;
-            message.Response.createChar.Errormsg = "添加角色成功！";
             
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
@@ -190,13 +190,17 @@ namespace GameServer.Services
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
-            CharacterManager.Instance.RemoveCharacter(character.Id); //根据角色ID在管理器中移除
+            //根据角色ID在角色管理器中从字典Characters移除
+            CharacterManager.Instance.RemoveCharacter(character.Id);
+
+            //根据角色信息在地图管理器中从当前地图字典中移除
             MapManager.Instance[character.Info.mapId].CharacterLeave(character.Info);
+
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.gameLeave = new UserGameLeaveResponse();
             message.Response.gameLeave.Result = Result.Success;
-            message.Response.gameLeave.Errormsg = "None";
+            message.Response.gameLeave.Errormsg =  string.Format("Player{0}已经从地图{1}中移除", character.Info.Name, character.Info.mapId);
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
