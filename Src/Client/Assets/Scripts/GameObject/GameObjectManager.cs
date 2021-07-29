@@ -53,7 +53,10 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         }
     }
 
-
+    /// <summary>
+    /// 创建角色对象
+    /// </summary>
+    /// <param name="character"></param>
     private void CreateCharacterObject(Character character)
     {
         if (!Characters.ContainsKey(character.entityId) || Characters[character.entityId] == null) //当前编号的角色不存在或者角色对象为空时才可以创建

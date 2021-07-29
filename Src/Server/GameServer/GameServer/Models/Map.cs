@@ -41,6 +41,7 @@ namespace GameServer.Models
             this.Define = define;
         }
 
+
         internal void UpdateEntity(NEntitySync entity)
         {
             foreach (var item in this.MapCharacters)
@@ -61,6 +62,7 @@ namespace GameServer.Models
 
         internal void Update()
         {
+
         }
 
         /// <summary>
@@ -86,7 +88,7 @@ namespace GameServer.Models
                 this.SendCharacterEnterMap(kv.Value.connection, character.Info);
             }
             
-            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+            this.MapCharacters[character.Info.Id] = new MapCharacter(conn, character);
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
@@ -118,7 +120,7 @@ namespace GameServer.Models
         {
             Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, nCharacter.Id);
 
-            this.MapCharacters.Remove(nCharacter.Id);
+            this.MapCharacters.Remove(nCharacter.Id);//从当前地图中 管理所有角色的字典中 移除要离开的角色
 
             foreach (var kv in this.MapCharacters)
             {

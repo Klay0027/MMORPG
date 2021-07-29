@@ -112,6 +112,6 @@ public class EntityController : MonoBehaviour, IEntityNotify
 
     public void OnEntityChanged(Entity entity)
     {
-        
+        Debug.LogFormat("MapEntityUpdateRequest:ID:{0} Pos:{1} Dir:{2} Speed:{3}", entity.entityId, entity.position, entity.direction,  entity.speed);
     }
 }

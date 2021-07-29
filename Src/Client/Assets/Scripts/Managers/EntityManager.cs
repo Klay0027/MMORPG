@@ -39,6 +39,7 @@ namespace Managers
             }
         }
 
+        //同步状态
         internal void OnEntitySync(NEntitySync data)
         {
             Entity entity = null;

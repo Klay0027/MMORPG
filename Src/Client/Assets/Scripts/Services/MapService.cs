@@ -30,6 +30,11 @@ namespace Services
         
         }
 
+        /// <summary>
+        /// 角色进入地图
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
         private void OnMapCharacterEnter(object sender, MapCharacterEnterResponse response)
         {
             Debug.LogFormat("OnMapCharacterEnter:Map:{0} Count:{1}", response.mapId, response.Characters.Count);
@@ -51,6 +56,11 @@ namespace Services
             }
         }
 
+        /// <summary>
+        /// 角色离开地图
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
             Debug.LogFormat("OnMapCharacterLeave:CharID:{0}", response.characterId);
@@ -65,6 +75,10 @@ namespace Services
             }
         }
 
+        /// <summary>
+        /// 进入地图
+        /// </summary>
+        /// <param name="mapId"></param>
         private void EnterMap(int mapId)
         {
             if (DataManager.Instance.Maps.ContainsKey(mapId)) //判断传来的地图编号是否存在
@@ -79,8 +93,14 @@ namespace Services
             }
         }
 
+        /// <summary>
+        /// 发送同步请求
+        /// </summary>
+        /// <param name="entityEvent"></param>
+        /// <param name="entity"></param>
         public void SendMapEntitySync(EntityEvent entityEvent, NEntity entity)
         {
+            Debug.LogFormat("MapEntityUpdateRequest:ID:{0} Pos:{1} Dir:{2} Speed:{3}", entity.Id, entity.Position.String(), entity.Direction.String(), entity.Speed);
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.mapEntitySync = new MapEntitySyncRequest();
@@ -93,6 +113,11 @@ namespace Services
             NetClient.Instance.SendMessage(message);
         }
 
+        /// <summary>
+        /// 收到同步请求的响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="responce"></param>
         private void OnMapEntitySync(object sender, MapEntitySyncResponse responce)
         {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
