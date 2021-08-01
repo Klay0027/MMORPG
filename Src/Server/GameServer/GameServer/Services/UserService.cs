@@ -200,7 +200,7 @@ namespace GameServer.Services
             message.Response = new NetMessageResponse();
             message.Response.gameLeave = new UserGameLeaveResponse();
             message.Response.gameLeave.Result = Result.Success;
-            message.Response.gameLeave.Errormsg =  string.Format("Player{0}已经从地图{1}中移除", character.Info.Name, character.Info.mapId);
+            message.Response.gameLeave.Errormsg = "None";
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
