@@ -28,7 +28,7 @@ namespace GameServer.Services
         private void OnMapEntitySync(NetConnection<NetSession> sender, MapEntitySyncRequest request)
         {
             Character character = sender.Session.Character;
-
+            Log.InfoFormat("OnMapEntitySync: characterID:{0} :{1} Entity.Id:{2} Event:{3} Entity:{4}", character.Id, character.Info.Name, request.entitySync.Id, request.entitySync.Event, request.entitySync.Entity.String());
             MapManager.Instance[character.Info.mapId].UpdateEntity(request.entitySync);
         }
 
@@ -37,11 +37,11 @@ namespace GameServer.Services
 
         }
 
+        //发送给其他玩家 同步状态
         internal void SendEntityUpdate(NetConnection<NetSession> connection, NEntitySync entity)
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
-
             message.Response.mapEntitySync = new MapEntitySyncResponse();
             message.Response.mapEntitySync.entitySyncs.Add(entity);
 

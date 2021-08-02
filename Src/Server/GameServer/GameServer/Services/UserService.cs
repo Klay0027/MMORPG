@@ -80,7 +80,7 @@ namespace GameServer.Services
                     message.Response.userLogin.Result = Result.Success;
                     message.Response.userLogin.Errormsg = "登录成功，欢迎来到声闻世界！";
                     message.Response.userLogin.Userinfo = new NUserInfo();
-                    message.Response.userLogin.Userinfo.Id = 1;
+                    message.Response.userLogin.Userinfo.Id = (int)user.ID;
                     message.Response.userLogin.Userinfo.Player = new NPlayerInfo();
                     message.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
 
@@ -90,6 +90,8 @@ namespace GameServer.Services
                         info.Id = character.ID;
                         info.Name = character.Name;
                         info.Class = (CharacterClass)character.Class;
+                        info.Tid = character.ID;
+                        info.Type = CharacterType.Player;
                         message.Response.userLogin.Userinfo.Player.Characters.Add(info);
                     }
                     
@@ -143,10 +145,11 @@ namespace GameServer.Services
             foreach (var item in sender.Session.User.Player.Characters)
             {
                 NCharacterInfo info = new NCharacterInfo();
-                info.Id = item.ID;
+                info.Id = 0;
                 info.Name = item.Name;
                 info.Class = (CharacterClass)item.Class;
-                info.Tid = item.TID;
+                info.Tid = item.ID;
+                info.Type = CharacterType.Player;
                 message.Response.createChar.Characters.Add(info);
             }
             
@@ -194,7 +197,7 @@ namespace GameServer.Services
             CharacterManager.Instance.RemoveCharacter(character.Id);
 
             //根据角色信息在地图管理器中从当前地图字典中移除
-            MapManager.Instance[character.Info.mapId].CharacterLeave(character.Info);
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
