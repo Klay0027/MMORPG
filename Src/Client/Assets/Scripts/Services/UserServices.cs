@@ -6,6 +6,7 @@ using UnityEngine;
 using SkillBridge.Message;
 using Common;
 using Network;
+using Models;
 
 namespace Services
 {
@@ -14,8 +15,6 @@ namespace Services
         public UnityEngine.Events.UnityAction<Result, string> OnRegister;
         public UnityEngine.Events.UnityAction<Result, string> OnLogin;
         public UnityEngine.Events.UnityAction<Result, string> OnCreateChar;
-        public UnityEngine.Events.UnityAction<Result, string> OnGameEnter;
-        public UnityEngine.Events.UnityAction<Result, string> OnGameLeave;
 
         NetMessage pendingMessage = null;
         bool connected = true;
@@ -256,7 +255,7 @@ namespace Services
         /// <param name="characterIdx">当前玩家角色的ID</param>
         public void SendEnterGame(int characterIdx)
         {
-            Debug.LogFormat("UserGameEnterRequest::characterId :{0}", characterIdx);
+            Debug.LogFormat("UserGameEnterRequest: 进入游戏的角色ID :{0}", characterIdx);
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.gameEnter = new UserGameEnterRequest();
@@ -289,6 +288,7 @@ namespace Services
         private void OnLeaveGame(object sender, UserGameLeaveResponse response)
         {
             MapService.Instance.CurrentMapId = 0;
+            User.Instance.CurrentCharacter = null;
             Debug.LogFormat("OnLeaveGame:{0} [{1}]", response.Result, response.Errormsg);
 
         }

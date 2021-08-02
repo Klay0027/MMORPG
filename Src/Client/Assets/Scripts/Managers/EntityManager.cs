@@ -13,6 +13,8 @@ namespace Managers
         void OnEntityChanged(Entity entity);
         void OnEntityEvent(EntityEvent @event);
     }
+
+
     class EntityManager : Singleton<EntityManager>
     {
         Dictionary<int, Entity> entities = new Dictionary<int, Entity>();
@@ -32,6 +34,7 @@ namespace Managers
         public void RemoveEntity(NEntity entity)
         {
             this.entities.Remove(entity.Id);
+
             if (notifiers.ContainsKey(entity.Id))
             {
                 notifiers[entity.Id].OnEntityRemoved();

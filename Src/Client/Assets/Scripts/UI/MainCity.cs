@@ -16,7 +16,6 @@ public class MainCity : MonoBehaviour
     {
         UpdateAvatar();
         back_Btn.onClick.AddListener(BackToSelect);
-        UserServices.Instance.OnGameLeave = OnPlayerLeave;
     }
 
     private void UpdateAvatar()
@@ -42,6 +41,5 @@ public class MainCity : MonoBehaviour
         {
             MessageBox.Show(message, "错误", MessageBoxType.Error);
         }
-
     }
 }

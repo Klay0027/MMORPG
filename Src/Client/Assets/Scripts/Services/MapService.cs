@@ -41,7 +41,7 @@ namespace Services
 
             foreach (var cha in response.Characters)
             {
-                if (User.Instance.CurrentCharacter.Id == cha.Id)
+                if (User.Instance.CurrentCharacter == null || User.Instance.CurrentCharacter.Id == cha.Id)
                 {
                     User.Instance.CurrentCharacter = cha; //刷新一遍角色数据
                 }
@@ -114,19 +114,19 @@ namespace Services
         }
 
         /// <summary>
-        /// 收到同步请求的响应
+        /// 客户端收到同步请求的响应
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="responce"></param>
         private void OnMapEntitySync(object sender, MapEntitySyncResponse responce)
         {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            sb.AppendFormat("MapEntitySyncResponse: Entity:{0}", responce.entitySyncs.Count);
+            sb.AppendFormat("MapEntityUpdateResponse: Entity:{0}", responce.entitySyncs.Count);
             sb.AppendLine();
 
             foreach (var entity in responce.entitySyncs)
             {
-                Managers.EntityManager.Instance.OnEntitySync(entity);
+                EntityManager.Instance.OnEntitySync(entity);
 
                 sb.AppendFormat("[{0}evt:{1} entity:{2}]", entity.Id, entity.Event, entity.Entity.String());
                 sb.AppendLine();

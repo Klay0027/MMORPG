@@ -18,19 +18,25 @@ public class MiniMap : MonoBehaviour
     private void Start()
     {
         this.mapName.text = User.Instance.CurrentMapData.Name;
-        //init minimap
+
+
         if (this.miniMap.overrideSprite == null)
         {
             this.miniMap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
         }
+
         this.miniMap.SetNativeSize();
         this.miniMap.transform.localPosition = Vector3.zero;
-        // init player
-        this.playerTransfrom = User.Instance.CurrentCharacterObject.transform;
+
     }
 
     private void Update()
     {
+        if (playerTransfrom == null)
+        {
+            playerTransfrom = MinimapManager.Instance.PlayerTransform;
+        }
+
         if (MinimapBoundingBox == null || playerTransfrom == null)
         {
             return;

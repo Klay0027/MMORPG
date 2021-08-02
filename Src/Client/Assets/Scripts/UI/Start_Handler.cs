@@ -33,7 +33,6 @@ public class Start_Handler : MonoBehaviour
         startBtn.onClick.AddListener(OnClickStart);
         back2Create.onClick.AddListener(OnBack2Create);
         UserServices.Instance.OnCreateChar = OnCharacterCreate;
-        UserServices.Instance.OnGameEnter = OnPlayerEnterGame;
     }
 
     /// <summary>
@@ -82,9 +81,8 @@ public class Start_Handler : MonoBehaviour
     private void OnSelectCharacter(int idx)
     {
         this.selectCharacterIdx = idx;
-        User.Instance.CurrentCharacter = User.Instance.Info.Player.Characters[idx];
-        int charIndex = (int)User.Instance.CurrentCharacter.Class;
-        nickNameShowText.text = User.Instance.CurrentCharacter.Name;
+        int charIndex = (int)User.Instance.Info.Player.Characters[idx].Class;
+        nickNameShowText.text = User.Instance.Info.Player.Characters[idx].Name;
         for (int i = 0; i < charactersPrefabs.Length; i++)
         {
             if (i == charIndex - 1)
@@ -191,8 +189,6 @@ public class Start_Handler : MonoBehaviour
     /// </summary>
     private void OnClickStart()
     {
-        //MessageBox.Show("进入游戏", "进入游戏", MessageBoxType.Confirm);
-        //selectPanel.SetActive(false);
         if (selectCharacterIdx >= 0)
         {
             UserServices.Instance.SendEnterGame(selectCharacterIdx);
