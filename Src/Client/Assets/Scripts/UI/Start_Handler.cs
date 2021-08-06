@@ -193,7 +193,6 @@ public class Start_Handler : MonoBehaviour
         {
             UserServices.Instance.SendEnterGame(selectCharacterIdx);
         }
-        Debug.Log("我点击了第" + selectCharacterIdx + "个玩家");
     }
 
     /// <summary>

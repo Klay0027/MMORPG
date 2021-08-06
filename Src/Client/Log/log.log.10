@@ -1,0 +1,187 @@
+2021-08-06 17:10:08,309 [ 1] INFO  Unity: LoadingManager start
+2021-08-06 17:10:08,318 [ 1] INFO  Unity: DataManager > DataManager()
+2021-08-06 17:10:19,474 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-08-06 17:10:19,476 [ 1] INFO  Unity: ConnectToServer Start
+2021-08-06 17:10:19,477 [ 1] INFO  Unity: DoConnect
+2021-08-06 17:10:19,478 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-08-06 17:10:19,480 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2021-08-06 17:10:19,483 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-08-06 17:10:19,581 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-08-06 17:10:20,570 [ 1] INFO  Unity: LoadLevel: Start
+2021-08-06 17:10:20,654 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-08-06 17:10:22,901 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
+2021-08-06 17:10:22,938 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
+2021-08-06 17:10:22,939 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2021-08-06 17:10:22,941 [ 1] INFO  Unity: AddCharacter:3:酷酷酷 Map:1 Entity:(3:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-08-06 17:10:22,944 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-08-06 17:10:23,365 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-08-06 17:10:23,918 [ 1] INFO  Unity: MoveForward
+2021-08-06 17:10:23,919 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
+2021-08-06 17:10:25,283 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2610,1900,800) Dir:(100,0,0) Speed:300
+2021-08-06 17:10:26,294 [ 1] INFO  Unity: Stop
+2021-08-06 17:10:26,295 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-08-06 17:10:26,296 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2915,1900,800) Dir:(100,0,0) Speed:0
+2021-08-06 17:10:26,716 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2915,1900,800) Dir:(100,0,0) Speed:0
+2021-08-06 17:10:27,289 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2915,1900,800) Dir:(100,0,0) Speed:0
+2021-08-06 17:10:27,878 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2915,1900,800) Dir:(100,0,0) Speed:0
+2021-08-06 17:10:28,199 [ 1] INFO  Unity: MoveForward
+2021-08-06 17:10:28,199 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2915,1900,800) Dir:(100,0,0) Speed:300
+2021-08-06 17:10:28,586 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2021-08-06 17:10:28,587 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3030,1900,800) Dir:(98,18,0) Speed:300
+2021-08-06 17:10:28,688 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2021-08-06 17:10:28,689 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3060,1906,800) Dir:(93,36,0) Speed:300
+2021-08-06 17:10:28,788 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
+2021-08-06 17:10:28,789 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3090,1918,800) Dir:(84,55,0) Speed:300
+2021-08-06 17:10:28,889 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
+2021-08-06 17:10:28,890 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3114,1936,800) Dir:(71,71,0) Speed:300
+2021-08-06 17:10:28,973 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2021-08-06 17:10:28,974 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3134,1956,800) Dir:(57,82,0) Speed:300
+2021-08-06 17:10:29,075 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
+2021-08-06 17:10:29,076 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3152,1980,800) Dir:(39,92,0) Speed:300
+2021-08-06 17:10:29,159 [ 1] INFO  Unity: SetDirection:(22, 97, 0)
+2021-08-06 17:10:29,160 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3162,2005,800) Dir:(22,97,0) Speed:300
+2021-08-06 17:10:29,260 [ 1] INFO  Unity: SetDirection:(2, 100, 0)
+2021-08-06 17:10:29,261 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3168,2035,800) Dir:(2,100,0) Speed:300
+2021-08-06 17:10:29,344 [ 1] INFO  Unity: SetDirection:(-16, 99, 0)
+2021-08-06 17:10:29,345 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3168,2060,800) Dir:(-16,99,0) Speed:300
+2021-08-06 17:10:29,445 [ 1] INFO  Unity: SetDirection:(-36, 93, 0)
+2021-08-06 17:10:29,446 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3162,2090,800) Dir:(-36,93,0) Speed:300
+2021-08-06 17:10:29,547 [ 1] INFO  Unity: SetDirection:(-55, 84, 0)
+2021-08-06 17:10:29,547 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3150,2120,800) Dir:(-55,84,0) Speed:300
+2021-08-06 17:10:29,647 [ 1] INFO  Unity: SetDirection:(-71, 71, 0)
+2021-08-06 17:10:29,648 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3132,2144,800) Dir:(-71,71,0) Speed:300
+2021-08-06 17:10:29,732 [ 1] INFO  Unity: SetDirection:(-82, 57, 0)
+2021-08-06 17:10:29,733 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3112,2164,800) Dir:(-82,57,0) Speed:300
+2021-08-06 17:10:29,816 [ 1] INFO  Unity: SetDirection:(-91, 40, 0)
+2021-08-06 17:10:29,817 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3088,2182,800) Dir:(-91,40,0) Speed:300
+2021-08-06 17:10:29,967 [ 1] INFO  Unity: SetDirection:(-97, 23, 0)
+2021-08-06 17:10:29,968 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(3043,2200,800) Dir:(-97,23,0) Speed:300
+2021-08-06 17:10:30,372 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2923,2224,800) Dir:(-97,23,0) Speed:300
+2021-08-06 17:10:32,007 [ 1] INFO  Unity: Stop
+2021-08-06 17:10:32,007 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-08-06 17:10:32,008 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2433,2322,800) Dir:(-97,23,0) Speed:0
+2021-08-06 17:10:32,698 [ 1] INFO  Unity: MoveForward
+2021-08-06 17:10:32,699 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2433,2322,800) Dir:(-97,23,0) Speed:300
+2021-08-06 17:10:34,266 [ 1] INFO  Unity: SetPosition:(2003, 2447, 800)
+2021-08-06 17:10:34,266 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(2003,2447,800) Dir:(-97,23,0) Speed:300
+2021-08-06 17:10:34,656 [ 1] INFO  Unity: 传送点存在
+2021-08-06 17:10:35,648 [ 1] INFO  Unity: Stop
+2021-08-06 17:10:35,649 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-08-06 17:10:35,649 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(1588,2530,800) Dir:(-97,23,0) Speed:0
+2021-08-06 17:10:35,985 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(1588,2530,800) Dir:(-97,23,0) Speed:0
+2021-08-06 17:10:36,643 [ 1] INFO  Unity: MoveForward
+2021-08-06 17:10:36,644 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(1588,2530,800) Dir:(-97,23,0) Speed:300
+2021-08-06 17:10:37,536 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(1318,2584,800) Dir:(-97,23,0) Speed:300
+2021-08-06 17:10:38,868 [ 1] INFO  Unity: SetDirection:(-100, 5, 0)
+2021-08-06 17:10:38,869 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(923,2663,800) Dir:(-100,5,0) Speed:300
+2021-08-06 17:10:38,969 [ 1] INFO  Unity: SetDirection:(-99, -13, 0)
+2021-08-06 17:10:38,971 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(888,2663,800) Dir:(-99,-13,0) Speed:300
+2021-08-06 17:10:39,139 [ 1] INFO  Unity: SetDirection:(-95, -31, 0)
+2021-08-06 17:10:39,140 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(838,2653,800) Dir:(-95,-31,0) Speed:300
+2021-08-06 17:10:39,410 [ 1] INFO  Unity: SetPosition:(771, 2670, 800)
+2021-08-06 17:10:39,410 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 Pos:(771,2670,800) Dir:(-95,-31,0) Speed:300
+2021-08-06 17:10:39,426 [ 1] INFO  Unity: 传送点存在
+2021-08-06 17:10:39,426 [ 1] INFO  Unity: 
+2021-08-06 17:10:39,494 [ 1] INFO  Unity: OnMapCharacterLeave:CharID:3
+2021-08-06 17:10:39,496 [ 1] INFO  Unity: RemoveCharacter:3
+2021-08-06 17:10:39,498 [ 1] INFO  Unity: Character_3_酷酷酷 OnDestroy :ID:3 POS:(746, 2660, 800) DIR:(-95, -31, 0) SPD:300 
+2021-08-06 17:10:53,835 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2021-08-06 17:10:53,836 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+
+2021-08-06 17:10:53,852 [ 1] INFO  Unity: DoConnect
+2021-08-06 17:10:53,852 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-08-06 17:10:53,854 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2021-08-06 17:10:55,857 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2021-08-06 17:10:55,859 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2021-08-06 17:10:55,874 [ 1] INFO  Unity: DoConnect
+2021-08-06 17:10:55,875 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-08-06 17:10:55,876 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2021-08-06 17:10:57,880 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2021-08-06 17:10:57,881 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2021-08-06 17:10:57,896 [ 1] INFO  Unity: DoConnect
+2021-08-06 17:10:57,897 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-08-06 17:10:57,898 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2021-08-06 17:10:59,901 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2021-08-06 17:10:59,901 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2021-08-06 17:10:59,902 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2021-08-06 17:11:00,028 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-08-06 17:11:00,029 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+

@@ -23,6 +23,7 @@ namespace Services
         {
             MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Unsubscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
+            MessageDistributer.Instance.Unsubscribe<MapEntitySyncResponse>(this.OnMapEntitySync);
         }
 
         public void Init()
@@ -132,6 +133,16 @@ namespace Services
                 sb.AppendLine();
             }
             Debug.Log(sb.ToString());
+        }
+
+        internal void SendMapTeleport(int teleporterID)
+        {
+            Debug.LogFormat("");
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapTeleport = new MapTeleportRequest();
+            message.Request.mapTeleport.teleporterId = teleporterID;
+            NetClient.Instance.SendMessage(message);
         }
     }
 }

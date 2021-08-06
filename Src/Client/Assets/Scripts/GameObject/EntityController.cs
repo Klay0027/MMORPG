@@ -19,8 +19,8 @@ public class EntityController : MonoBehaviour, IEntityNotify
     private Quaternion lastRotation;
 
     public float speed;
-    public float animSpeed = 1.5f;
-    public float jumpPower = 3.0f;
+    public float animSpeed = 2f;
+    public float jumpPower = 3.5f;
 
     public bool isPlayer = false;
 

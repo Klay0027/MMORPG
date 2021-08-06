@@ -10,7 +10,7 @@ public class PlayerInputController : MonoBehaviour
     public Rigidbody rb; //玩家父物体的刚体
     SkillBridge.Message.CharacterState state; //玩家的状态
     public Character character; //角色
-    public float rotateSpeed = 2.0f; //玩家转动速度
+    public float rotateSpeed = 2.5f; //玩家转动速度
     public float turnAngle = 10; //玩家转动的角度
     public int speed; //移动速度
 
@@ -62,7 +62,7 @@ public class PlayerInputController : MonoBehaviour
                 this.character.MoveForward();
                 this.SendEntityEvent(EntityEvent.MoveFwd);
             }
-            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
+            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 15f) / 100f;
         }
         else if (v < -0.01)
         {
@@ -72,7 +72,7 @@ public class PlayerInputController : MonoBehaviour
                 this.character.MoveBack();
                 this.SendEntityEvent(EntityEvent.MoveBack);
             }
-            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
+            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 15f) / 100f;
         }
         else
         {
@@ -117,7 +117,7 @@ public class PlayerInputController : MonoBehaviour
         } 
 
         Vector3 offset = this.rb.transform.position - lastPos;
-        this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
+        this.speed = (int)(offset.magnitude * 500f / Time.deltaTime);
         this.lastPos = this.rb.transform.position;
 
         if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.position).magnitude > 50)

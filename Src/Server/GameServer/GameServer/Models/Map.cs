@@ -41,7 +41,7 @@ namespace GameServer.Models
             this.Define = define;
         }
 
-
+        //在当前地图中同步状态
         internal void UpdateEntity(NEntitySync entity)
         {
             foreach (var item in this.MapCharacters)
@@ -57,7 +57,6 @@ namespace GameServer.Models
                     MapService.Instance.SendEntityUpdate(item.Value.connection, entity);
                 }
             }
-
         }
 
         internal void Update()
@@ -116,16 +115,16 @@ namespace GameServer.Models
         /// 角色离开地图
         /// </summary>
         /// <param name="nCharacter"></param>
-        internal void CharacterLeave(NCharacterInfo nCharacter)
+        internal void CharacterLeave(Character Character)
         {
-            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, nCharacter.Id);
+            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, Character.Id);
 
-            this.MapCharacters.Remove(nCharacter.Id);//从当前地图中 管理所有角色的字典中 移除要离开的角色
-
+            //通知其他在线玩家 有角色离开
             foreach (var kv in this.MapCharacters)
             {
-                this.SendCharacterLeaveMap(kv.Value.connection, nCharacter);
+                this.SendCharacterLeaveMap(kv.Value.connection, Character);
             }
+            this.MapCharacters.Remove(Character.Id);//从当前地图中 管理所有角色的字典中 移除要离开的角色
         }
 
         /// <summary>
@@ -133,7 +132,7 @@ namespace GameServer.Models
         /// </summary>
         /// <param name="conn"></param>
         /// <param name="character"></param>
-        private void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        private void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();

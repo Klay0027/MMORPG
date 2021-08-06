@@ -93,7 +93,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         }
 
         PlayerInputController pc = go.GetComponent<PlayerInputController>(); //获取当前角色的控制脚本
-        Debug.Log("游戏物体管理器111111111");
+
         if (pc != null)
         {
             if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id) //如果是当前选择的对象

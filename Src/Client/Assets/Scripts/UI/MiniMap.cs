@@ -17,17 +17,20 @@ public class MiniMap : MonoBehaviour
 
     private void Start()
     {
+        MinimapManager.Instance.minimap = this;
+        UpdateMap();
+    }
+
+    public void UpdateMap()
+    {
         this.mapName.text = User.Instance.CurrentMapData.Name;
 
-
-        if (this.miniMap.overrideSprite == null)
-        {
-            this.miniMap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
-        }
+        this.miniMap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
 
         this.miniMap.SetNativeSize();
         this.miniMap.transform.localPosition = Vector3.zero;
-
+        this.MinimapBoundingBox = MinimapManager.Instance.MinimapBoundingBox;
+        this.playerTransfrom = null;
     }
 
     private void Update()
@@ -55,7 +58,6 @@ public class MiniMap : MonoBehaviour
 
         this.miniMap.rectTransform.pivot = new Vector2(pivotX, pivotY);
         this.miniMap.rectTransform.localPosition = Vector3.zero;
-
         this.arrow.transform.eulerAngles = new Vector3(0, 0, -playerTransfrom.eulerAngles.y);
     }
 }

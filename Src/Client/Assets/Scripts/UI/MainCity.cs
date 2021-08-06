@@ -6,16 +6,17 @@ using UnityEngine.UI;
 using Services;
 using SkillBridge.Message;
 
-public class MainCity : MonoBehaviour
+public class MainCity : MonoSingleton<MainCity>
 {
     public Text avatarName;
     public Text avatarLevel;
-    public Button back_Btn;
+    public Button back_Btn, test_Btn;
 
-    private void Start()
+    protected override void OnStart()
     {
         UpdateAvatar();
         back_Btn.onClick.AddListener(BackToSelect);
+        test_Btn.onClick.AddListener(OnClickTest);
     }
 
     private void UpdateAvatar()
@@ -30,16 +31,16 @@ public class MainCity : MonoBehaviour
         UserServices.Instance.SendLeaveGame();
     }
 
-    private void OnPlayerLeave(Result result, string message)
+    public void OnClickTest()
     {
-        if (result == Result.Success)
-        {
-            
-            Debug.Log("已经正常离开游戏");
-        }
-        else
-        {
-            MessageBox.Show(message, "错误", MessageBoxType.Error);
-        }
+        UITest test = UIManager.Instance.Show<UITest>();
+        test.SetTitle("我是一个提示框标题", "式步枪和结束标签是不加区别苏北v去诉求不俗并且不俗把球传到和去和地区我");
+        test.parentGameObject = this.gameObject;
+        test.OnClose += Test_OnClose;
+    }
+
+    private void Test_OnClose(UIWindow sender, UIWindow.WindowResult result)
+    {
+        MessageBox.Show("点击了：" + result, "对话框响应结果", MessageBoxType.Information);
     }
 }

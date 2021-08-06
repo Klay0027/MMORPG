@@ -127,9 +127,9 @@ namespace GameServer.Services
             character.Name = request.Name;
             character.TID = (int)request.Class;
             character.MapID = 1;
-            character.MapPosX = 5000;
-            character.MapPosY = 4000;
-            character.MapPosZ = 820;
+            character.MapPosX = 2200;
+            character.MapPosY = 1900;
+            character.MapPosZ = 800;
 
             //调用数据库服务新增角色存储到数据库
             character = DBService.Instance.Entities.Characters.Add(character);
@@ -174,7 +174,7 @@ namespace GameServer.Services
             message.Response = new NetMessageResponse();
             message.Response.gameEnter = new UserGameEnterResponse();
             message.Response.gameEnter.Result = Result.Success;
-            message.Response.gameEnter.Errormsg = "Success!";
+            message.Response.gameEnter.Errormsg = "Login Success!";
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
@@ -193,11 +193,7 @@ namespace GameServer.Services
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
-            //根据角色ID在角色管理器中从字典Characters移除
-            CharacterManager.Instance.RemoveCharacter(character.Id);
-
-            //根据角色信息在地图管理器中从当前地图字典中移除
-            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+            CharacterLaeve(character);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
@@ -207,6 +203,15 @@ namespace GameServer.Services
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
+        }
+
+        public void CharacterLaeve(Character character)
+        {
+            //根据角色ID在角色管理器中从字典Characters移除
+            CharacterManager.Instance.RemoveCharacter(character.Id);
+
+            //根据角色信息在地图管理器中从当前地图字典中移除
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
         }
     }
 }

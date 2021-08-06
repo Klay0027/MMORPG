@@ -17,12 +17,13 @@ namespace Models
             get { return userInfo; }
         }
 
-
+        //设置角色信息
         public void SetupUserInfo(SkillBridge.Message.NUserInfo info)
         {
             this.userInfo = info;
         }
 
+        //当前角色
         public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
 
         /// <summary>

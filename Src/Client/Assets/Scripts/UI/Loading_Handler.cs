@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Managers;
+using Services;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,8 @@ public class Loading_Handler : MonoBehaviour
         //Init basic services
         UserServices.Instance.Init();
         MapService.Instance.Init();
+
+        TestManager.Instance.Init();
     }
 
     private void Update()
