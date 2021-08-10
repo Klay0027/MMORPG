@@ -17,7 +17,8 @@ public class UIManager : Singleton<UIManager>
 
     public UIManager()
     {
-        this.UIResources.Add(typeof(UITest), new UIElement() { Resources = "UI/UI_Test", Cache = true });
+        this.UIResources.Add(typeof(UITest), new UIElement() { Resources = "PreFabs/UI_Test", Cache = true });
+        this.UIResources.Add(typeof(UIBag), new UIElement() { Resources = "PreFabs/UI_Bag", Cache = true });
     }
 
     ~UIManager()

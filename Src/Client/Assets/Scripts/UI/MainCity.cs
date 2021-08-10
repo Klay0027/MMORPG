@@ -35,12 +35,16 @@ public class MainCity : MonoSingleton<MainCity>
     {
         UITest test = UIManager.Instance.Show<UITest>();
         test.SetTitle("我是一个提示框标题", "式步枪和结束标签是不加区别苏北v去诉求不俗并且不俗把球传到和去和地区我");
-        test.parentGameObject = this.gameObject;
         test.OnClose += Test_OnClose;
     }
 
     private void Test_OnClose(UIWindow sender, UIWindow.WindowResult result)
     {
         MessageBox.Show("点击了：" + result, "对话框响应结果", MessageBoxType.Information);
+    }
+
+    private void OnClickBag()
+    {
+        UIManager.Instance.Show<UIBag>();   
     }
 }

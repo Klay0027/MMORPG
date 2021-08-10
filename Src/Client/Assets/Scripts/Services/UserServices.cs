@@ -7,6 +7,7 @@ using SkillBridge.Message;
 using Common;
 using Network;
 using Models;
+using Managers;
 
 namespace Services
 {
@@ -269,7 +270,11 @@ namespace Services
 
             if (response.Result == Result.Success)
             {
-
+                if (response.Character != null)
+                {
+                    ItemManager.Instance.Init(response.Character.Items);
+                    //BagManager.Instance.Init(response.Character)
+                }
             }
         }
 

@@ -95,7 +95,6 @@ public class EntityController : MonoBehaviour, IEntityNotify
                 anim.SetTrigger("Jump");
                 break;
         }
-
     }
 
     //当收到角色删除时

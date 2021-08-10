@@ -107,9 +107,9 @@ public class NpcController : MonoBehaviour
         if (highlight)
         {
             Debug.Log(renderer.sharedMaterial.color);
-            if (renderer.sharedMaterial.color != Color.red)
+            if (renderer.sharedMaterial.color != Color.white)
             {
-                renderer.sharedMaterial.color = Color.red;
+                renderer.sharedMaterial.color = Color.white;
             }
         }
         else
