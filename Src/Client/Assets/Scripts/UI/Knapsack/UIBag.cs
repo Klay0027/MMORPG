@@ -16,11 +16,11 @@ public class UIBag : UIWindow
 
     public Text title_Text;
 
-    public Button close_Btn, determine_Btn;
+    public Button close_Btn;
     private void Start()
     {
         close_Btn.onClick.AddListener(OnCloseClick);
-        determine_Btn.onClick.AddListener(OnYesClick);
+
         this.gameObject.transform.localPosition = Vector3.zero;
 
         if (slots == null)

@@ -1,47 +1,21 @@
-2021-08-09 17:12:52,155 [ 1] INFO  Unity: LoadingManager start
-2021-08-09 17:12:52,165 [ 1] INFO  Unity: DataManager > DataManager()
-2021-08-09 17:13:08,433 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-08-09 17:13:08,435 [ 1] INFO  Unity: ConnectToServer Start
-2021-08-09 17:13:08,436 [ 1] INFO  Unity: DoConnect
-2021-08-09 17:13:08,437 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-08-09 17:13:08,439 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2021-08-09 17:13:08,441 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-08-09 17:13:10,735 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-08-09 17:13:11,722 [ 1] INFO  Unity: LoadLevel: Start
-2021-08-09 17:13:11,821 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-09 17:13:14,680 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
-2021-08-09 17:13:15,003 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-08-09 17:13:15,007 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:126 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Managers.ItemManager.Init (System.Collections.Generic.List`1 items) [0x0004a] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Managers\ItemManager.cs:24 
-  at Services.UserServices.OnEnterGame (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\UserServices.cs:275 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-08-09 17:13:15,008 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:126)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Managers.ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:24)
-Services.UserServices.OnEnterGame (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserServices.cs:275)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+2021-08-11 17:35:32,492 [ 1] INFO  Unity: LoadingManager start
+2021-08-11 17:35:32,500 [ 1] INFO  Unity: DataManager > DataManager()
+2021-08-11 17:35:33,026 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{FileNotFoundException: Could not find file "F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Data\ItemDefine.txt"., System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/FileStream.cs:305)
+System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share)
+(wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+System.IO.File.OpenRead (System.String path) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:363)
+System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/StreamReader.cs:167)
+System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding)
+(wrapper remoting-invoke-with-check) System.IO.StreamReader:.ctor (string,System.Text.Encoding)
+System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:587)
+System.IO.File.ReadAllText (System.String path) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:582)
+DataManager+<LoadData>c__Iterator0.MoveNext () (at Assets/Scripts/Managers/DataManager.cs:73)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
 }</args></log4net.Error>
-2021-08-09 17:13:15,022 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-08-09 17:13:15,024 [ 1] INFO  Unity: AddCharacter:1:盖伦 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-08-09 17:13:15,027 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-08-09 17:13:15,442 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-09 17:14:25,482 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-08-09 17:14:25,483 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-08-11 17:35:40,655 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-08-11 17:35:40,656 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 
-2021-08-09 17:14:25,485 [ 1] INFO  Unity: Character_1_盖伦 OnDestroy :ID:1 POS:(2200, 1900, 800) DIR:(100, 0, 0) SPD:0 

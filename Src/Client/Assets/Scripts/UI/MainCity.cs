@@ -10,13 +10,14 @@ public class MainCity : MonoSingleton<MainCity>
 {
     public Text avatarName;
     public Text avatarLevel;
-    public Button back_Btn, test_Btn;
+    public Button back_Btn, test_Btn, bag_Btn;
 
     protected override void OnStart()
     {
         UpdateAvatar();
         back_Btn.onClick.AddListener(BackToSelect);
         test_Btn.onClick.AddListener(OnClickTest);
+        bag_Btn.onClick.AddListener(OnClickBag);
     }
 
     private void UpdateAvatar()

@@ -587,6 +587,8 @@ namespace SkillBridge.Message
         Material = 1,
         [global::ProtoBuf.ProtoEnum(Name = @"TASK")]
         Task = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"EQUIP")]
+        Equip = 3,
     }
 
 }
