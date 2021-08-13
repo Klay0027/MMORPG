@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 08/10/2021 13:31:01
+-- Date Created: 08/13/2021 14:56:41
 -- Generated from EDMX file: F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Server\GameServer\GameServer\Entities.edmx
 -- --------------------------------------------------
 
@@ -17,31 +17,37 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[FK_CharacterItems]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[CharacterItem] DROP CONSTRAINT [FK_CharacterItems];
+IF OBJECT_ID(N'[dbo].[FK_UserPlayer]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserPlayer];
 GO
 IF OBJECT_ID(N'[dbo].[FK_PlayerCharacter]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Characters] DROP CONSTRAINT [FK_PlayerCharacter];
 GO
-IF OBJECT_ID(N'[dbo].[FK_UserPlayer]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserPlayer];
+IF OBJECT_ID(N'[dbo].[FK_CharacterItems]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CharacterItem] DROP CONSTRAINT [FK_CharacterItems];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TCharacterTCharacterBag]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Characters] DROP CONSTRAINT [FK_TCharacterTCharacterBag];
 GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[CharacterItem]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[CharacterItem];
-GO
-IF OBJECT_ID(N'[dbo].[Characters]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Characters];
+IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Users];
 GO
 IF OBJECT_ID(N'[dbo].[Players]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Players];
 GO
-IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Users];
+IF OBJECT_ID(N'[dbo].[Characters]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Characters];
+GO
+IF OBJECT_ID(N'[dbo].[CharacterItem]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CharacterItem];
+GO
+IF OBJECT_ID(N'[dbo].[CharacterBag]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CharacterBag];
 GO
 
 -- --------------------------------------------------
@@ -74,6 +80,7 @@ CREATE TABLE [dbo].[Characters] (
     [MapPosX] int  NOT NULL,
     [MapPosY] int  NOT NULL,
     [MapPosZ] int  NOT NULL,
+    [Gold] bigint  NOT NULL,
     [Player_ID] int  NOT NULL,
     [CharacterBag_Id] int  NOT NULL
 );

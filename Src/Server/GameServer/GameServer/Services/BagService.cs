@@ -15,7 +15,6 @@ namespace GameServer.Services
         public BagService()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<BagSaveRequest>(this.OnBagSave);
-
         }
 
         private void OnBagSave(NetConnection<NetSession> sender, BagSaveRequest request)

@@ -136,7 +136,7 @@ namespace GameServer.Services
             var bag = new TCharacterBag();
             bag.Character = character;
             bag.Items = new byte[0];
-            bag.Unlocked = 20;
+            bag.Unlocked = 10;
             TCharacterItems it = new TCharacterItems();
             character.CharacterBag = DBService.Instance.Entities.CharacterBag.Add(bag);
             //end

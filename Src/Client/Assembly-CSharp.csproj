@@ -105,6 +105,8 @@
     <Compile Include="Assets\Scripts\UI\MiniMap.cs" />
     <Compile Include="Assets\Scripts\UI\Register_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Resloader.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
+    <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\Start_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />

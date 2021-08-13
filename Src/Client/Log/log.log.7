@@ -1,47 +1,46 @@
-2021-08-09 17:24:56,753 [ 1] INFO  Unity: LoadingManager start
-2021-08-09 17:24:56,763 [ 1] INFO  Unity: DataManager > DataManager()
-2021-08-09 17:25:09,278 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-08-09 17:25:09,279 [ 1] INFO  Unity: ConnectToServer Start
-2021-08-09 17:25:09,280 [ 1] INFO  Unity: DoConnect
-2021-08-09 17:25:09,282 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-08-09 17:25:09,284 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-08-12 15:26:57,657 [ 1] INFO  Unity: LoadingManager start
+2021-08-12 15:26:57,673 [ 1] INFO  Unity: DataManager > DataManager()
+2021-08-12 15:27:12,404 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-08-12 15:27:12,416 [ 1] INFO  Unity: ConnectToServer Start
+2021-08-12 15:27:12,417 [ 1] INFO  Unity: DoConnect
+2021-08-12 15:27:12,419 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-08-12 15:27:12,421 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-08-09 17:25:09,286 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-08-09 17:25:11,578 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-08-09 17:25:12,565 [ 1] INFO  Unity: LoadLevel: Start
-2021-08-09 17:25:12,665 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-09 17:25:25,779 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
-2021-08-09 17:25:26,103 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-08-09 17:25:26,106 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:126 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Managers.ItemManager.Init (System.Collections.Generic.List`1 items) [0x0004f] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Managers\ItemManager.cs:24 
-  at Services.UserServices.OnEnterGame (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\UserServices.cs:275 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-08-09 17:25:26,107 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:126)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Managers.ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:24)
-Services.UserServices.OnEnterGame (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserServices.cs:275)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2021-08-09 17:25:26,119 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-08-09 17:25:26,121 [ 1] INFO  Unity: AddCharacter:1:艾希 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-08-09 17:25:26,124 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-08-09 17:25:26,520 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-09 17:25:40,994 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-08-09 17:25:40,995 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-08-12 15:27:12,427 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-08-12 15:27:12,928 [ 1] INFO  Unity: 请确认您已阅读过用户协议
+2021-08-12 15:27:14,751 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-08-12 15:27:15,709 [ 1] INFO  Unity: LoadLevel: Start
+2021-08-12 15:27:15,821 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-08-12 15:27:17,525 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
+2021-08-12 15:27:17,679 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
+2021-08-12 15:27:17,686 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:50
+2021-08-12 15:27:17,686 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:100
+2021-08-12 15:27:17,687 [ 1] INFO  Unity: ItemManager:Init,ItemId:3, itemCount:200
+2021-08-12 15:27:17,688 [ 1] INFO  Unity: ItemManager:Init,ItemId:4, itemCount:14
+2021-08-12 15:27:17,695 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2021-08-12 15:27:17,701 [ 1] INFO  Unity: AddCharacter:1:亚索 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-08-12 15:27:17,715 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-08-12 15:27:18,095 [ 1] WARN  Unity: MainPlayerCamera  -53604 Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-08-12 15:27:18,098 [ 1] WARN  Unity: GameObjectManager  -49194 Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-08-12 15:27:18,118 [ 1] WARN  Unity: UIWorldElementManager  52524 Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-08-12 15:27:18,119 [ 1] WARN  Unity: MainCity  54268 Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-08-12 15:27:18,168 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-08-12 15:29:32,167 [ 1] INFO  Unity: Character_1_亚索 OnDestroy :ID:1 POS:(2200, 1900, 800) DIR:(100, 0, 0) SPD:0 
+2021-08-12 15:29:32,171 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-08-12 15:29:32,171 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 
-2021-08-09 17:25:40,997 [ 1] INFO  Unity: Character_1_艾希 OnDestroy :ID:1 POS:(2200, 1900, 800) DIR:(100, 0, 0) SPD:0 

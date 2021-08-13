@@ -7,17 +7,16 @@ public class TabButton : MonoBehaviour
 {
     public Sprite activeImage;
     private Sprite normalImage;
+    private Image tabImage;
 
     public TabView tabView;
-
-    public int tabIndex = 0;
+    public int tabIndex;
     public bool selected = false;
-
-    private Image tabImage;
 
     private void Start()
     {
         tabImage = this.GetComponent<Image>();
+
         normalImage = tabImage.sprite;
 
         this.GetComponent<Button>().onClick.AddListener(OnClick);

@@ -115,6 +115,13 @@ namespace GameServer.Managers
             //DBService.Instance.Save();
             return true;
         }
+
+        /// <summary>
+        /// 移除道具
+        /// </summary>
+        /// <param name="itemId"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public bool RemoveItem(int itemId, int count)
         {
             if (!this.Items.ContainsKey(itemId))

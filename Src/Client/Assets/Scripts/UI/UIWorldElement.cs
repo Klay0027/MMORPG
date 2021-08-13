@@ -5,11 +5,11 @@ using UnityEngine;
 public class UIWorldElement : MonoBehaviour
 {
     public Transform owner;
-    private float height;
+    public float height;
 
     private void Start()
     {
-        height = 2.5f;
+        height = 2.05f;
     }
 
     private void Update()
