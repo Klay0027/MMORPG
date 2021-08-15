@@ -11,11 +11,13 @@ public class UIShop : UIWindow
     public Text title, money;
     public GameObject shopItem;
     public Transform[] itemRoot;
+    public Button buy_btn;
     private ShopDefine shop;
 
     private void Start()
     {
-        
+        buy_btn.onClick.AddListener(OnClickBuy);
+        StartCoroutine(InitItems());
     }
 
     private IEnumerator InitItems()
@@ -25,8 +27,8 @@ public class UIShop : UIWindow
             if (kv.Value.Status > 0)
             {
                 GameObject go = Instantiate(shopItem, itemRoot[0]);
-                //UIShopItem ui = go.GetComponent<UIShopItem>();
-                //ui.SetShopItem(kv.Key, kv.Value, this);
+                UIShopItem ui = go.GetComponent<UIShopItem>();
+                ui.SetShopItem(kv.Key, kv.Value, this);
             }
         }
         yield return null;
@@ -39,5 +41,24 @@ public class UIShop : UIWindow
         this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
     }
 
-    //private UIShopItem selectedItem;
+    private UIShopItem selectedItem;
+
+    public void SelectShopItem(UIShopItem item)
+    {
+        if (selectedItem != null)
+        {
+            selectedItem.Selected = false;
+        }
+        selectedItem = item;
+    }
+
+    public void OnClickBuy()
+    {
+        if (this.selectedItem == null)
+        {
+            MessageBox.Show("请选择要购买的道具", "购买提示");
+            return;
+        }
+    
+    }
 }

@@ -21,7 +21,7 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
         }   
         set
         {
-            selected = true;
+            selected = value;
             this.background.overrideSprite = selected ? selectedBg : normalBg;
         }
     }
@@ -45,6 +45,7 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
-        
+        this.Selected = true;
+        this.shop.SelectShopItem(this);
     }
 }
