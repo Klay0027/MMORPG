@@ -130,7 +130,7 @@ namespace GameServer.Services
             character.MapPosX = 2200;
             character.MapPosY = 1900;
             character.MapPosZ = 800;
-
+            character.Gold = 1000;
             //背包系统测试
             //start
             var bag = new TCharacterBag();
@@ -140,7 +140,19 @@ namespace GameServer.Services
             TCharacterItems it = new TCharacterItems();
             character.CharacterBag = DBService.Instance.Entities.CharacterBag.Add(bag);
             //end
+            character.Items.Add(new TCharacterItems()
+            {
+                Owner = character,
+                ItemID = 1,
+                ItemCount = 20,
+            });
 
+            character.Items.Add(new TCharacterItems()
+            {
+                Owner = character,
+                ItemID = 2,
+                ItemCount = 20,
+            });
 
             //调用数据库服务新增角色存储到数据库
             character = DBService.Instance.Entities.Characters.Add(character);
@@ -228,7 +240,7 @@ namespace GameServer.Services
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
-            CharacterLaeve(character);
+            CharacterLeave(character);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
@@ -240,7 +252,7 @@ namespace GameServer.Services
             sender.SendData(data, 0, data.Length);
         }
 
-        public void CharacterLaeve(Character character)
+        public void CharacterLeave(Character character)
         {
             //根据角色ID在角色管理器中从字典Characters移除
             CharacterManager.Instance.RemoveCharacter(character.Id);

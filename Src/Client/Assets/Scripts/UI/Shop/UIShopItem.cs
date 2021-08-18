@@ -9,7 +9,7 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
 {
     public Image icon, background;
     public Text title, price, count;
-    public Sprite normalBg, selectedBg;
+    //public Sprite normalBg, selectedBg;
 
     private bool selected;
 
@@ -22,7 +22,7 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
         set
         {
             selected = value;
-            this.background.overrideSprite = selected ? selectedBg : normalBg;
+            //this.background.overrideSprite = selected ? selectedBg : normalBg;
         }
     }
     public int ShopItemID { get; set; }
@@ -43,6 +43,10 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
         this.icon.overrideSprite = Resloader.Load<Sprite>(item.Icon);
     }
 
+    /// <summary>
+    /// 被选择
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnSelect(BaseEventData eventData)
     {
         this.Selected = true;

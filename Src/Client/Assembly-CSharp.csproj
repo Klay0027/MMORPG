@@ -106,7 +106,6 @@
     <Compile Include="Assets\Scripts\UI\MessageBox_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\MiniMap.cs" />
     <Compile Include="Assets\Scripts\UI\Register_Handler.cs" />
-    <Compile Include="Assets\Scripts\UI\Resloader.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\Start_Handler.cs" />
@@ -118,6 +117,7 @@
     <Compile Include="Assets\Scripts\UI\UIWorldElementManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Resloader.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
     <None Include="Assets\Shader\UITest.shader" />
     <None Include="Assets\Shader\Lightmap\Lightmap.shader" />

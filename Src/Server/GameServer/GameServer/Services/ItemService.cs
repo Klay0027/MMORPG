@@ -1,5 +1,6 @@
 ﻿using Common;
 using GameServer.Entities;
+using GameServer.Managers;
 using Network;
 using SkillBridge.Message;
 using System;
@@ -21,7 +22,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnItemBuy: character : {0}, shop: {1}, shopItem: {2}", character.Id, request.shopId, request.shopItemId);
-            //var result = ShopManager.Instance
+            //var result = ShopManager
         }
 
         public void Init()

@@ -5,25 +5,32 @@ using UnityEngine.UI;
 using SkillBridge.Message;
 using Common.Data;
 using Models;
+using Managers;
 
 public class UIShop : UIWindow
 {
     public Text title, money;
     public GameObject shopItem;
     public Transform[] itemRoot;
-    public Button buy_btn;
+    public Button buy_btn, close_btn;
     private ShopDefine shop;
 
     private void Start()
     {
         buy_btn.onClick.AddListener(OnClickBuy);
+        close_btn.onClick.AddListener(OnCloseClick);
         StartCoroutine(InitItems());
     }
 
+    /// <summary>
+    /// 初始化商店中的商品
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator InitItems()
     {
         foreach (var kv in DataManager.Instance.ShopItems[shop.ID])
         {
+            //商品的状态大于0说明该商品在销售中
             if (kv.Value.Status > 0)
             {
                 GameObject go = Instantiate(shopItem, itemRoot[0]);
@@ -34,6 +41,10 @@ public class UIShop : UIWindow
         yield return null;
     }
 
+    /// <summary>
+    /// 初始化打开的是什么类型的商店
+    /// </summary>
+    /// <param name="shop"></param>
     public void SetShop(ShopDefine shop)
     {
         this.shop = shop;
@@ -59,6 +70,10 @@ public class UIShop : UIWindow
             MessageBox.Show("请选择要购买的道具", "购买提示");
             return;
         }
-    
+
+        if (!ShopManager.Instance.BuyItem(this.shop.ID, this.selectedItem.ShopItemID))
+        {
+
+        }
     }
 }
