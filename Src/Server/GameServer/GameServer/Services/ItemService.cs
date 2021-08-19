@@ -22,7 +22,10 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnItemBuy: character : {0}, shop: {1}, shopItem: {2}", character.Id, request.shopId, request.shopItemId);
-            //var result = ShopManager
+            var result = ShopManager.Instance.BuyItem(sender, request.shopId, request.shopItemId);
+            sender.Session.Response.itemBuy = new ItemBuyResponse();
+            sender.Session.Response.itemBuy.Result = result;           
+            sender.SendResponse();
         }
 
         public void Init()

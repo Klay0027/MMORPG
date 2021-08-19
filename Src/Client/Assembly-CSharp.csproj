@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
+    <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserServices.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterInfo.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterView.cs" />

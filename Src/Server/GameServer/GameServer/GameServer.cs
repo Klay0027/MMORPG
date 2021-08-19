@@ -27,6 +27,7 @@ namespace GameServer
             DataManager.Instance.Load();
             MapService.Instance.Init();
             UserService.Instance.Init();
+            ItemService.Instance.Init();
             //MapManager.Instance.Init();
             //CharacterManager.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));

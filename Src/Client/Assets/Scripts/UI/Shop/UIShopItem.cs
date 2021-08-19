@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class UIShopItem : MonoBehaviour, ISelectHandler
 {
     public Image icon, background;
-    public Text title, price, count;
+    public Text title, price, count, limitClass;
     //public Sprite normalBg, selectedBg;
 
     private bool selected;
@@ -38,8 +38,9 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
         this.item = DataManager.Instance.Items[this.ShopItem.ItemID];
 
         this.title.text = this.item.Name;
-        this.count.text = ShopItem.Count.ToString();
+        this.count.text = "X" + ShopItem.Count.ToString();
         this.price.text = ShopItem.Price.ToString();
+        this.limitClass.text = this.item.LimitClass.ToString();
         this.icon.overrideSprite = Resloader.Load<Sprite>(item.Icon);
     }
 

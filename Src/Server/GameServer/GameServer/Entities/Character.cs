@@ -53,7 +53,8 @@ namespace GameServer.Entities
                 {
                     return;
                 }
-                //this.StatusManager.
+                this.StatusManager.AddGoldChange((int)(value - this.Data.Gold));
+                this.Data.Gold = value;
             }
         }
     }
