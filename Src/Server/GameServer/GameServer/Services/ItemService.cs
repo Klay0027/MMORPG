@@ -16,8 +16,19 @@ namespace GameServer.Services
         public ItemService()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ItemBuyRequest>(this.OnItemBuy);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ItemEquipRequest>(this.OnItemEquip);
         }
 
+        public void Init()
+        {
+
+        }
+
+        /// <summary>
+        /// 服务端收到客户端传来购买道具的请求
+        /// </summary>
+        /// <param name="sender">传来的是哪个玩家</param>
+        /// <param name="request">请求协议的内容</param>
         private void OnItemBuy(NetConnection<NetSession> sender, ItemBuyRequest request)
         {
             Character character = sender.Session.Character;
@@ -28,10 +39,16 @@ namespace GameServer.Services
             sender.SendResponse();
         }
 
-        public void Init()
-        { 
-        
+        private void OnItemEquip(NetConnection<NetSession> sender, ItemEquipRequest request)
+        {
+            Character character = sender.Session.Character;
+            Log.InfoFormat("OnItemEquip: character : {0}, slot: {1}, item: {2}, equip: {3}", character.Id, request.Slot, request.itermId, request.isEquip);
+            var result = EquipManager.Instance.EquipItem(sender, request.Slot, request.itermId, request.isEquip);
+            sender.Session.Response.itemEquip = new ItemEquipResponse();
+            sender.Session.Response.itemEquip.Result = result;
+            sender.SendResponse();
         }
+
 
 
     }

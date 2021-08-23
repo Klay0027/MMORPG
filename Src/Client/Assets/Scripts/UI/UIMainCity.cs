@@ -6,11 +6,11 @@ using UnityEngine.UI;
 using Services;
 using SkillBridge.Message;
 
-public class MainCity : MonoSingleton<MainCity>
+public class UIMainCity : MonoSingleton<UIMainCity>
 {
     public Text avatarName;
     public Text avatarLevel;
-    public Button back_Btn, test_Btn, bag_Btn;
+    public Button back_Btn, test_Btn, bag_Btn, charEquip_Btn;
 
     protected override void OnStart()
     {
@@ -18,6 +18,7 @@ public class MainCity : MonoSingleton<MainCity>
         back_Btn.onClick.AddListener(BackToSelect);
         test_Btn.onClick.AddListener(OnClickTest);
         bag_Btn.onClick.AddListener(OnClickBag);
+        charEquip_Btn.onClick.AddListener(OnClickCharEquip);
     }
 
     private void UpdateAvatar()
@@ -47,5 +48,11 @@ public class MainCity : MonoSingleton<MainCity>
     private void OnClickBag()
     {
         UIManager.Instance.Show<UIBag>();   
+    }
+
+    private void OnClickCharEquip()
+    {
+        UIManager.Instance.Show<UICharEquip>();
+    
     }
 }

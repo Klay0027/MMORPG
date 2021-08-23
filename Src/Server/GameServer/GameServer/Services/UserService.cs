@@ -128,6 +128,7 @@ namespace GameServer.Services
             character.MapPosY = 1900;
             character.MapPosZ = 800;
             character.Gold = 1000;
+            character.Equips = new byte[28];
             //背包系统测试
             //start
             var bag = new TCharacterBag();
@@ -197,28 +198,6 @@ namespace GameServer.Services
             message.Response.gameEnter.Errormsg = "Login Success!";
 
             message.Response.gameEnter.Character = character.Info;
-
-            //道具系统测试
-            //Start
-            int itemId = 2;
-            bool hasItem = character.ItemManager.HasItem(itemId);
-            Log.InfoFormat("Hasitem;[{0}]{1}", itemId, hasItem);
-            if (hasItem)
-            {
-                //character.ItemManager.RemoveItem(itemId, 1);
-            }
-            else
-            {
-                character.ItemManager.AddItem(1, 50);
-                character.ItemManager.AddItem(2, 100);
-                character.ItemManager.AddItem(3, 200);
-                character.ItemManager.AddItem(4, 14);
-            }
-            Models.Item item = character.ItemManager.GetItem(itemId);
-
-            Log.InfoFormat("Item:[{0}][{1}]", itemId, item);
-            //End
-            DBService.Instance.Save();
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
