@@ -101,6 +101,10 @@ public class UIEquipItem : MonoBehaviour, IPointerClickHandler
                     this.owner.DoEquip(this.item);
                 };
             }
+            else
+            {
+                this.owner.DoEquip(this.item);
+            }
         };
     }
 

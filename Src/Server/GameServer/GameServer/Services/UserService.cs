@@ -127,7 +127,7 @@ namespace GameServer.Services
             character.MapPosX = 2200;
             character.MapPosY = 1900;
             character.MapPosZ = 800;
-            character.Gold = 1000;
+            character.Gold = 5000;
             character.Equips = new byte[28];
             //背包系统测试
             //start

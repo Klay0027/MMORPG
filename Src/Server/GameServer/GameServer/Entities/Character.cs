@@ -11,11 +11,12 @@ using System.Threading.Tasks;
 namespace GameServer.Entities
 {
     class Character : CharacterBase
-    {
-       
+    {       
         public TCharacter Data;
 
         public ItemManager ItemManager;
+
+        public QuestManager QuestManager;
 
         public StatusManager StatusManager;
 
@@ -27,7 +28,7 @@ namespace GameServer.Entities
             this.Info.Type = type;
             this.Info.Id = cha.ID;
             this.Info.Name = cha.Name;
-            this.Info.Level = 1;//cha.Level;
+            this.Info.Level = 10;//cha.Level;
             this.Info.Tid = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
@@ -42,6 +43,8 @@ namespace GameServer.Entities
             this.Info.Bag.Unlocked = this.Data.CharacterBag.Unlocked;
             this.Info.Bag.Items = this.Data.CharacterBag.Items;
             this.Info.Equips = this.Data.Equips;
+            this.QuestManager = new QuestManager(this); //任务管理器初始化
+            this.QuestManager.GetQuestInfos(this.Info.Quests);
             this.StatusManager = new StatusManager(this);
         }
 

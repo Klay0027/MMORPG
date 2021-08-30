@@ -74,9 +74,9 @@ public class UICharEquip : UIWindow
     {
         foreach (var item in slots)
         {
-            if (item.childCount > 0)
+            if (item.childCount > 1)
             {
-                Destroy(item.GetChild(0).gameObject);
+                Destroy(item.GetChild(1).gameObject);
             }
         }
     }

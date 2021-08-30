@@ -43,7 +43,7 @@ public class Loading_Handler : MonoBehaviour
         UserServices.Instance.Init();
         MapService.Instance.Init();
         ShopManager.Instance.Init();
-        
+        StatusService.Instance.Init();
         TestManager.Instance.Init();
     }
 

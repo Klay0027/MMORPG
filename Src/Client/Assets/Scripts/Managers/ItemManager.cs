@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Common.Data;
 using Models;
+using Services;
 using SkillBridge.Message;
 using UnityEngine;
 
@@ -23,6 +24,7 @@ namespace Managers
 
                 Debug.LogFormat("ItemManager:Init,ItemId:{0}, itemCount:{1}", item.Id, item.Count);
             }
+            StatusService.Instance.RegisterStatusNofity(StatusType.Item, OnItemNotify);
         }
 
         public ItemDefine GetItem(int itemId)
@@ -44,6 +46,11 @@ namespace Managers
             return true;
         }
 
+        /// <summary>
+        /// 增加道具
+        /// </summary>
+        /// <param name="itemId"></param>
+        /// <param name="count"></param>
         private void AddItem(int itemId, int count)
         {
             Item item = null;
