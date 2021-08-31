@@ -10,7 +10,7 @@ public class UIMainCity : MonoSingleton<UIMainCity>
 {
     public Text avatarName;
     public Text avatarLevel;
-    public Button back_Btn, test_Btn, bag_Btn, charEquip_Btn;
+    public Button back_Btn, test_Btn, bag_Btn, charEquip_Btn, quest_Btn;
 
     protected override void OnStart()
     {
@@ -19,6 +19,7 @@ public class UIMainCity : MonoSingleton<UIMainCity>
         test_Btn.onClick.AddListener(OnClickTest);
         bag_Btn.onClick.AddListener(OnClickBag);
         charEquip_Btn.onClick.AddListener(OnClickCharEquip);
+        quest_Btn.onClick.AddListener(OnClickQeust);
     }
 
     private void UpdateAvatar()
@@ -54,5 +55,10 @@ public class UIMainCity : MonoSingleton<UIMainCity>
     {
         UIManager.Instance.Show<UICharEquip>();
     
+    }
+
+    private void OnClickQeust()
+    {
+        UIManager.Instance.Show<UIQuestSystem>();
     }
 }

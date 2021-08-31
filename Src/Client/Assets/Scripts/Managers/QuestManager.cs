@@ -94,6 +94,11 @@ namespace Managers
             }
         }
 
+        internal void OnQuestSubmited(NQuestInfo quest)
+        {
+            
+        }
+
         /// <summary>
         /// 获取NPC任务状态
         /// </summary>
@@ -144,6 +149,11 @@ namespace Managers
             return false;
         }
 
+        /// <summary>
+        /// 显示任务对话框
+        /// </summary>
+        /// <param name="quest"></param>
+        /// <returns></returns>
         private bool ShowQuestDialog(Quest quest)
         {
             if (quest.Info == null || quest.Info.Status == QuestStatus.Complated)

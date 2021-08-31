@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class UINameBar : MonoBehaviour
 {
+    public Image avatar;
+
     public Text avaverName, avaverLevel;
 
     public Character character;
@@ -14,14 +16,20 @@ public class UINameBar : MonoBehaviour
     {
         if (this.character != null)
         {
-
+            if (character.Info.Type == SkillBridge.Message.CharacterType.Monster)
+            {
+                this.avatar.gameObject.SetActive(false);
+            }
+            else
+            {
+                this.avatar.gameObject.SetActive(true);
+            }
         }
     }
 
     private void Update()
     {
         this.UpdateInfo();
-        this.transform.forward = Camera.main.transform.forward;
     }
 
     private void UpdateInfo()
