@@ -8,7 +8,7 @@ using Managers;
 
 public class NpcController : MonoBehaviour
 {
-    public int npcID;
+    public int npcId;
 
     SkinnedMeshRenderer renderer;
 
@@ -20,13 +20,37 @@ public class NpcController : MonoBehaviour
 
     NpcDefine npc;
 
+    NpcQuestStatus questStatus;
+
     private void Start()
     {
         renderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
         animator = this.gameObject.GetComponentInChildren<Animator>();
         orignColor = renderer.sharedMaterial.color;
-        npc = NpcManager.Instance.GetNpcDefine(this.npcID);
+        npc = NpcManager.Instance.GetNpcDefine(this.npcId);
         this.StartCoroutine(Actions());
+        RefreshNpcStatus();
+        QuestManager.Instance.onQuestStatusChanged += OnQuestStatusChanged;
+    }
+
+    private void OnQuestStatusChanged(Quest quest)
+    {
+        RefreshNpcStatus();
+    }
+
+    private void RefreshNpcStatus()
+    {
+        questStatus = QuestManager.Instance.GetQuestStatusByNpc(this.npcId);
+        UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);
+    }
+
+    private void OnDestroy()
+    {
+        QuestManager.Instance.onQuestStatusChanged -= OnQuestStatusChanged;
+        if (UIWorldElementManager.Instance != null)
+        {
+            UIWorldElementManager.Instance.RemoveNpcQuestStatus(this.transform);
+        }
     }
 
     IEnumerator Actions()

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using Models;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,18 @@ public class UIQuestDialog : UIWindow
     public GameObject openButtons;
     public GameObject submitButtons;
 
+    private Button accept_Btn, deny_Btn, submit_Btn, close_Btn;
+    private void Start()
+    {
+        accept_Btn = openButtons.transform.GetChild(0).gameObject.GetComponent<Button>();
+        deny_Btn = openButtons.transform.GetChild(1).gameObject.GetComponent<Button>();
+        submit_Btn = submitButtons.transform.GetChild(0).gameObject.GetComponent<Button>();
+
+        accept_Btn.onClick.AddListener(OnYesClick);
+        deny_Btn.onClick.AddListener(OnNoClick);
+        submit_Btn.onClick.AddListener(OnYesClick);
+        close_Btn.onClick.AddListener(OnCloseClick);
+    }
     public void SetQuest(Quest quest)
     {
         this.quest = quest;
@@ -22,8 +35,8 @@ public class UIQuestDialog : UIWindow
         {
             if (this.quest.Info.Status == SkillBridge.Message.QuestStatus.Complated)
             {
-                openButtons.SetActive(true);
-                submitButtons.SetActive(false);
+                openButtons.SetActive(false);
+                submitButtons.SetActive(true);
             }
             else
             {

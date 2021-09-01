@@ -20,6 +20,10 @@ namespace GameServer.Managers
             this.Owner = owner;
         }
 
+        /// <summary>
+        /// 获取任务信息
+        /// </summary>
+        /// <param name="list"></param>
         public void GetQuestInfos(List<NQuestInfo> list)
         {
             foreach (var quest in this.Owner.Data.Quests)
@@ -28,6 +32,11 @@ namespace GameServer.Managers
             }
         }
 
+        /// <summary>
+        /// 转换为发送给客户端的任务信息
+        /// </summary>
+        /// <param name="quest"></param>
+        /// <returns></returns>
         public NQuestInfo GetQuestInfo(TCharacterQuest quest)
         {
             return new NQuestInfo()

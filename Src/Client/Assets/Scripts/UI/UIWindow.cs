@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 public abstract class UIWindow : MonoBehaviour
@@ -36,6 +37,11 @@ public abstract class UIWindow : MonoBehaviour
     public virtual void OnYesClick()
     {
         this.Close(WindowResult.Yes);
+    }
+
+    public virtual void OnNoClick()
+    {
+        this.Close(WindowResult.No);
     }
 
     private void OnMouseDown()

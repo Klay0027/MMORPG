@@ -24,6 +24,11 @@ public class QuestService : Singleton<QuestService>, IDisposable
         MessageDistributer.Instance.Unsubscribe<QuestSubmitResponse>(this.OnQuestSubmit);
     }
 
+    /// <summary>
+    /// 发送接受任务
+    /// </summary>
+    /// <param name="quest">接受的哪个任务</param>
+    /// <returns></returns>
     public bool SendQuestAccept(Quest quest)
     {
         Debug.Log("SendQuestAccept");
@@ -35,12 +40,17 @@ public class QuestService : Singleton<QuestService>, IDisposable
         return true;
     }
 
+    /// <summary>
+    /// 收到接受任务的响应
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="message"></param>
     private void OnQuestAccept(object sender, QuestAcceptResponse message)
     {
         Debug.LogFormat("OnQuestAccept:{0}, ERR:{1}", message.Result, message.Errormsg);
         if (message.Result == Result.Success)
         {
-            //QuestManager.Instance.OnQuestAccepted(message.Quest);
+            QuestManager.Instance.OnQuestAccepted(message.Quest);
         }
         else
         {
@@ -48,6 +58,11 @@ public class QuestService : Singleton<QuestService>, IDisposable
         }
     }
 
+    /// <summary>
+    /// 发送提交任务
+    /// </summary>
+    /// <param name="quest">提交的任务</param>
+    /// <returns></returns>
     public bool SendQuestSubmit(Quest quest)
     {
         Debug.Log("SendQuestSubmit");
@@ -59,6 +74,11 @@ public class QuestService : Singleton<QuestService>, IDisposable
         return false;
     }
 
+    /// <summary>
+    /// 收到提交任务的响应
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="message"></param>
     private void OnQuestSubmit(object sender, QuestSubmitResponse message)
     {
         Debug.LogFormat("OnQuestSubmit:{0}, ERR:{1}", message.Result, message.Errormsg);

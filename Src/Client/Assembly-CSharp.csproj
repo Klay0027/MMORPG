@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
     <Compile Include="Assets\Scripts\Models\Item.cs" />
     <Compile Include="Assets\Scripts\Models\Quest.cs" />
@@ -98,8 +99,6 @@
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserServices.cs" />
-    <Compile Include="Assets\Scripts\UI\CharacterInfo.cs" />
-    <Compile Include="Assets\Scripts\UI\CharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UICharEquip.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UIEquipItem.cs" />
     <Compile Include="Assets\Scripts\UI\Knapsack\UIBag.cs" />
@@ -115,6 +114,8 @@
     <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestSystem.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
+    <Compile Include="Assets\Scripts\UI\Start\CharacterInfo.cs" />
+    <Compile Include="Assets\Scripts\UI\Start\CharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\Start\Loading_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Start\Login_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\Start\Register_Handler.cs" />
@@ -122,7 +123,6 @@
     <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
     <Compile Include="Assets\Scripts\UI\UIMainCity.cs" />
-    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UITest.cs" />
     <Compile Include="Assets\Scripts\UI\UIWindow.cs" />

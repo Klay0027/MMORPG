@@ -8,7 +8,7 @@ public class MessageBox
     {
         if (cacheObject == null)
         {
-            cacheObject = Resloader.Load<Object>("PreFabs/UIMessageBox");
+            cacheObject = Resloader.Load<Object>("PreFabs/Mian_City/UIMessageBox");
         }
     
         GameObject go = (GameObject)GameObject.Instantiate(cacheObject);

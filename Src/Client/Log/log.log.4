@@ -1,427 +1,80 @@
-2021-08-24 17:15:58,446 [ 1] INFO  Unity: LoadingManager start
-2021-08-24 17:15:58,454 [ 1] INFO  Unity: DataManager > DataManager()
-2021-08-24 17:16:13,051 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-08-24 17:16:13,052 [ 1] INFO  Unity: ConnectToServer Start
-2021-08-24 17:16:13,053 [ 1] INFO  Unity: DoConnect
-2021-08-24 17:16:13,055 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-08-24 17:16:13,057 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-09-01 15:36:13,831 [ 1] INFO  Unity: LoadingManager start
+2021-09-01 15:36:13,860 [ 1] INFO  Unity: DataManager > DataManager()
+2021-09-01 15:36:25,076 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-09-01 15:36:25,085 [ 1] INFO  Unity: ConnectToServer Start
+2021-09-01 15:36:25,091 [ 1] INFO  Unity: DoConnect
+2021-09-01 15:36:25,093 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-09-01 15:36:25,095 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-08-24 17:16:13,059 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-08-24 17:16:15,252 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-08-24 17:16:16,239 [ 1] INFO  Unity: LoadLevel: Start
-2021-08-24 17:16:16,351 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-24 17:16:18,702 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
-2021-08-24 17:16:18,791 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-08-24 17:16:18,794 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:21
-2021-08-24 17:16:18,794 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-08-24 17:16:18,795 [ 1] INFO  Unity: ItemManager:Init,ItemId:1006, itemCount:2
-2021-08-24 17:16:18,796 [ 1] INFO  Unity: ItemManager:Init,ItemId:2003, itemCount:1
-2021-08-24 17:16:18,798 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-08-24 17:16:18,800 [ 1] INFO  Unity: AddCharacter:1:拉克丝 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-08-24 17:16:18,803 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-08-24 17:16:19,170 [ 1] WARN  Unity: MainPlayerCamera  -165106 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+2021-09-01 15:36:27,117 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserServices:ConnectToServer() (at Assets/Scripts/Services/UserServices.cs:63)
+Services.UserServices:SendLogin(String, String) (at Assets/Scripts/Services/UserServices.cs:182)
+Login_Handler:OnLoginClick() (at Assets/Scripts/UI/Start/Login_Handler.cs:67)
+UnityEngine.EventSystems.EventSystem:Update()
 
-2021-08-24 17:16:19,171 [ 1] WARN  Unity: GameObjectManager  -160696 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+2021-09-01 15:36:27,147 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
 
-2021-08-24 17:16:19,179 [ 1] WARN  Unity: UIWorldElementManager  110332 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserServices:ConnectToServer() (at Assets/Scripts/Services/UserServices.cs:63)
+Services.UserServices:SendLogin(String, String) (at Assets/Scripts/Services/UserServices.cs:182)
+Login_Handler:OnLoginClick() (at Assets/Scripts/UI/Start/Login_Handler.cs:67)
+UnityEngine.EventSystems.EventSystem:Update()
 
-2021-08-24 17:16:19,179 [ 1] WARN  Unity: UIMainCity  112078 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+2021-09-01 15:36:27,148 [ 1] INFO  Unity: DoConnect
+2021-09-01 15:36:27,148 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-09-01 15:36:27,149 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
 
-2021-08-24 17:16:19,210 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-24 17:16:20,156 [ 1] INFO  Unity: MoveForward
-2021-08-24 17:16:20,157 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
-2021-08-24 17:16:20,510 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2021-08-24 17:16:20,511 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2305,1900,800) Dir:(98,18,0) Speed:300
-2021-08-24 17:16:20,594 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
-2021-08-24 17:16:20,595 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2335,1906,800) Dir:(94,35,0) Speed:300
-2021-08-24 17:16:20,678 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
-2021-08-24 17:16:20,679 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2360,1916,800) Dir:(86,51,0) Speed:300
-2021-08-24 17:16:20,779 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
-2021-08-24 17:16:20,780 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2384,1934,800) Dir:(74,68,0) Speed:300
-2021-08-24 17:16:20,863 [ 1] INFO  Unity: SetDirection:(61, 79, 0)
-2021-08-24 17:16:20,864 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2404,1949,800) Dir:(61,79,0) Speed:300
-2021-08-24 17:16:20,948 [ 1] INFO  Unity: SetDirection:(46, 89, 0)
-2021-08-24 17:16:20,948 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2419,1969,800) Dir:(46,89,0) Speed:300
-2021-08-24 17:16:21,083 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
-2021-08-24 17:16:21,084 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2435,2001,800) Dir:(29,96,0) Speed:300
-2021-08-24 17:16:21,994 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:16:21,995 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,009 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,026 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,043 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,060 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,077 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,094 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,111 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,128 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,145 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,161 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,178 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,195 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,212 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,229 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,245 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,262 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,279 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,296 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,314 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,330 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,347 [ 1] INFO  Unity: Stop
-2021-08-24 17:16:22,348 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
-UnityEngine.Animator:SetTrigger(String)
-EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
-PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
-PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+2021-09-01 15:36:29,156 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
 
-2021-08-24 17:16:22,348 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2510,2376,800) Dir:(29,96,0) Speed:0
-2021-08-24 17:16:22,349 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,364 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,380 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,397 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,414 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,430 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,447 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,464 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,481 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,498 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,515 [ 1] INFO  Unity: 点我干嘛！我是LeeSin
-2021-08-24 17:16:22,516 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,532 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,548 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,565 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,582 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,599 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,616 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,633 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,650 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,667 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,684 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,700 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,716 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[2 : 锤石] Type : Functional Func : InvokeShop 
-2021-08-24 17:16:22,747 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,764 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,781 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,797 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,813 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,830 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,847 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,864 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,881 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,898 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,915 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,932 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,949 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,965 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,982 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:22,999 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:24,635 [ 1] INFO  Unity: SendBuyItem
-2021-08-24 17:16:24,893 [ 1] INFO  Unity: 
-2021-08-24 17:16:24,894 [ 1] INFO  Unity: 
-2021-08-24 17:16:29,824 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-08-24 17:16:29,825 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,176 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:16:30,177 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,193 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,210 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,227 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,244 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,261 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,278 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,295 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,312 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,329 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,345 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,362 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,379 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,396 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,413 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,430 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,447 [ 1] INFO  Unity: 点我干嘛！我是LeeSin
-2021-08-24 17:16:30,447 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,464 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,467 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[2 : 锤石] Type : Functional Func : InvokeShop 
-2021-08-24 17:16:30,485 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,502 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,519 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,536 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,551 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,568 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,585 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,602 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,619 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,636 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,653 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,670 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,687 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,704 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,720 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,737 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:30,839 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-08-24 17:16:30,840 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,027 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-08-24 17:16:37,028 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,280 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:16:37,281 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,584 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:16:37,585 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,600 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,617 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,634 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,651 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,667 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,684 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,701 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,718 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,735 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,752 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,768 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,785 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,802 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,819 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,836 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,853 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,870 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,887 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,904 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,920 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,937 [ 1] INFO  Unity: 点我干嘛！我是LeeSin
-2021-08-24 17:16:37,938 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,954 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,956 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[2 : 锤石] Type : Functional Func : InvokeShop 
-2021-08-24 17:16:37,981 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:37,998 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,014 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,031 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,048 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,065 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,082 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,099 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,116 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,133 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,150 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:38,167 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:41,826 [ 1] INFO  Unity: LoadLevel: Start
-2021-08-24 17:16:41,827 [ 1] INFO  Unity: UserGameLeaveRequest
-2021-08-24 17:16:41,913 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-24 17:16:41,916 [ 1] INFO  Unity: OnMapCharacterLeave:CharID:1
-2021-08-24 17:16:41,918 [ 1] INFO  Unity: RemoveCharacter:1
-2021-08-24 17:16:41,920 [ 1] INFO  Unity: OnLeaveGame:Success [None]
-2021-08-24 17:16:41,921 [ 1] INFO  Unity: Character_1_拉克丝 OnDestroy :ID:1 POS:(2510, 2376, 800) DIR:(29, 96, 0) SPD:0 
-2021-08-24 17:16:43,178 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
-2021-08-24 17:16:43,212 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-08-24 17:16:43,213 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:22
-2021-08-24 17:16:43,213 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-08-24 17:16:43,214 [ 1] INFO  Unity: ItemManager:Init,ItemId:1006, itemCount:2
-2021-08-24 17:16:43,215 [ 1] INFO  Unity: ItemManager:Init,ItemId:2003, itemCount:1
-2021-08-24 17:16:43,216 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-08-24 17:16:43,216 [ 1] INFO  Unity: AddCharacter:2:拉克丝 Map:1 Entity:(2:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-08-24 17:16:43,220 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-08-24 17:16:43,580 [ 1] WARN  Unity: MainPlayerCamera  -175718 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+2021-09-01 15:36:29,157 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
 
-2021-08-24 17:16:43,581 [ 1] WARN  Unity: GameObjectManager  -171308 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
 
-2021-08-24 17:16:43,581 [ 1] WARN  Unity: UIWorldElementManager  115118 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+2021-09-01 15:36:29,171 [ 1] INFO  Unity: DoConnect
+2021-09-01 15:36:29,171 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-09-01 15:36:29,172 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
 
-2021-08-24 17:16:43,582 [ 1] WARN  Unity: UIMainCity  116864 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+2021-09-01 15:36:31,182 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
 
-2021-08-24 17:16:43,605 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-24 17:16:51,594 [ 1] INFO  Unity: MoveForward
-2021-08-24 17:16:51,595 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
-2021-08-24 17:16:51,830 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2021-08-24 17:16:51,831 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2270,1900,800) Dir:(98,18,0) Speed:300
-2021-08-24 17:16:51,931 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
-2021-08-24 17:16:51,932 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2300,1906,800) Dir:(93,36,0) Speed:300
-2021-08-24 17:16:52,033 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
-2021-08-24 17:16:52,033 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2330,1918,800) Dir:(84,55,0) Speed:300
-2021-08-24 17:16:52,134 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
-2021-08-24 17:16:52,135 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2354,1936,800) Dir:(71,71,0) Speed:300
-2021-08-24 17:16:52,251 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
-2021-08-24 17:16:52,252 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2382,1964,800) Dir:(57,82,0) Speed:300
-2021-08-24 17:16:53,229 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-08-24 17:16:53,230 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,246 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,297 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:16:53,297 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,313 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,330 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,347 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,364 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,381 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,398 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,414 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,431 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,448 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,465 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,481 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,498 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,515 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,532 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,549 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,568 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,584 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,601 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,618 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,635 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,652 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,669 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,686 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,703 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,720 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,736 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,753 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,770 [ 1] INFO  Unity: Stop
-2021-08-24 17:16:53,770 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
-UnityEngine.Animator:SetTrigger(String)
-EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
-PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
-PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+2021-09-01 15:36:31,183 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
 
-2021-08-24 17:16:53,771 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2655,2328,800) Dir:(57,82,0) Speed:0
-2021-08-24 17:16:53,772 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,787 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,804 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,821 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,838 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:53,870 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-08-24 17:16:53,871 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,225 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:16:54,226 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,241 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,258 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,275 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,292 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,309 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,325 [ 1] INFO  Unity: 点我干嘛！我是LeeSin
-2021-08-24 17:16:54,326 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,342 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,360 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,376 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,393 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,410 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,427 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,444 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,461 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,478 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,485 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[2 : 锤石] Type : Functional Func : InvokeShop 
-2021-08-24 17:16:54,506 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,523 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,540 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,557 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,572 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,589 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,606 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,623 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:54,640 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:16:56,544 [ 1] INFO  Unity: SendBuyItem
-2021-08-24 17:16:56,579 [ 1] INFO  Unity: 
-2021-08-24 17:16:56,580 [ 1] INFO  Unity: 
-2021-08-24 17:17:02,949 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:17:02,950 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:02,966 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,409 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:17:09,410 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,425 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,442 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,459 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,477 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,493 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,510 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,527 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,543 [ 1] INFO  Unity: 点我干嘛！我是LeeSin
-2021-08-24 17:17:09,544 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,561 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,563 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[2 : 锤石] Type : Functional Func : InvokeShop 
-2021-08-24 17:17:09,581 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,598 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,615 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,632 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,649 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,666 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,683 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,700 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,717 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,734 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:09,801 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-08-24 17:17:09,802 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,233 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-08-24 17:17:11,234 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,250 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,267 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,284 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,301 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,318 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,335 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,351 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,368 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,385 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,402 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,419 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,435 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,452 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,469 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,486 [ 1] INFO  Unity: 点我干嘛！我是Thresh
-2021-08-24 17:17:11,487 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,503 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,519 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,536 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,553 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,570 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,587 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,604 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,621 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-08-24 17:17:11,859 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[4 : 布隆] Type : Functional Func : InvokeShop 
-2021-08-24 17:18:49,408 [ 1] INFO  Unity: LoadLevel: Start
-2021-08-24 17:18:49,409 [ 1] INFO  Unity: UserGameLeaveRequest
-2021-08-24 17:18:49,489 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-24 17:18:49,491 [ 1] INFO  Unity: OnMapCharacterLeave:CharID:2
-2021-08-24 17:18:49,492 [ 1] INFO  Unity: RemoveCharacter:2
-2021-08-24 17:18:49,492 [ 1] INFO  Unity: OnLeaveGame:Success [None]
-2021-08-24 17:18:49,493 [ 1] INFO  Unity: Character_2_拉克丝 OnDestroy :ID:2 POS:(2655, 2328, 800) DIR:(57, 82, 0) SPD:0 
-2021-08-24 17:18:51,024 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
-2021-08-24 17:18:51,057 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-08-24 17:18:51,058 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:32
-2021-08-24 17:18:51,058 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-08-24 17:18:51,059 [ 1] INFO  Unity: ItemManager:Init,ItemId:1006, itemCount:2
-2021-08-24 17:18:51,060 [ 1] INFO  Unity: ItemManager:Init,ItemId:2003, itemCount:1
-2021-08-24 17:18:51,061 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-08-24 17:18:51,061 [ 1] INFO  Unity: AddCharacter:3:拉克丝 Map:1 Entity:(3:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-08-24 17:18:51,065 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-08-24 17:18:51,426 [ 1] WARN  Unity: MainPlayerCamera  -190732 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
 
-2021-08-24 17:18:51,426 [ 1] WARN  Unity: GameObjectManager  -186322 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2021-08-24 17:18:51,427 [ 1] WARN  Unity: UIWorldElementManager  119904 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2021-08-24 17:18:51,427 [ 1] WARN  Unity: UIMainCity  121650 Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2021-08-24 17:18:51,451 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-08-24 17:19:00,260 [ 1] INFO  Unity: Character_3_拉克丝 OnDestroy :ID:3 POS:(2200, 1900, 800) DIR:(100, 0, 0) SPD:0 
-2021-08-24 17:19:00,261 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-08-24 17:19:00,262 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-09-01 15:36:31,183 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2021-09-01 15:36:44,708 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-09-01 15:36:44,709 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

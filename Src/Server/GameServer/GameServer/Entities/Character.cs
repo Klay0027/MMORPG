@@ -28,7 +28,7 @@ namespace GameServer.Entities
             this.Info.Type = type;
             this.Info.Id = cha.ID;
             this.Info.Name = cha.Name;
-            this.Info.Level = 10;//cha.Level;
+            this.Info.Level = 10;//角色等级;
             this.Info.Tid = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
@@ -44,7 +44,7 @@ namespace GameServer.Entities
             this.Info.Bag.Items = this.Data.CharacterBag.Items;
             this.Info.Equips = this.Data.Equips;
             this.QuestManager = new QuestManager(this); //任务管理器初始化
-            this.QuestManager.GetQuestInfos(this.Info.Quests);
+            this.QuestManager.GetQuestInfos(this.Info.Quests); //从数据库中获取到当前玩家的任务信息
             this.StatusManager = new StatusManager(this);
         }
 

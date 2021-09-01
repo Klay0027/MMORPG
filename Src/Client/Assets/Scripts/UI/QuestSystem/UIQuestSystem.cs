@@ -14,15 +14,17 @@ public class UIQuestSystem : UIWindow
     public TabView Tabs;
     public ListView listMain, listBranch;
     public UIQuestInfo questInfo;
+    public Button close_btn;
 
     private bool showAvailableList = false;
 
     private void Start()
     {
+        close_btn.onClick.AddListener(OnCloseClick);
         this.listMain.onItemSelected += this.OnQuestSelected;
         this.listBranch.onItemSelected += this.OnQuestSelected;
         this.Tabs.OnTabSelect += OnSelectTab;
-        //QuestManager.Instance.onq
+        RefreshUI();
     }
 
     private void OnSelectTab(int idx)
@@ -55,8 +57,7 @@ public class UIQuestSystem : UIWindow
                     }
                 }
 
-                //GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main)
-                GameObject go = Instantiate(itemPrefab);
+                GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
                 UIQuestItem ui = go.GetComponent<UIQuestItem>();
                 ui.SetQuestInfo(kv.Value);
                 if (kv.Value.Define.Type == QuestType.Main)
@@ -71,24 +72,25 @@ public class UIQuestSystem : UIWindow
         } 
     }
 
+    /// <summary>
+    /// 清空所有的任务列表
+    /// </summary>
     private void ClearAllQuestList()
     {
         this.listMain.RemoveAll();
         this.listBranch.RemoveAll();   
     }
 
-    public void DoEquip(Item item)
-    {
-        EquipManager.Instance.EquipItem(item);
-    }
-
-    public void UnEquip(Item item)
-    {
-        EquipManager.Instance.UnEquipItem(item);
-    }
-
     public void OnQuestSelected(ListView.ListViewItem item)
     {
+        //if (item.owner == this.listMain)
+        //{
+        //    this.listBranch.gameObject.SetActive(false);
+        //}
+        //else if(item.owner == this.listBranch)
+        //{
+        //    this.listMain.gameObject.SetActive(false);
+        //}
         UIQuestItem questItem = item as UIQuestItem;
         this.questInfo.SetQuestInfo(questItem.quest);
     }

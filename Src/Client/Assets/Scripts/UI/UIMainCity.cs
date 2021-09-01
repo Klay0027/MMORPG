@@ -53,8 +53,7 @@ public class UIMainCity : MonoSingleton<UIMainCity>
 
     private void OnClickCharEquip()
     {
-        UIManager.Instance.Show<UICharEquip>();
-    
+        UIManager.Instance.Show<UICharEquip>();   
     }
 
     private void OnClickQeust()

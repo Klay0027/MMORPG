@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UINameBar : MonoBehaviour
 {
-    public Image avatar;
+    //public Image avatar;
 
     public Text avaverName, avaverLevel;
 
@@ -18,11 +18,11 @@ public class UINameBar : MonoBehaviour
         {
             if (character.Info.Type == SkillBridge.Message.CharacterType.Monster)
             {
-                this.avatar.gameObject.SetActive(false);
+                //this.avatar.gameObject.SetActive(false);
             }
             else
             {
-                this.avatar.gameObject.SetActive(true);
+                //this.avatar.gameObject.SetActive(true);
             }
         }
     }
