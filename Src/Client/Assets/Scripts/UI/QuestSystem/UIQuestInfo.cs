@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Common.Data;
 
 public class UIQuestInfo : MonoBehaviour
 {
     public Text title;
     public Text[] targets;
     public Text description;
-    public UIIconItem rewardItems;
+    //public UIIconItem rewardItems;
     public Text rewardMoney, rewardExp;
 
     /// <summary>
@@ -19,11 +20,20 @@ public class UIQuestInfo : MonoBehaviour
     public void SetQuestInfo(Quest quest)
     {
         //设置任务标题
-        this.title.text = string.Format("[{0}]{1}", quest.Define.Type, quest.Define.Name);
+        if (quest.Define.Type == QuestType.Main)
+        {
+            this.title.text ="[主线]" + quest.Define.Name;
+        }
+        else
+        {
+            this.title.text = "[支线]" + quest.Define.Name;
+        }
+        //this.title.text = string.Format("[{0}]{1}", quest.Define.Type, quest.Define.Name);
+        this.targets[0].text = quest.Define.Overview;
         //设置任务描述
         if (quest.Info == null)
         {
-            this.description.text = quest.Define.DiaLog;
+            this.description.text = quest.Define.Overview;
         }
         else
         {
@@ -33,8 +43,8 @@ public class UIQuestInfo : MonoBehaviour
             }
         }
 
-        this.rewardMoney.text = quest.Define.RewardGold.ToString();
-        this.rewardExp.text = quest.Define.RewardExp.ToString();
+        this.rewardMoney.text = "金币：" + quest.Define.RewardGold.ToString();
+        this.rewardExp.text = "经验：" + quest.Define.RewardExp.ToString();
 
         foreach (var fitter in this.GetComponentsInChildren<ContentSizeFitter>())
         {
@@ -46,7 +56,7 @@ public class UIQuestInfo : MonoBehaviour
     /// 点击放弃任务
     /// </summary>
     public void OnClickAbandon()
-    { 
-    
+    {
+        MessageBox.Show("不要放弃呀！");
     }
 }

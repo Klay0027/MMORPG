@@ -18,6 +18,7 @@ public class TabButton : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         tabImage = this.GetComponent<Image>();
+
         normalImage = tabImage.sprite;
 
         this.GetComponent<Button>().onClick.AddListener(OnClick);

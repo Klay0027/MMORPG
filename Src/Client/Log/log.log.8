@@ -1,98 +1,18 @@
-2021-09-01 15:22:00,383 [ 1] INFO  Unity: LoadingManager start
-2021-09-01 15:22:00,391 [ 1] INFO  Unity: DataManager > DataManager()
-2021-09-01 15:22:14,419 [ 1] INFO  Unity: UserRegisterRequest::user :aaa psw:aaa
-2021-09-01 15:22:14,420 [ 1] INFO  Unity: ConnectToServer Start
-2021-09-01 15:22:14,421 [ 1] INFO  Unity: DoConnect
-2021-09-01 15:22:14,423 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-01 15:22:14,425 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-09-02 16:03:03,749 [ 1] INFO  Unity: LoadingManager start
+2021-09-02 16:03:03,756 [ 1] INFO  Unity: DataManager > DataManager()
+2021-09-02 16:05:09,870 [ 1] WARN  Unity: Assets/Scripts/GameObject/NpcController.cs(7,1): warning CS0105: The using directive for `Managers' appeared previously in this namespace
 
-2021-09-01 15:22:14,427 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-09-01 15:22:14,778 [ 1] INFO  Unity: OnUserRegister:Success [注册成功！]
-2021-09-01 15:22:19,091 [ 1] INFO  Unity: UserLoginRequest::user :aaa psw:aaa
-2021-09-01 15:22:19,135 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-09-01 15:22:20,137 [ 1] INFO  Unity: LoadLevel: Start
-2021-09-01 15:22:20,251 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-01 15:22:24,811 [ 1] INFO  Unity: CreateCharacterRequest::name :aaa character:Archer
-2021-09-01 15:22:24,919 [ 1] INFO  Unity: OnCreateCharacter:Success [添加角色成功！]
-2021-09-01 15:22:24,922 [ 1] WARN  Unity: The referenced script (Unknown) on this Behaviour is missing!
-UnityEngine.Object:Instantiate(GameObject, Transform)
-Start_Handler:InitSelectCharacter(Boolean) (at Assets/Scripts/UI/Start/Start_Handler.cs:57)
-Start_Handler:OnCharacterCreate(Result, String) (at Assets/Scripts/UI/Start/Start_Handler.cs:161)
-Services.UserServices:OnCreateCharacter(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserServices.cs:249)
-Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:12)
-Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-09-02 16:05:09,872 [ 1] WARN  Unity: Assets/Scripts/GameObject/MainPlayerCamera.cs(8,19): warning CS0108: `MainPlayerCamera.camera' hides inherited member `UnityEngine.Component.camera'. Use the new keyword if hiding was intended
 
-2021-09-01 15:22:24,923 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'Character.N') is missing!
-UnityEngine.Object:Instantiate(GameObject, Transform)
-Start_Handler:InitSelectCharacter(Boolean) (at Assets/Scripts/UI/Start/Start_Handler.cs:57)
-Start_Handler:OnCharacterCreate(Result, String) (at Assets/Scripts/UI/Start/Start_Handler.cs:161)
-Services.UserServices:OnCreateCharacter(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserServices.cs:249)
-Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:12)
-Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-09-02 16:05:09,872 [ 1] WARN  Unity: Assets/Scripts/GameObject/NpcController.cs(13,25): warning CS0108: `NpcController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
 
-2021-09-01 15:22:24,924 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'Character.N') is missing!
-UnityEngine.Object:Instantiate(GameObject, Transform)
-Start_Handler:InitSelectCharacter(Boolean) (at Assets/Scripts/UI/Start/Start_Handler.cs:57)
-Start_Handler:OnCharacterCreate(Result, String) (at Assets/Scripts/UI/Start/Start_Handler.cs:161)
-Services.UserServices:OnCreateCharacter(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserServices.cs:249)
-Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:12)
-Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-09-02 16:05:09,873 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(16,24): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
 
-2021-09-01 15:22:24,926 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Start_Handler.InitSelectCharacter (Boolean isInit) [0x000b9] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Start\Start_Handler.cs:59 
-  at Start_Handler.OnCharacterCreate (Result result, System.String message) [0x00025] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Start\Start_Handler.cs:161 
-  at Services.UserServices.OnCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\UserServices.cs:249 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-09-01 15:24:08,497 [ 1] INFO  Unity: CreateCharacterRequest::name :斯巴达 character:Warrior
-2021-09-01 15:24:08,531 [ 1] INFO  Unity: OnCreateCharacter:Success [添加角色成功！]
-2021-09-01 15:24:29,543 [ 1] WARN  Unity: The referenced script (Unknown) on this Behaviour is missing!
-UnityEngine.Object:Instantiate(GameObject, Transform)
-Start_Handler:InitSelectCharacter(Boolean) (at Assets/Scripts/UI/Start/Start_Handler.cs:57)
-Start_Handler:OnCharacterCreate(Result, String) (at Assets/Scripts/UI/Start/Start_Handler.cs:161)
-Services.UserServices:OnCreateCharacter(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserServices.cs:249)
-Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:12)
-Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-09-02 16:05:09,873 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(19,24): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
 
-2021-09-01 15:24:29,544 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'Character.N') is missing!
-UnityEngine.Object:Instantiate(GameObject, Transform)
-Start_Handler:InitSelectCharacter(Boolean) (at Assets/Scripts/UI/Start/Start_Handler.cs:57)
-Start_Handler:OnCharacterCreate(Result, String) (at Assets/Scripts/UI/Start/Start_Handler.cs:161)
-Services.UserServices:OnCreateCharacter(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserServices.cs:249)
-Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:12)
-Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-09-02 16:05:09,874 [ 1] WARN  Unity: Assets/Scripts/GameObject/PlayerInputController.cs(21,19): warning CS0414: The private field `PlayerInputController.lastSync' is assigned but its value is never used
 
-2021-09-01 15:24:29,545 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'Character.N') is missing!
-UnityEngine.Object:Instantiate(GameObject, Transform)
-Start_Handler:InitSelectCharacter(Boolean) (at Assets/Scripts/UI/Start/Start_Handler.cs:57)
-Start_Handler:OnCharacterCreate(Result, String) (at Assets/Scripts/UI/Start/Start_Handler.cs:161)
-Services.UserServices:OnCreateCharacter(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserServices.cs:249)
-Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:12)
-Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-09-02 16:05:09,874 [ 1] WARN  Unity: Assets/Scripts/UI/QuestSystem/UIQuestStatus.cs(10,28): warning CS0414: The private field `UIQuestStatus.questStatus' is assigned but its value is never used
 
-2021-09-01 15:24:33,666 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Start_Handler.InitSelectCharacter (Boolean isInit) [0x000b9] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Start\Start_Handler.cs:59 
-  at Start_Handler.OnCharacterCreate (Result result, System.String message) [0x00025] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Start\Start_Handler.cs:161 
-  at Services.UserServices.OnCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\UserServices.cs:249 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-09-01 15:25:52,181 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-09-01 15:25:52,182 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+2021-09-02 16:05:09,875 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(25,32): warning CS0219: The variable `allTeleporters' is assigned but its value is never used
 

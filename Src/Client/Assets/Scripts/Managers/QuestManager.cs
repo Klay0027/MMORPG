@@ -213,7 +213,7 @@ namespace Managers
                 }
                 if (status[NpcQuestStatus.Available].Count > 0)
                 {
-                    return ShowQuestDialog(status[NpcQuestStatus.Complete].First());
+                    return ShowQuestDialog(status[NpcQuestStatus.Available].First());
                 }
                 if (status[NpcQuestStatus.Incomplete].Count > 0)
                 {

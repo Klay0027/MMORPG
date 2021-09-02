@@ -49,27 +49,27 @@ public class UIQuestSystem : UIWindow
                 {
                     continue;
                 }
-                else
+            }
+            else
+            {
+                if (kv.Value.Info == null)
                 {
-                    if (kv.Value.Info == null)
-                    {
-                        continue;
-                    }
-                }
-
-                GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
-                UIQuestItem ui = go.GetComponent<UIQuestItem>();
-                ui.SetQuestInfo(kv.Value);
-                if (kv.Value.Define.Type == QuestType.Main)
-                {
-                    this.listMain.AddItem(ui as ListView.ListViewItem);
-                }
-                else
-                {
-                    this.listBranch.AddItem(ui as ListView.ListViewItem);
+                    continue;
                 }
             }
-        } 
+            GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
+            UIQuestItem ui = go.GetComponent<UIQuestItem>();
+            ui.SetQuestInfo(kv.Value);
+
+            if (kv.Value.Define.Type == QuestType.Main)
+            {
+                this.listMain.AddItem(ui as ListView.ListViewItem);
+            }
+            else
+            {
+                this.listBranch.AddItem(ui as ListView.ListViewItem);
+            }
+        }
     }
 
     /// <summary>
@@ -78,19 +78,31 @@ public class UIQuestSystem : UIWindow
     private void ClearAllQuestList()
     {
         this.listMain.RemoveAll();
-        this.listBranch.RemoveAll();   
+        this.listBranch.RemoveAll();
     }
 
     public void OnQuestSelected(ListView.ListViewItem item)
     {
-        //if (item.owner == this.listMain)
-        //{
-        //    this.listBranch.gameObject.SetActive(false);
-        //}
-        //else if(item.owner == this.listBranch)
-        //{
-        //    this.listMain.gameObject.SetActive(false);
-        //}
+        if (item.owner == this.listMain)
+        {
+            if (this.listBranch.gameObject.transform.childCount > 0)
+            {
+                for (int i = 0; i < this.listBranch.gameObject.transform.childCount; i++)
+                {
+                    this.listBranch.gameObject.transform.GetChild(i).gameObject.GetComponent<ListView.ListViewItem>().Selected = false;
+                }
+            }
+        }
+        else if (item.owner == this.listBranch)
+        {
+            if (this.listMain.gameObject.transform.childCount > 0)
+            {
+                for (int i = 0; i < this.listMain.gameObject.transform.childCount; i++)
+                {
+                    this.listMain.gameObject.transform.GetChild(i).gameObject.GetComponent<ListView.ListViewItem>().Selected = false;
+                }
+            }
+        }
         UIQuestItem questItem = item as UIQuestItem;
         this.questInfo.SetQuestInfo(questItem.quest);
     }

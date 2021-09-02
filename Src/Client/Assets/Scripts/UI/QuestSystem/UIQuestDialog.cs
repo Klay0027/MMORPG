@@ -10,7 +10,8 @@ public class UIQuestDialog : UIWindow
     public GameObject openButtons;
     public GameObject submitButtons;
 
-    private Button accept_Btn, deny_Btn, submit_Btn, close_Btn;
+    private Button accept_Btn, deny_Btn, submit_Btn;
+    public Button close_Btn;
     private void Start()
     {
         accept_Btn = openButtons.transform.GetChild(0).gameObject.GetComponent<Button>();
