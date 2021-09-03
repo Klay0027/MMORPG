@@ -83,26 +83,26 @@ public class UIQuestSystem : UIWindow
 
     public void OnQuestSelected(ListView.ListViewItem item)
     {
-        if (item.owner == this.listMain)
-        {
-            if (this.listBranch.gameObject.transform.childCount > 0)
-            {
-                for (int i = 0; i < this.listBranch.gameObject.transform.childCount; i++)
-                {
-                    this.listBranch.gameObject.transform.GetChild(i).gameObject.GetComponent<ListView.ListViewItem>().Selected = false;
-                }
-            }
-        }
-        else if (item.owner == this.listBranch)
-        {
-            if (this.listMain.gameObject.transform.childCount > 0)
-            {
-                for (int i = 0; i < this.listMain.gameObject.transform.childCount; i++)
-                {
-                    this.listMain.gameObject.transform.GetChild(i).gameObject.GetComponent<ListView.ListViewItem>().Selected = false;
-                }
-            }
-        }
+        //if (item.owner == this.listMain)
+        //{
+        //    if (this.listBranch.gameObject.transform.childCount > 0)
+        //    {
+        //        for (int i = 0; i < this.listBranch.gameObject.transform.childCount; i++)
+        //        {
+        //            this.listBranch.gameObject.transform.GetChild(i).gameObject.GetComponent<ListView.ListViewItem>().Selected = false;
+        //        }
+        //    }
+        //}
+        //else if (item.owner == this.listBranch)
+        //{
+        //    if (this.listMain.gameObject.transform.childCount > 0)
+        //    {
+        //        for (int i = 0; i < this.listMain.gameObject.transform.childCount; i++)
+        //        {
+        //            this.listMain.gameObject.transform.GetChild(i).gameObject.GetComponent<ListView.ListViewItem>().Selected = false;
+        //        }
+        //    }
+        //}
         UIQuestItem questItem = item as UIQuestItem;
         this.questInfo.SetQuestInfo(questItem.quest);
     }
