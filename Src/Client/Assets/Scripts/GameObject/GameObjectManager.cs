@@ -70,7 +70,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             }
 
             GameObject go = (GameObject)Instantiate(obj, this.transform); //实例化角色对象
-            go.name = "Character_" + character.Info.Id + "_" + character.Info.Name; //为角色对象添加名字           
+            go.name = "Character_" + character.Id + "_" + character.Name; //为角色对象添加名字           
             Characters[character.entityId] = go;   
             
             //添加显示角色名称和等级的UI
@@ -89,14 +89,14 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         if (ec != null) //如果实体脚本不为空
         {
             ec.entity = character; //将当前角色 赋值 给实体脚本中的角色
-            ec.isPlayer = character.IsPlayer; //
+            ec.isPlayer = character.IsCurrentPlayer; //
         }
 
         PlayerInputController pc = go.GetComponent<PlayerInputController>(); //获取当前角色的控制脚本
 
         if (pc != null)
         {
-            if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id) //如果是当前选择的对象
+            if (character.IsCurrentPlayer) //如果是当前选择的对象
             {
                 User.Instance.CurrentCharacterObject = go;
                 MainPlayerCamera.Instance.player = go;

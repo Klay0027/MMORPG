@@ -42,7 +42,7 @@ namespace Services
 
             foreach (var cha in response.Characters)
             {
-                if (User.Instance.CurrentCharacter == null || User.Instance.CurrentCharacter.Id == cha.Id)
+                if (User.Instance.CurrentCharacter == null || (cha.Type == CharacterType.Player) && User.Instance.CurrentCharacter.Id == cha.Id)
                 {
                     User.Instance.CurrentCharacter = cha; //刷新一遍角色数据
                 }
@@ -64,11 +64,11 @@ namespace Services
         /// <param name="response"></param>
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
-            Debug.LogFormat("OnMapCharacterLeave:CharID:{0}", response.characterId);
+            Debug.LogFormat("OnMapCharacterLeave:CharID:{0}", response.entityId);
 
-            if (response.characterId != User.Instance.CurrentCharacter.Id)
+            if (response.entityId != User.Instance.CurrentCharacter.EntityId)
             {
-                CharacterManager.Instance.RemoveCharacter(response.characterId);
+                CharacterManager.Instance.RemoveCharacter(response.entityId);
             }
             else
             {

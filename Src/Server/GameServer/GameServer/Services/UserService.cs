@@ -85,7 +85,7 @@ namespace GameServer.Services
                         info.Id = character.ID;
                         info.Name = character.Name;
                         info.Class = (CharacterClass)character.Class;
-                        info.Tid = character.ID;
+                        info.ConfigId = character.ID;
                         info.Type = CharacterType.Player;
                         sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                     }
@@ -120,6 +120,7 @@ namespace GameServer.Services
             character.Class = (int)request.Class;
             character.Name = request.Name;
             character.TID = (int)request.Class;
+            character.Level = 1;
             character.MapID = 1;
             character.MapPosX = 2200;
             character.MapPosY = 1900;
@@ -161,10 +162,10 @@ namespace GameServer.Services
             foreach (var item in sender.Session.User.Player.Characters)
             {
                 NCharacterInfo info = new NCharacterInfo();
-                info.Id = 0;
+                info.Id = item.ID;
                 info.Name = item.Name;
                 info.Class = (CharacterClass)item.Class;
-                info.Tid = item.ID;
+                info.ConfigId = item.TID;
                 info.Type = CharacterType.Player;
                 sender.Session.Response.createChar.Characters.Add(info);
             }
@@ -184,7 +185,7 @@ namespace GameServer.Services
             Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
 
             Character character = CharacterManager.Instance.AddCharacter(dbchar);
-
+            
             sender.Session.Response.gameEnter = new UserGameEnterResponse();
             sender.Session.Response.gameEnter.Result = Result.Success;
             sender.Session.Response.gameEnter.Errormsg = "Login Success!";

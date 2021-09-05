@@ -1,116 +1,441 @@
-2021-09-03 10:55:10,316 [ 1] INFO  Unity: LoadingManager start
-2021-09-03 10:55:10,345 [ 1] INFO  Unity: DataManager > DataManager()
-2021-09-03 10:55:21,095 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-09-03 10:55:21,097 [ 1] INFO  Unity: ConnectToServer Start
-2021-09-03 10:55:21,097 [ 1] INFO  Unity: DoConnect
-2021-09-03 10:55:21,099 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-03 10:55:21,101 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-09-05 17:08:26,574 [ 1] INFO  Unity: LoadingManager start
+2021-09-05 17:08:26,582 [ 1] INFO  Unity: DataManager > DataManager()
+2021-09-05 17:08:45,103 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-09-05 17:08:45,104 [ 1] INFO  Unity: ConnectToServer Start
+2021-09-05 17:08:45,105 [ 1] INFO  Unity: DoConnect
+2021-09-05 17:08:45,107 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-09-05 17:08:45,109 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-09-03 10:55:21,104 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-09-03 10:55:23,879 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-09-03 10:55:24,849 [ 1] INFO  Unity: LoadLevel: Start
-2021-09-03 10:55:26,120 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-03 10:55:27,953 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
-2021-09-03 10:55:28,130 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-09-03 10:55:28,133 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
-2021-09-03 10:55:28,133 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-09-03 10:55:28,142 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-09-03 10:55:28,144 [ 1] INFO  Unity: AddCharacter:1:维鲁斯 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-09-03 10:55:28,147 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-09-03 10:55:31,134 [ 1] WARN  Unity: MainPlayerCamera  -6096 Awake
+2021-09-05 17:08:45,111 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-09-05 17:08:47,059 [ 1] INFO  Unity: OnUserRegister:Failed [用户不存在!请先注册~]
+2021-09-05 17:08:52,017 [ 1] INFO  Unity: UserRegisterRequest::user :123 psw:123
+2021-09-05 17:08:52,371 [ 1] INFO  Unity: OnUserRegister:Success [注册成功！]
+2021-09-05 17:08:57,241 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-09-05 17:08:57,300 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-09-05 17:08:58,305 [ 1] INFO  Unity: LoadLevel: Start
+2021-09-05 17:08:58,397 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-05 17:09:07,013 [ 1] INFO  Unity: CreateCharacterRequest::name :哈哈 character:Archer
+2021-09-05 17:09:07,137 [ 1] INFO  Unity: OnCreateCharacter:Success [添加角色成功！]
+2021-09-05 17:09:10,339 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
+2021-09-05 17:09:10,377 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
+2021-09-05 17:09:10,380 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
+2021-09-05 17:09:10,380 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
+2021-09-05 17:09:10,389 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-09-05 17:09:10,391 [ 1] INFO  Unity: AddCharacter:1:哈哈 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-05 17:09:10,394 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-09-05 17:09:10,395 [ 1] INFO  Unity: AddCharacter:1:哈哈 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-05 17:09:10,798 [ 1] WARN  Unity: MainPlayerCamera  -34566 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:55:31,135 [ 1] WARN  Unity: GameObjectManager  -1688 Awake
+2021-09-05 17:09:10,799 [ 1] WARN  Unity: GameObjectManager  -30158 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:55:31,143 [ 1] WARN  Unity: UIWorldElementManager  16184 Awake
+2021-09-05 17:09:10,805 [ 1] WARN  Unity: UIWorldElementManager  53446 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:55:31,144 [ 1] WARN  Unity: UIMainCity  17938 Awake
+2021-09-05 17:09:10,806 [ 1] WARN  Unity: UIMainCity  55200 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:55:31,187 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-03 10:55:32,646 [ 1] INFO  Unity: MoveForward
-2021-09-03 10:55:32,647 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
-2021-09-03 10:55:32,933 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2021-09-03 10:55:32,934 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2285,1900,800) Dir:(98,18,0) Speed:300
-2021-09-03 10:55:33,034 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
-2021-09-03 10:55:33,035 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2315,1906,800) Dir:(93,36,0) Speed:300
-2021-09-03 10:55:33,135 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
-2021-09-03 10:55:33,135 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2345,1918,800) Dir:(84,55,0) Speed:300
-2021-09-03 10:55:33,235 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
-2021-09-03 10:55:33,236 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2369,1936,800) Dir:(71,71,0) Speed:300
-2021-09-03 10:55:33,354 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
-2021-09-03 10:55:33,355 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2397,1964,800) Dir:(57,82,0) Speed:300
-2021-09-03 10:55:35,022 [ 1] INFO  Unity: Stop
-2021-09-03 10:55:35,023 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2697,2364,800) Dir:(57,82,0) Speed:0
-2021-09-03 10:55:40,654 [ 1] INFO  Unity: LoadLevel: Start
-2021-09-03 10:55:40,661 [ 1] INFO  Unity: UserGameLeaveRequest
-2021-09-03 10:55:40,740 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-03 10:55:40,743 [ 1] INFO  Unity: OnMapCharacterLeave:CharID:1
-2021-09-03 10:55:40,745 [ 1] INFO  Unity: RemoveCharacter:1
-2021-09-03 10:55:40,747 [ 1] INFO  Unity: OnLeaveGame:Success [None]
-2021-09-03 10:55:40,748 [ 1] INFO  Unity: Character_1_维鲁斯 OnDestroy :ID:1 POS:(2697, 2364, 800) DIR:(57, 82, 0) SPD:0 
-2021-09-03 10:55:56,835 [ 1] INFO  Unity: CreateCharacterRequest::name :拉克丝 character:Wizard
-2021-09-03 10:55:57,156 [ 1] INFO  Unity: OnCreateCharacter:Success [添加角色成功！]
-2021-09-03 10:55:59,603 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
-2021-09-03 10:55:59,637 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-09-03 10:55:59,638 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
-2021-09-03 10:55:59,638 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-09-03 10:55:59,639 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-09-03 10:55:59,640 [ 1] INFO  Unity: AddCharacter:2:拉克丝 Map:1 Entity:(2:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-09-03 10:55:59,643 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-09-03 10:56:00,003 [ 1] WARN  Unity: MainPlayerCamera  -12904 Awake
+2021-09-05 17:09:10,849 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-05 17:09:12,086 [ 1] INFO  Unity: MoveForward
+2021-09-05 17:09:12,088 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
+2021-09-05 17:09:12,137 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2021-09-05 17:09:12,138 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2215,1900,800) Dir:(98,18,0) Speed:300
+2021-09-05 17:09:12,238 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2021-09-05 17:09:12,239 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2245,1906,800) Dir:(93,36,0) Speed:300
+2021-09-05 17:09:12,339 [ 1] INFO  Unity: SetDirection:(85, 53, 0)
+2021-09-05 17:09:12,340 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2275,1918,800) Dir:(85,53,0) Speed:300
+2021-09-05 17:09:12,508 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
+2021-09-05 17:09:12,508 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2315,1948,800) Dir:(74,68,0) Speed:300
+2021-09-05 17:09:13,132 [ 1] INFO  Unity: SetDirection:(61, 80, 0)
+2021-09-05 17:09:13,133 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2463,2059,800) Dir:(61,80,0) Speed:300
+2021-09-05 17:09:13,722 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-05 17:09:13,722 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,738 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,755 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,772 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,789 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,806 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,823 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,839 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,855 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,873 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-05 17:09:13,874 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,889 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,907 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,924 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,941 [ 1] INFO  Unity: Stop
+2021-09-05 17:09:13,942 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2610,2255,800) Dir:(61,80,0) Speed:0
+2021-09-05 17:09:13,943 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,958 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,975 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:13,992 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:14,009 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:14,025 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:14,042 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:14,059 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:14,076 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:15,676 [ 1] INFO  Unity: SetDirection:(46, 89, 0)
+2021-09-05 17:09:15,676 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2610,2255,800) Dir:(46,89,0) Speed:0
+2021-09-05 17:09:15,693 [ 1] INFO  Unity: MoveForward
+2021-09-05 17:09:15,694 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2610,2255,800) Dir:(46,89,0) Speed:300
+2021-09-05 17:09:15,811 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:15,812 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:15,828 [ 1] INFO  Unity: SetDirection:(30, 96, 0)
+2021-09-05 17:09:15,829 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2626,2287,800) Dir:(30,96,0) Speed:300
+2021-09-05 17:09:15,829 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:16,013 [ 1] INFO  Unity: SetDirection:(13, 99, 0)
+2021-09-05 17:09:16,013 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2648,2342,800) Dir:(13,99,0) Speed:300
+2021-09-05 17:09:17,366 [ 1] INFO  Unity: Stop
+2021-09-05 17:09:17,367 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2729,2747,800) Dir:(13,99,0) Speed:0
+2021-09-05 17:09:21,832 [ 1] INFO  Unity: MoveForward
+2021-09-05 17:09:21,833 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2729,2747,800) Dir:(13,99,0) Speed:300
+2021-09-05 17:09:22,338 [ 1] INFO  Unity: SetDirection:(30, 95, 0)
+2021-09-05 17:09:22,339 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2760,2902,800) Dir:(30,95,0) Speed:300
+2021-09-05 17:09:22,507 [ 1] INFO  Unity: SetDirection:(48, 88, 0)
+2021-09-05 17:09:22,508 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2780,2952,800) Dir:(48,88,0) Speed:300
+2021-09-05 17:09:23,249 [ 1] INFO  Unity: SetPosition:(2846, 3173, 795)
+2021-09-05 17:09:23,249 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2846,3173,795) Dir:(48,88,0) Speed:300
+2021-09-05 17:09:23,595 [ 1] INFO  Unity: Stop
+2021-09-05 17:09:23,596 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2888,3257,795) Dir:(48,88,0) Speed:0
+2021-09-05 17:09:28,156 [ 1] INFO  Unity: MoveForward
+2021-09-05 17:09:28,157 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2888,3257,795) Dir:(48,88,0) Speed:300
+2021-09-05 17:09:28,543 [ 1] INFO  Unity: SetDirection:(31, 95, 0)
+2021-09-05 17:09:28,544 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2934,3349,795) Dir:(31,95,0) Speed:300
+2021-09-05 17:09:28,545 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:28,545 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:28,560 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:28,577 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:28,594 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:28,611 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,203 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:29,204 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,220 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,237 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,254 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,271 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,287 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,304 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,321 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,338 [ 1] INFO  Unity: 点我干嘛！我是Thresh
+2021-09-05 17:09:29,339 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,355 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,372 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,389 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,406 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,414 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[2 : 锤石] Type : Functional Func : InvokeShop 
+2021-09-05 17:09:29,461 [ 1] INFO  Unity: Stop
+2021-09-05 17:09:29,461 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3040,3614,795) Dir:(31,95,0) Speed:0
+2021-09-05 17:09:29,462 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,478 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,495 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,511 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,528 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,545 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,562 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,864 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:29,865 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:29,881 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,050 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:30,051 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,067 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,084 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,522 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:30,523 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,539 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,556 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,572 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,589 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,606 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,623 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,640 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,657 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,674 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,691 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,707 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,724 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,741 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,758 [ 1] INFO  Unity: 点我干嘛！我是Bron
+2021-09-05 17:09:30,759 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,775 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,792 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,809 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,826 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,843 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,859 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,876 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,892 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,909 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,926 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,943 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,960 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,977 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:30,994 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,010 [ 1] INFO  Unity: MoveForward
+2021-09-05 17:09:31,011 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3040,3614,795) Dir:(31,95,0) Speed:300
+2021-09-05 17:09:31,012 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,028 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,044 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,061 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,078 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,095 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,112 [ 1] INFO  Unity: 点我干嘛！我是Bron
+2021-09-05 17:09:31,113 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,129 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,146 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,163 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,179 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,180 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[4 : 布隆] Type : Functional Func : InvokeShop 
+2021-09-05 17:09:31,196 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,213 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,230 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,247 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,264 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,280 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,297 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,314 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,331 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,347 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,364 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,381 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,398 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,415 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,432 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,449 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,465 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,482 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,499 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,518 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,535 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,552 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,569 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,586 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,603 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,620 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,636 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,654 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,670 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,687 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,704 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,721 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:31,738 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:32,327 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2021-09-05 17:09:32,328 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3198,4009,795) Dir:(49,87,0) Speed:300
+2021-09-05 17:09:32,444 [ 1] INFO  Unity: SetDirection:(64, 77, 0)
+2021-09-05 17:09:32,445 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3212,4037,795) Dir:(64,77,0) Speed:300
+2021-09-05 17:09:32,546 [ 1] INFO  Unity: SetDirection:(77, 64, 0)
+2021-09-05 17:09:32,547 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3230,4061,795) Dir:(77,64,0) Speed:300
+2021-09-05 17:09:32,698 [ 1] INFO  Unity: SetDirection:(87, 49, 0)
+2021-09-05 17:09:32,699 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3266,4088,795) Dir:(87,49,0) Speed:300
+2021-09-05 17:09:33,388 [ 1] INFO  Unity: SetDirection:(77, 64, 0)
+2021-09-05 17:09:33,389 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3430,4170,795) Dir:(77,64,0) Speed:300
+2021-09-05 17:09:33,810 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:33,811 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,827 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,844 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,860 [ 1] INFO  Unity: SetDirection:(64, 76, 0)
+2021-09-05 17:09:33,861 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3546,4257,795) Dir:(64,76,0) Speed:300
+2021-09-05 17:09:33,861 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,877 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,894 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,911 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,928 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,944 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,961 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,978 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:33,995 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,012 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,029 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,046 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,063 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,080 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,097 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,113 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,130 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,147 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,164 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,181 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,198 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,215 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,231 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,248 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,264 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,281 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,298 [ 1] INFO  Unity: Stop
+2021-09-05 17:09:34,299 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3624,4361,795) Dir:(64,76,0) Speed:0
+2021-09-05 17:09:34,299 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,315 [ 1] INFO  Unity: 点我干嘛！我是Bron
+2021-09-05 17:09:34,316 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,334 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,351 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,368 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:34,371 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[4 : 布隆] Type : Functional Func : InvokeShop 
+2021-09-05 17:09:44,316 [ 1] INFO  Unity: SendBuyItem
+2021-09-05 17:09:47,086 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:47,087 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,103 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,119 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,136 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,153 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,170 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,187 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,204 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,221 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,238 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,255 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,272 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,289 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,305 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,322 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,341 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,357 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,374 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:47,391 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:53,148 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2021-09-05 17:09:53,149 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3624,4361,795) Dir:(49,87,0) Speed:0
+2021-09-05 17:09:53,300 [ 1] INFO  Unity: SetDirection:(33, 95, 0)
+2021-09-05 17:09:53,300 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3624,4361,795) Dir:(33,95,0) Speed:0
+2021-09-05 17:09:53,638 [ 1] INFO  Unity: MoveForward
+2021-09-05 17:09:53,639 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3624,4361,795) Dir:(33,95,0) Speed:300
+2021-09-05 17:09:53,925 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:53,926 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:53,942 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:53,959 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:53,975 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:53,992 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,009 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,026 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,043 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,060 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,077 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,094 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,110 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,127 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,127 [ 1] INFO  Unity: SetPosition:(3638, 4475, 794)
+2021-09-05 17:09:54,128 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3638,4475,794) Dir:(33,95,0) Speed:300
+2021-09-05 17:09:54,144 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,160 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,177 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,194 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,211 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,228 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,245 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,262 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,279 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,313 [ 1] INFO  Unity: SetPosition:(3638, 4480, 794)
+2021-09-05 17:09:54,313 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3638,4480,794) Dir:(33,95,0) Speed:300
+2021-09-05 17:09:54,497 [ 1] INFO  Unity: SetPosition:(3638, 4486, 794)
+2021-09-05 17:09:54,498 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3638,4486,794) Dir:(33,95,0) Speed:300
+2021-09-05 17:09:54,599 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:54,599 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,616 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,632 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,649 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,666 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,683 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,684 [ 1] INFO  Unity: SetPosition:(3638, 4492, 794)
+2021-09-05 17:09:54,685 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3638,4492,794) Dir:(33,95,0) Speed:300
+2021-09-05 17:09:54,700 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,717 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,734 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,751 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,768 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,785 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,801 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,818 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,835 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,852 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,868 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:54,869 [ 1] INFO  Unity: SetPosition:(3638, 4497, 794)
+2021-09-05 17:09:54,870 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3638,4497,794) Dir:(33,95,0) Speed:300
+2021-09-05 17:09:54,986 [ 1] INFO  Unity: SetDirection:(15, 99, 0)
+2021-09-05 17:09:54,987 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3652,4532,794) Dir:(15,99,0) Speed:300
+2021-09-05 17:09:55,846 [ 1] INFO  Unity: SetDirection:(32, 95, 0)
+2021-09-05 17:09:55,847 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3704,4792,794) Dir:(32,95,0) Speed:300
+2021-09-05 17:09:55,914 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:55,914 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:55,929 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:55,946 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:55,963 [ 1] INFO  Unity: SetDirection:(48, 88, 0)
+2021-09-05 17:09:55,964 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3718,4827,794) Dir:(48,88,0) Speed:300
+2021-09-05 17:09:55,964 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:55,980 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:55,997 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,014 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,031 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,318 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:56,325 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,338 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,355 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,371 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,388 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,405 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,422 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,439 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,455 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,472 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,489 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,506 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,523 [ 1] INFO  Unity: 点我干嘛！我是Bron
+2021-09-05 17:09:56,524 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,540 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,557 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,574 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,592 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,607 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,624 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,641 [ 1] INFO  Unity: Stop
+2021-09-05 17:09:56,642 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3800,4991,794) Dir:(48,88,0) Speed:0
+2021-09-05 17:09:56,642 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,658 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,675 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,692 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,709 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:09:56,743 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop：Npc:[4 : 布隆] Type : Functional Func : InvokeShop 
+2021-09-05 17:09:59,386 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-05 17:09:59,387 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-05 17:10:00,313 [ 1] INFO  Unity: LoadLevel: Start
+2021-09-05 17:10:00,314 [ 1] INFO  Unity: UserGameLeaveRequest
+2021-09-05 17:10:00,393 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-05 17:10:00,396 [ 1] INFO  Unity: OnMapCharacterLeave:CharID:1
+2021-09-05 17:10:00,398 [ 1] INFO  Unity: RemoveCharacter:1
+2021-09-05 17:10:00,400 [ 1] INFO  Unity: OnLeaveGame:Success [None]
+2021-09-05 17:10:00,401 [ 1] INFO  Unity: Character_1_哈哈 OnDestroy :ID:1 POS:(3800, 4991, 794) DIR:(48, 88, 0) SPD:0 
+2021-09-05 17:10:01,910 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
+2021-09-05 17:10:01,943 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
+2021-09-05 17:10:01,944 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
+2021-09-05 17:10:01,945 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
+2021-09-05 17:10:01,945 [ 1] INFO  Unity: ItemManager:Init,ItemId:3001, itemCount:1
+2021-09-05 17:10:01,946 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-09-05 17:10:01,947 [ 1] INFO  Unity: AddCharacter:1:哈哈 Map:1 Entity:(6:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-05 17:10:01,951 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-09-05 17:10:01,952 [ 1] INFO  Unity: AddCharacter:1:哈哈 Map:1 Entity:(6:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-05 17:10:02,317 [ 1] WARN  Unity: MainPlayerCamera  -47464 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:56:00,003 [ 1] WARN  Unity: GameObjectManager  -8496 Awake
+2021-09-05 17:10:02,318 [ 1] WARN  Unity: GameObjectManager  -43056 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:56:00,004 [ 1] WARN  Unity: UIWorldElementManager  23320 Awake
+2021-09-05 17:10:02,318 [ 1] WARN  Unity: UIWorldElementManager  58276 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:56:00,004 [ 1] WARN  Unity: UIMainCity  25074 Awake
+2021-09-05 17:10:02,319 [ 1] WARN  Unity: UIMainCity  60030 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-03 10:56:00,031 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-03 10:56:01,775 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2021-09-03 10:56:01,776 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2200,1900,800) Dir:(98,18,0) Speed:0
-2021-09-03 10:56:01,877 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
-2021-09-03 10:56:01,878 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2200,1900,800) Dir:(93,36,0) Speed:0
-2021-09-03 10:56:01,943 [ 1] INFO  Unity: MoveForward
-2021-09-03 10:56:01,944 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2200,1900,800) Dir:(93,36,0) Speed:300
-2021-09-03 10:56:01,977 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
-2021-09-03 10:56:01,978 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2210,1904,800) Dir:(84,55,0) Speed:300
-2021-09-03 10:56:02,079 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
-2021-09-03 10:56:02,080 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2234,1922,800) Dir:(71,71,0) Speed:300
-2021-09-03 10:56:02,180 [ 1] INFO  Unity: SetDirection:(55, 83, 0)
-2021-09-03 10:56:02,181 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2258,1946,800) Dir:(55,83,0) Speed:300
-2021-09-03 10:56:02,331 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
-2021-09-03 10:56:02,332 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2285,1982,800) Dir:(39,92,0) Speed:300
-2021-09-03 10:56:02,820 [ 1] INFO  Unity: SetDirection:(55, 83, 0)
-2021-09-03 10:56:02,821 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2345,2132,800) Dir:(55,83,0) Speed:300
-2021-09-03 10:56:03,309 [ 1] INFO  Unity: Stop
-2021-09-03 10:56:03,310 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
-UnityEngine.Animator:SetTrigger(String)
-EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
-PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
-PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
-
-2021-09-03 10:56:03,310 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 Pos:(2432,2248,800) Dir:(55,83,0) Speed:0
-2021-09-03 10:57:59,208 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-09-03 10:57:59,209 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-03 10:59:46,350 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-09-03 10:59:46,351 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-09-05 17:10:02,344 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-05 17:10:05,792 [ 1] INFO  Unity: SendEquipItem
+2021-09-05 17:10:09,075 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-09-05 17:10:09,076 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2021-09-03 10:59:46,352 [ 1] INFO  Unity: Character_2_拉克丝 OnDestroy :ID:2 POS:(2432, 2248, 800) DIR:(55, 83, 0) SPD:0 
+2021-09-05 17:10:09,077 [ 1] INFO  Unity: Character_1_哈哈 OnDestroy :ID:6 POS:(2200, 1900, 800) DIR:(100, 0, 0) SPD:0 
