@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\FriendManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MinimapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NpcManager.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\Scripts\Monster\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Services\FriendService.cs" />
     <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
@@ -102,6 +104,9 @@
     <Compile Include="Assets\Scripts\Services\UserServices.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UICharEquip.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UIEquipItem.cs" />
+    <Compile Include="Assets\Scripts\UI\Friend\UIFriendItem.cs" />
+    <Compile Include="Assets\Scripts\UI\Friend\UIFriends.cs" />
+    <Compile Include="Assets\Scripts\UI\InputBox.cs" />
     <Compile Include="Assets\Scripts\UI\Knapsack\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\Knapsack\UIIconItem.cs" />
     <Compile Include="Assets\Scripts\UI\ListView\ListView.cs" />
@@ -123,6 +128,7 @@
     <Compile Include="Assets\Scripts\UI\Start\Start_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
+    <Compile Include="Assets\Scripts\UI\UIInputBox.cs" />
     <Compile Include="Assets\Scripts\UI\UIMainCity.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UITest.cs" />

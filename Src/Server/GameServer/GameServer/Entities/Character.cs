@@ -20,7 +20,7 @@ namespace GameServer.Entities
 
         public StatusManager StatusManager;
 
-        //public FriendManager FriendManager;
+        public FriendManager FriendManager;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -49,6 +49,8 @@ namespace GameServer.Entities
             this.QuestManager = new QuestManager(this); //任务管理器初始化
             this.QuestManager.GetQuestInfos(this.Info.Quests); //从数据库中获取到当前玩家的任务信息
             this.StatusManager = new StatusManager(this);
+            this.FriendManager = new FriendManager(this);
+            this.FriendManager.GetFriendInfos(this.Info.Friends);
         }
 
         public long Gold
@@ -63,6 +65,20 @@ namespace GameServer.Entities
                 this.StatusManager.AddGoldChange((int)(value - this.Data.Gold));
                 this.Data.Gold = value;
             }
+        }
+
+        public void PostProcess(NetMessageResponse message)
+        {
+            this.FriendManager.PostProcess(message);
+            if (this.StatusManager.HasStatus)
+            {
+                this.StatusManager.PostProcess(message);
+            }
+        }
+
+        public void Clear()
+        {
+            this.FriendManager.UpdateFriendInfo(this.Info, 0);
         }
     }
 }

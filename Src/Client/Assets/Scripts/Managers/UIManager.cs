@@ -23,6 +23,7 @@ public class UIManager : Singleton<UIManager>
         this.UIResources.Add(typeof(UICharEquip), new UIElement() { Resources = "PreFabs/UI/Equip/UI_ChatEquip", Cache = false });
         this.UIResources.Add(typeof(UIQuestSystem), new UIElement() { Resources = "PreFabs/UI/Quest/UI_QuestSystem", Cache = false });
         this.UIResources.Add(typeof(UIQuestDialog), new UIElement() { Resources = "PreFabs/UI/Quest/UIQuestDialog", Cache = false });
+        this.UIResources.Add(typeof(UIFriends), new UIElement() { Resources = "PreFabs/UI/Friend/UI_Friends", Cache = false });
     }
 
     ~UIManager()

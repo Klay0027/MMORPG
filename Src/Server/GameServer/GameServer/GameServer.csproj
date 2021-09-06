@@ -119,6 +119,7 @@
     <Compile Include="Managers\MapManager.cs" />
     <Compile Include="Managers\MonsterManager.cs" />
     <Compile Include="Managers\QuestManager.cs" />
+    <Compile Include="Managers\SessionManager.cs" />
     <Compile Include="Managers\ShopManager.cs" />
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\SpawnManager.cs" />
@@ -140,6 +141,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services\FriendService.cs" />
     <Compile Include="Services\BagService.cs" />
     <Compile Include="Services\DBService.cs" />
     <Compile Include="Services\ItemService.cs" />
