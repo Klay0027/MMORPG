@@ -185,7 +185,7 @@ namespace GameServer.Services
             Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
 
             Character character = CharacterManager.Instance.AddCharacter(dbchar);
-            
+            SessionManager.Instance.AddSession(character.Id, sender);
             sender.Session.Response.gameEnter = new UserGameEnterResponse();
             sender.Session.Response.gameEnter.Result = Result.Success;
             sender.Session.Response.gameEnter.Errormsg = "Login Success!";
@@ -194,7 +194,7 @@ namespace GameServer.Services
 
             sender.SendResponse();
             sender.Session.Character = character;
-
+            //sender.Session.PostResponser = character;
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
 
@@ -208,8 +208,8 @@ namespace GameServer.Services
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
+            SessionManager.Instance.RemoveSession(character.Id);
             CharacterLeave(character);
-
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
             sender.Session.Response.gameLeave.Result = Result.Success;
             sender.Session.Response.gameLeave.Errormsg = "None";
@@ -224,6 +224,7 @@ namespace GameServer.Services
 
             //根据角色信息在地图管理器中从当前地图字典中移除
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+            character.Clear();
         }
     }
 }
