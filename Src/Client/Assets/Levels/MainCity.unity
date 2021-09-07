@@ -30689,6 +30689,7 @@ GameObject:
   - component: {fileID: 935887188}
   - component: {fileID: 935887190}
   - component: {fileID: 935887189}
+  - component: {fileID: 935887191}
   m_Layer: 5
   m_Name: UITeamSystem
   m_TagString: Untagged
@@ -30754,6 +30755,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935887187}
   m_CullTransparentMesh: 0
+--- !u!114 &935887191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935887187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a68187f06232b4499da357c0e436fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamTitle: {fileID: 871884464}
+  Members:
+  - {fileID: 442305820}
+  - {fileID: 1803261219}
+  - {fileID: 434351816}
+  - {fileID: 408127418}
+  - {fileID: 236528296}
+  list: {fileID: 942191464}
+  leave_Btn: {fileID: 2126059507}
 --- !u!1 &936346619
 GameObject:
   m_ObjectHideFlags: 0
@@ -45113,6 +45135,7 @@ MonoBehaviour:
   charEquip_Btn: {fileID: 1551786051}
   quest_Btn: {fileID: 147551305}
   friends_Btn: {fileID: 1421862559}
+  Teamwindow: {fileID: 0}
 --- !u!114 &1415483397
 MonoBehaviour:
   m_ObjectHideFlags: 0

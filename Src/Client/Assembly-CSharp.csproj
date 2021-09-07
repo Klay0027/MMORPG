@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
+    <Compile Include="Assets\Scripts\Services\TeamService.cs" />
     <Compile Include="Assets\Scripts\Services\UserServices.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UICharEquip.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UIEquipItem.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
     <Compile Include="Assets\Scripts\UI\Team\Team.cs" />
+    <Compile Include="Assets\Scripts\UI\Team\UITeam.cs" />
     <Compile Include="Assets\Scripts\UI\Team\UITeamItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIInputBox.cs" />
     <Compile Include="Assets\Scripts\UI\UIMainCity.cs" />

@@ -23,6 +23,7 @@ public class UIFriends : UIWindow
         addFriend_Btn.onClick.AddListener(OnClickFriendAdd);
         delFriend_Btn.onClick.AddListener(OnClickFriendRemove);
         close_Btn.onClick.AddListener(OnCloseClick);
+        invite_Btn.onClick.AddListener(OnClickFriendTeamInvite);
     }
 
     public void OnFriendSelected(ListView.ListViewItem item)
@@ -57,6 +58,23 @@ public class UIFriends : UIWindow
     public void OnClickFriendChat()
     { 
     
+    }
+
+    public void OnClickFriendTeamInvite()
+    {
+        if (selectedItem == null)
+        {
+            MessageBox.Show("请选择要邀请的好友！");
+            return;
+        }
+        if (selectedItem.info.Status == 0)
+        {
+            MessageBox.Show("请选择在线的好友！");
+            return;
+        }
+        MessageBox.Show(string.Format("确定要邀请好友【{0}】吗？", selectedItem.info.friendInfo.Name), "邀请好友组队", MessageBoxType.Confirm, "删除", "取消").OnYes = () => {
+            TeamService.Instance.SendTeamInviteRequest(this.selectedItem.info.Id, this.selectedItem.info.friendInfo.Name);
+        };
     }
 
     public void OnClickFriendRemove()

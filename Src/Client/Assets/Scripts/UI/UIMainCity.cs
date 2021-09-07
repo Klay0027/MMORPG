@@ -11,6 +11,7 @@ public class UIMainCity : MonoSingleton<UIMainCity>
     public Text avatarName;
     public Text avatarLevel;
     public Button back_Btn, test_Btn, bag_Btn, charEquip_Btn, quest_Btn, friends_Btn;
+    public GameObject Teamwindow;
 
     protected override void OnStart()
     {
@@ -65,5 +66,11 @@ public class UIMainCity : MonoSingleton<UIMainCity>
     private void OnClickFriend()
     {
         UIManager.Instance.Show<UIFriends>();
+    }
+
+    public void ShowTeamUI(bool show)
+    {
+
+
     }
 }
