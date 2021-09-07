@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Managers\NpcManager.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\TeamManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestSystem.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
+    <Compile Include="Assets\Scripts\UI\SpriteManager.cs" />
     <Compile Include="Assets\Scripts\UI\Start\CharacterInfo.cs" />
     <Compile Include="Assets\Scripts\UI\Start\CharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\Start\Loading_Handler.cs" />
@@ -128,6 +130,8 @@
     <Compile Include="Assets\Scripts\UI\Start\Start_Handler.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
+    <Compile Include="Assets\Scripts\UI\Team\Team.cs" />
+    <Compile Include="Assets\Scripts\UI\Team\UITeamItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIInputBox.cs" />
     <Compile Include="Assets\Scripts\UI\UIMainCity.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />

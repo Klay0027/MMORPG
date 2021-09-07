@@ -45,6 +45,7 @@ public class Loading_Handler : MonoBehaviour
         ShopManager.Instance.Init();
         StatusService.Instance.Init();
         TestManager.Instance.Init();
+        FriendService.Instance.Init();
     }
 
     private void Update()

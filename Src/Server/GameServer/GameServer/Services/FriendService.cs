@@ -71,7 +71,7 @@ namespace GameServer.Services
         private void OnFriendAddResponse(NetConnection<NetSession> sender, FriendAddResponse response)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("");
+            Log.InfoFormat("OnFriendAddResponse");
             sender.Session.Response.friendAddRes = response;
             if (response.Result == Result.Success)
             {
@@ -98,7 +98,7 @@ namespace GameServer.Services
         private void OnFriendRemove(NetConnection<NetSession> sender, FriendRemoveRequest request)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("");
+            Log.InfoFormat("OnFriendRemove");
             sender.Session.Response.friendRemove = new FriendRemoveResponse();
             sender.Session.Response.friendRemove.Id = request.Id;
 

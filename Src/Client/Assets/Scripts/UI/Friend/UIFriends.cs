@@ -13,7 +13,7 @@ public class UIFriends : UIWindow
     public ListView list;
     public Transform itemRoot;
     public UIFriendItem selectedItem;
-    public Button addFriend_Btn, delFriend_Btn, invite_Btn, chat_Btn;
+    public Button addFriend_Btn, delFriend_Btn, invite_Btn, chat_Btn, close_Btn;
 
     private void Start()
     {
@@ -22,6 +22,7 @@ public class UIFriends : UIWindow
         RefreshUI();
         addFriend_Btn.onClick.AddListener(OnClickFriendAdd);
         delFriend_Btn.onClick.AddListener(OnClickFriendRemove);
+        close_Btn.onClick.AddListener(OnCloseClick);
     }
 
     public void OnFriendSelected(ListView.ListViewItem item)

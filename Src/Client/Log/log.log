@@ -1,269 +1,1739 @@
-2021-09-06 17:15:04,494 [ 1] INFO  Unity: LoadingManager start
-2021-09-06 17:15:04,502 [ 1] INFO  Unity: DataManager > DataManager()
-2021-09-06 17:15:16,187 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-09-06 17:15:16,188 [ 1] INFO  Unity: ConnectToServer Start
-2021-09-06 17:15:16,189 [ 1] INFO  Unity: DoConnect
-2021-09-06 17:15:16,191 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-06 17:15:16,193 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-09-07 13:15:16,832 [ 1] INFO  Unity: LoadingManager start
+2021-09-07 13:15:16,840 [ 1] INFO  Unity: DataManager > DataManager()
+2021-09-07 13:16:10,632 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-09-07 13:16:10,633 [ 1] INFO  Unity: ConnectToServer Start
+2021-09-07 13:16:10,635 [ 1] INFO  Unity: DoConnect
+2021-09-07 13:16:10,636 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-09-07 13:16:10,638 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-09-06 17:15:16,195 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-09-06 17:15:16,352 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-09-06 17:15:17,306 [ 1] INFO  Unity: LoadLevel: Start
-2021-09-06 17:15:17,415 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-06 17:15:18,997 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
-2021-09-06 17:15:19,039 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-09-06 17:15:19,041 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
-2021-09-06 17:15:19,042 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-09-06 17:15:19,043 [ 1] INFO  Unity: ItemManager:Init,ItemId:3001, itemCount:1
-2021-09-06 17:15:19,052 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2021-09-06 17:15:19,053 [ 1] INFO  Unity: AddCharacter:1:哈哈 Map:1 Entity:(7:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-09-06 17:15:19,057 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-09-06 17:15:19,058 [ 1] INFO  Unity: AddCharacter:1:哈哈 Map:1 Entity:(7:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-09-06 17:15:19,422 [ 1] WARN  Unity: MainPlayerCamera  -65548 Awake
+2021-09-07 13:16:10,641 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-09-07 13:16:12,842 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-09-07 13:16:13,812 [ 1] INFO  Unity: LoadLevel: Start
+2021-09-07 13:16:13,905 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-07 13:16:16,819 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :1
+2021-09-07 13:16:16,980 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
+2021-09-07 13:16:16,982 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
+2021-09-07 13:16:16,983 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
+2021-09-07 13:16:16,990 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-09-07 13:16:16,992 [ 1] INFO  Unity: AddCharacter:1003:龙王 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-07 13:16:16,995 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-09-07 13:16:16,997 [ 1] INFO  Unity: AddCharacter:1003:龙王 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-07 13:16:17,373 [ 1] WARN  Unity: MainPlayerCamera  -105882 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-06 17:15:19,422 [ 1] WARN  Unity: GameObjectManager  -61140 Awake
+2021-09-07 13:16:17,374 [ 1] WARN  Unity: GameObjectManager  -101474 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-06 17:15:19,432 [ 1] WARN  Unity: UIWorldElementManager  53760 Awake
+2021-09-07 13:16:17,381 [ 1] WARN  Unity: UIWorldElementManager  119090 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-06 17:15:19,433 [ 1] WARN  Unity: UIMainCity  55514 Awake
+2021-09-07 13:16:17,382 [ 1] WARN  Unity: UIMainCity  120844 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-06 17:15:19,468 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-06 17:15:20,513 [ 1] INFO  Unity: MoveForward
-2021-09-06 17:15:20,514 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
-2021-09-06 17:15:20,648 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2021-09-06 17:15:20,648 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2240,1900,800) Dir:(98,18,0) Speed:300
-2021-09-06 17:15:20,749 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
-2021-09-06 17:15:20,750 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2270,1906,800) Dir:(93,36,0) Speed:300
-2021-09-06 17:15:20,850 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
-2021-09-06 17:15:20,850 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2300,1918,800) Dir:(84,55,0) Speed:300
-2021-09-06 17:15:20,934 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
-2021-09-06 17:15:20,935 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2324,1936,800) Dir:(71,71,0) Speed:300
-2021-09-06 17:15:21,036 [ 1] INFO  Unity: SetDirection:(55, 83, 0)
-2021-09-06 17:15:21,037 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2348,1960,800) Dir:(55,83,0) Speed:300
-2021-09-06 17:15:22,065 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-09-06 17:15:22,066 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,081 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,098 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,115 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,132 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,148 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,165 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,181 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,198 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,215 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,232 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,249 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,267 [ 1] INFO  Unity: 点我干嘛！我是Kinks
-2021-09-06 17:15:22,267 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,283 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,300 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,317 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,334 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,351 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,367 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,384 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,401 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,417 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:22,485 [ 1] INFO  Unity: Stop
-2021-09-06 17:15:22,486 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2606,2304,800) Dir:(55,83,0) Speed:0
-2021-09-06 17:15:23,979 [ 1] INFO  Unity: SetDirection:(69, 72, 0)
-2021-09-06 17:15:23,980 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2606,2304,800) Dir:(69,72,0) Speed:0
-2021-09-06 17:15:24,014 [ 1] INFO  Unity: MoveForward
-2021-09-06 17:15:24,014 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2606,2304,800) Dir:(69,72,0) Speed:300
-2021-09-06 17:15:24,131 [ 1] INFO  Unity: SetDirection:(81, 58, 0)
-2021-09-06 17:15:24,132 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2627,2332,800) Dir:(81,58,0) Speed:300
-2021-09-06 17:15:25,008 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-09-06 17:15:25,009 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,025 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,042 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,059 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,075 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,092 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,109 [ 1] INFO  Unity: 点我干嘛！我是Elise
-2021-09-06 17:15:25,110 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,125 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,142 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,159 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,176 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,192 [ 1] INFO  Unity: Stop
-2021-09-06 17:15:25,193 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(81,58,0) Speed:0
-2021-09-06 17:15:25,194 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,211 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,227 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,243 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,260 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,277 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,294 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:25,903 [ 1] INFO  Unity: TestManager.OnNpcInvokeInsrance：Npc:[3 : 伊莉丝] Type : Functional Func : InvokeInsrance 
-2021-09-06 17:15:26,288 [ 1] INFO  Unity: SetDirection:(68, 73, 0)
-2021-09-06 17:15:26,289 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(68,73,0) Speed:0
-2021-09-06 17:15:26,372 [ 1] INFO  Unity: SetDirection:(54, 84, 0)
-2021-09-06 17:15:26,372 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(54,84,0) Speed:0
-2021-09-06 17:15:26,473 [ 1] INFO  Unity: SetDirection:(36, 93, 0)
-2021-09-06 17:15:26,474 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(36,93,0) Speed:0
-2021-09-06 17:15:26,557 [ 1] INFO  Unity: SetDirection:(19, 98, 0)
-2021-09-06 17:15:26,557 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(19,98,0) Speed:0
-2021-09-06 17:15:26,641 [ 1] INFO  Unity: SetDirection:(1, 100, 0)
-2021-09-06 17:15:26,642 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(1,100,0) Speed:0
-2021-09-06 17:15:26,742 [ 1] INFO  Unity: SetDirection:(-19, 98, 0)
-2021-09-06 17:15:26,742 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-19,98,0) Speed:0
-2021-09-06 17:15:26,826 [ 1] INFO  Unity: SetDirection:(-36, 93, 0)
-2021-09-06 17:15:26,827 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-36,93,0) Speed:0
-2021-09-06 17:15:26,910 [ 1] INFO  Unity: SetDirection:(-52, 86, 0)
-2021-09-06 17:15:26,911 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-52,86,0) Speed:0
-2021-09-06 17:15:26,995 [ 1] INFO  Unity: SetDirection:(-66, 75, 0)
-2021-09-06 17:15:26,996 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-66,75,0) Speed:0
-2021-09-06 17:15:27,080 [ 1] INFO  Unity: SetDirection:(-80, 60, 0)
-2021-09-06 17:15:27,081 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-80,60,0) Speed:0
-2021-09-06 17:15:27,163 [ 1] INFO  Unity: SetDirection:(-89, 45, 0)
-2021-09-06 17:15:27,164 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-89,45,0) Speed:0
-2021-09-06 17:15:27,264 [ 1] INFO  Unity: SetDirection:(-97, 26, 0)
-2021-09-06 17:15:27,265 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-97,26,0) Speed:0
-2021-09-06 17:15:27,298 [ 1] INFO  Unity: MoveForward
-2021-09-06 17:15:27,299 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2883,2524,800) Dir:(-97,26,0) Speed:300
-2021-09-06 17:15:27,349 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
-2021-09-06 17:15:27,350 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2868,2527,800) Dir:(-100,8,0) Speed:300
-2021-09-06 17:15:27,451 [ 1] INFO  Unity: SetDirection:(-99, -12, 0)
-2021-09-06 17:15:27,452 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2838,2527,800) Dir:(-99,-12,0) Speed:300
-2021-09-06 17:15:27,535 [ 1] INFO  Unity: SetDirection:(-96, -30, 0)
-2021-09-06 17:15:27,536 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2813,2522,800) Dir:(-96,-30,0) Speed:300
-2021-09-06 17:15:27,957 [ 1] INFO  Unity: SetDirection:(-99, -11, 0)
-2021-09-06 17:15:27,958 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2688,2472,800) Dir:(-99,-11,0) Speed:300
-2021-09-06 17:15:28,057 [ 1] INFO  Unity: SetDirection:(-100, 10, 0)
-2021-09-06 17:15:28,058 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2658,2466,800) Dir:(-100,10,0) Speed:300
-2021-09-06 17:15:28,158 [ 1] INFO  Unity: SetDirection:(-95, 30, 0)
-2021-09-06 17:15:28,159 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2628,2472,800) Dir:(-95,30,0) Speed:300
-2021-09-06 17:15:28,226 [ 1] INFO  Unity: Stop
-2021-09-06 17:15:28,227 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2608,2480,800) Dir:(-95,30,0) Speed:0
-2021-09-06 17:15:28,260 [ 1] INFO  Unity: SetDirection:(-87, 49, 0)
-2021-09-06 17:15:28,261 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2608,2480,800) Dir:(-87,49,0) Speed:0
-2021-09-06 17:15:28,344 [ 1] INFO  Unity: SetDirection:(-77, 64, 0)
-2021-09-06 17:15:28,345 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2608,2480,800) Dir:(-77,64,0) Speed:0
-2021-09-06 17:15:28,445 [ 1] INFO  Unity: SetDirection:(-62, 78, 0)
-2021-09-06 17:15:28,445 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2608,2480,800) Dir:(-62,78,0) Speed:0
-2021-09-06 17:15:28,546 [ 1] INFO  Unity: SetDirection:(-45, 89, 0)
-2021-09-06 17:15:28,547 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2608,2480,800) Dir:(-45,89,0) Speed:0
-2021-09-06 17:15:28,597 [ 1] INFO  Unity: MoveForward
-2021-09-06 17:15:28,597 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2608,2480,800) Dir:(-45,89,0) Speed:300
-2021-09-06 17:15:28,631 [ 1] INFO  Unity: SetDirection:(-28, 96, 0)
-2021-09-06 17:15:28,632 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2604,2488,800) Dir:(-28,96,0) Speed:300
-2021-09-06 17:15:28,731 [ 1] INFO  Unity: SetDirection:(-8, 100, 0)
-2021-09-06 17:15:28,732 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2598,2518,800) Dir:(-8,100,0) Speed:300
-2021-09-06 17:15:28,816 [ 1] INFO  Unity: SetDirection:(10, 100, 0)
-2021-09-06 17:15:28,816 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2598,2543,800) Dir:(10,100,0) Speed:300
-2021-09-06 17:15:28,900 [ 1] INFO  Unity: SetDirection:(30, 96, 0)
-2021-09-06 17:15:28,901 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2604,2573,800) Dir:(30,96,0) Speed:300
-2021-09-06 17:15:29,035 [ 1] INFO  Unity: SetDirection:(47, 88, 0)
-2021-09-06 17:15:29,036 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2620,2613,800) Dir:(47,88,0) Speed:300
-2021-09-06 17:15:29,677 [ 1] INFO  Unity: SetDirection:(62, 78, 0)
-2021-09-06 17:15:29,678 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2696,2765,800) Dir:(62,78,0) Speed:300
-2021-09-06 17:15:29,829 [ 1] INFO  Unity: SetDirection:(75, 66, 0)
-2021-09-06 17:15:29,830 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2723,2801,800) Dir:(75,66,0) Speed:300
-2021-09-06 17:15:30,083 [ 1] INFO  Unity: SetPosition:(2779, 2896, 795)
-2021-09-06 17:15:30,083 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2779,2896,795) Dir:(75,66,0) Speed:300
-2021-09-06 17:15:30,251 [ 1] INFO  Unity: SetDirection:(62, 79, 0)
-2021-09-06 17:15:30,252 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2819,2926,795) Dir:(62,79,0) Speed:300
-2021-09-06 17:15:30,284 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-09-06 17:15:30,285 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:30,301 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:30,352 [ 1] INFO  Unity: SetDirection:(45, 89, 0)
-2021-09-06 17:15:30,353 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2837,2950,795) Dir:(45,89,0) Speed:300
-2021-09-06 17:15:30,469 [ 1] INFO  Unity: SetDirection:(28, 96, 0)
-2021-09-06 17:15:30,470 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2851,2978,795) Dir:(28,96,0) Speed:300
-2021-09-06 17:15:30,890 [ 1] INFO  Unity: Stop
-2021-09-06 17:15:30,891 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2877,3108,795) Dir:(28,96,0) Speed:0
-2021-09-06 17:15:31,414 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIFriends.InitFriendItems () (at Assets/Scripts/UI/Friend/UIFriends.cs:84)
-UIFriends.RefreshUI () (at Assets/Scripts/UI/Friend/UIFriends.cs:76)
-UIFriends.Start () (at Assets/Scripts/UI/Friend/UIFriends.cs:22)
-}</args></log4net.Error>
-2021-09-06 17:15:33,135 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-09-06 17:15:33,136 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,152 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,169 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,185 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,202 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,219 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,236 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,253 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,270 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,287 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,303 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,320 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,337 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,354 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,377 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,389 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,406 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,423 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,440 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,457 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,474 [ 1] INFO  Unity: 点我干嘛！我是Kinks
-2021-09-06 17:15:33,474 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,490 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,508 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:33,525 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:34,941 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
-2021-09-06 17:15:34,942 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:34,957 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:34,974 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:34,991 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,008 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,025 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,042 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,059 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,076 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,092 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,109 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,126 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,143 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,160 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,177 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,194 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,211 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,228 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,243 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,261 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,278 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,295 [ 1] INFO  Unity: 点我干嘛！我是Bron
-2021-09-06 17:15:35,296 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,312 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,329 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,346 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,363 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,380 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,397 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,414 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,430 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:35,787 [ 1] INFO  Unity: SetDirection:(11, 99, 0)
-2021-09-06 17:15:35,788 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2877,3108,795) Dir:(11,99,0) Speed:0
-2021-09-06 17:15:35,854 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-09-06 17:15:35,855 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,457 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
-2021-09-06 17:15:37,457 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,474 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,489 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,507 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,523 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,540 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
-2021-09-06 17:15:37,641 [ 1] INFO  Unity: SetDirection:(-8, 100, 0)
-2021-09-06 17:15:37,642 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2877,3108,795) Dir:(-8,100,0) Speed:0
-2021-09-06 17:15:37,776 [ 1] INFO  Unity: SetDirection:(-28, 96, 0)
-2021-09-06 17:15:37,777 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2877,3108,795) Dir:(-28,96,0) Speed:0
-2021-09-06 17:15:37,945 [ 1] INFO  Unity: SetDirection:(-45, 89, 0)
-2021-09-06 17:15:37,946 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 Pos:(2877,3108,795) Dir:(-45,89,0) Speed:0
-2021-09-06 17:15:54,318 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-09-06 17:15:54,318 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-09-07 13:16:17,414 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-07 13:16:18,733 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:16:18,734 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
+2021-09-07 13:16:18,834 [ 1] INFO  Unity: SetDirection:(98, 19, 0)
+2021-09-07 13:16:18,834 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2230,1900,800) Dir:(98,19,0) Speed:300
+2021-09-07 13:16:18,951 [ 1] INFO  Unity: SetDirection:(92, 38, 0)
+2021-09-07 13:16:18,952 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2265,1907,800) Dir:(92,38,0) Speed:300
+2021-09-07 13:16:19,154 [ 1] INFO  Unity: SetDirection:(84, 54, 0)
+2021-09-07 13:16:19,155 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2325,1931,800) Dir:(84,54,0) Speed:300
+2021-09-07 13:16:19,744 [ 1] INFO  Unity: SetDirection:(73, 68, 0)
+2021-09-07 13:16:19,745 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2465,2036,800) Dir:(73,68,0) Speed:300
+2021-09-07 13:16:19,895 [ 1] INFO  Unity: SetDirection:(60, 80, 0)
+2021-09-07 13:16:19,896 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2501,2063,800) Dir:(60,80,0) Speed:300
+2021-09-07 13:16:19,997 [ 1] INFO  Unity: SetDirection:(45, 89, 0)
+2021-09-07 13:16:19,998 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2519,2087,800) Dir:(45,89,0) Speed:300
+2021-09-07 13:16:20,081 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
+2021-09-07 13:16:20,082 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2529,2107,800) Dir:(29,96,0) Speed:300
+2021-09-07 13:16:20,957 [ 1] INFO  Unity: SetDirection:(47, 88, 0)
+2021-09-07 13:16:20,958 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2582,2372,800) Dir:(47,88,0) Speed:300
+2021-09-07 13:16:21,142 [ 1] INFO  Unity: SetDirection:(62, 79, 0)
+2021-09-07 13:16:21,143 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2604,2416,800) Dir:(62,79,0) Speed:300
+2021-09-07 13:16:22,073 [ 1] INFO  Unity: SetPosition:(2822, 2639, 800)
+2021-09-07 13:16:22,073 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2822,2639,800) Dir:(62,79,0) Speed:300
+2021-09-07 13:16:23,151 [ 1] INFO  Unity: SetDirection:(76, 66, 0)
+2021-09-07 13:16:23,152 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3014,2895,800) Dir:(76,66,0) Speed:300
+2021-09-07 13:16:23,253 [ 1] INFO  Unity: SetDirection:(86, 50, 0)
+2021-09-07 13:16:23,254 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3038,2913,800) Dir:(86,50,0) Speed:300
+2021-09-07 13:16:23,353 [ 1] INFO  Unity: SetDirection:(95, 31, 0)
+2021-09-07 13:16:23,354 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3062,2931,800) Dir:(95,31,0) Speed:300
+2021-09-07 13:16:23,454 [ 1] INFO  Unity: SetDirection:(99, 13, 0)
+2021-09-07 13:16:23,455 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3092,2943,800) Dir:(99,13,0) Speed:300
+2021-09-07 13:16:23,622 [ 1] INFO  Unity: SetDirection:(100, -5, 0)
+2021-09-07 13:16:23,623 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3142,2953,800) Dir:(100,-5,0) Speed:300
+2021-09-07 13:16:25,681 [ 1] INFO  Unity: SetDirection:(99, 15, 0)
+2021-09-07 13:16:25,682 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3762,2953,800) Dir:(99,15,0) Speed:300
+2021-09-07 13:16:25,782 [ 1] INFO  Unity: SetDirection:(94, 33, 0)
+2021-09-07 13:16:25,783 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3792,2959,800) Dir:(94,33,0) Speed:300
+2021-09-07 13:16:25,866 [ 1] INFO  Unity: SetDirection:(87, 49, 0)
+2021-09-07 13:16:25,867 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3817,2969,800) Dir:(87,49,0) Speed:300
+2021-09-07 13:16:25,951 [ 1] INFO  Unity: SetDirection:(77, 64, 0)
+2021-09-07 13:16:25,952 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3837,2979,800) Dir:(77,64,0) Speed:300
+2021-09-07 13:16:26,051 [ 1] INFO  Unity: SetDirection:(62, 78, 0)
+2021-09-07 13:16:26,052 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3861,2997,800) Dir:(62,78,0) Speed:300
+2021-09-07 13:16:26,152 [ 1] INFO  Unity: SetDirection:(45, 89, 0)
+2021-09-07 13:16:26,153 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3879,3021,800) Dir:(45,89,0) Speed:300
+2021-09-07 13:16:26,169 [ 1] INFO  Unity: Stop
+2021-09-07 13:16:26,170 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:16:26,170 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(45,89,0) Speed:0
+2021-09-07 13:16:26,237 [ 1] INFO  Unity: SetDirection:(28, 96, 0)
+2021-09-07 13:16:26,238 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(28,96,0) Speed:0
+2021-09-07 13:16:26,338 [ 1] INFO  Unity: SetDirection:(8, 100, 0)
+2021-09-07 13:16:26,339 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(8,100,0) Speed:0
+2021-09-07 13:16:26,422 [ 1] INFO  Unity: SetDirection:(-10, 100, 0)
+2021-09-07 13:16:26,422 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(-10,100,0) Speed:0
+2021-09-07 13:16:26,523 [ 1] INFO  Unity: SetDirection:(-30, 95, 0)
+2021-09-07 13:16:26,524 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(-30,95,0) Speed:0
+2021-09-07 13:16:26,624 [ 1] INFO  Unity: SetDirection:(-49, 87, 0)
+2021-09-07 13:16:26,625 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(-49,87,0) Speed:0
+2021-09-07 13:16:26,658 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:16:26,659 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3881,3025,800) Dir:(-49,87,0) Speed:300
+2021-09-07 13:16:26,708 [ 1] INFO  Unity: SetDirection:(-64, 77, 0)
+2021-09-07 13:16:26,709 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3875,3037,800) Dir:(-64,77,0) Speed:300
+2021-09-07 13:16:26,810 [ 1] INFO  Unity: SetDirection:(-77, 64, 0)
+2021-09-07 13:16:26,811 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3857,3061,800) Dir:(-77,64,0) Speed:300
+2021-09-07 13:16:26,962 [ 1] INFO  Unity: SetDirection:(-87, 50, 0)
+2021-09-07 13:16:26,962 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3821,3088,800) Dir:(-87,50,0) Speed:300
+2021-09-07 13:16:27,602 [ 1] INFO  Unity: SetPosition:(3666, 3155, 800)
+2021-09-07 13:16:27,602 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3666,3155,800) Dir:(-87,50,0) Speed:300
+2021-09-07 13:16:28,697 [ 1] INFO  Unity: SetDirection:(-75, 66, 0)
+2021-09-07 13:16:28,698 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3406,3350,800) Dir:(-75,66,0) Speed:300
+2021-09-07 13:16:28,798 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2021-09-07 13:16:28,799 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3382,3368,800) Dir:(-60,80,0) Speed:300
+2021-09-07 13:16:28,915 [ 1] INFO  Unity: SetDirection:(-44, 90, 0)
+2021-09-07 13:16:28,916 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3361,3396,800) Dir:(-44,90,0) Speed:300
+2021-09-07 13:16:29,322 [ 1] INFO  Unity: SetPosition:(3277, 3484, 800)
+2021-09-07 13:16:29,322 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3277,3484,800) Dir:(-44,90,0) Speed:300
+2021-09-07 13:16:30,803 [ 1] INFO  Unity: SetDirection:(-27, 96, 0)
+2021-09-07 13:16:30,804 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3101,3924,800) Dir:(-27,96,0) Speed:300
+2021-09-07 13:16:30,955 [ 1] INFO  Unity: SetDirection:(-9, 100, 0)
+2021-09-07 13:16:30,956 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3092,3969,800) Dir:(-9,100,0) Speed:300
+2021-09-07 13:16:31,056 [ 1] INFO  Unity: SetDirection:(11, 99, 0)
+2021-09-07 13:16:31,057 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3092,3999,800) Dir:(11,99,0) Speed:300
+2021-09-07 13:16:31,140 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
+2021-09-07 13:16:31,141 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3097,4024,800) Dir:(29,96,0) Speed:300
+2021-09-07 13:16:31,224 [ 1] INFO  Unity: Stop
+2021-09-07 13:16:31,225 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:16:31,225 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3103,4054,800) Dir:(29,96,0) Speed:0
+2021-09-07 13:16:31,225 [ 1] INFO  Unity: SetDirection:(48, 88, 0)
+2021-09-07 13:16:31,226 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3103,4054,800) Dir:(48,88,0) Speed:0
+2021-09-07 13:16:31,227 [ 1] INFO  Unity: SetPosition:(3075, 4012, 800)
+2021-09-07 13:16:31,227 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(48,88,0) Speed:0
+2021-09-07 13:16:31,342 [ 1] INFO  Unity: SetDirection:(64, 77, 0)
+2021-09-07 13:16:31,343 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(64,77,0) Speed:0
+2021-09-07 13:16:31,411 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:16:31,412 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,426 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,443 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,460 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,477 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,494 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,511 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,528 [ 1] INFO  Unity: SetDirection:(77, 64, 0)
+2021-09-07 13:16:31,528 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(77,64,0) Speed:0
+2021-09-07 13:16:31,529 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,545 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,562 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,579 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,595 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,612 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,629 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:31,646 [ 1] INFO  Unity: SetDirection:(88, 48, 0)
+2021-09-07 13:16:31,646 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(88,48,0) Speed:0
+2021-09-07 13:16:31,747 [ 1] INFO  Unity: SetDirection:(96, 29, 0)
+2021-09-07 13:16:31,747 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(96,29,0) Speed:0
+2021-09-07 13:16:31,898 [ 1] INFO  Unity: SetDirection:(99, 11, 0)
+2021-09-07 13:16:31,899 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(99,11,0) Speed:0
+2021-09-07 13:16:32,404 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:16:32,405 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,421 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,438 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,455 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,472 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,489 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,505 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,521 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,538 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,555 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,572 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,589 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,606 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,622 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,639 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,656 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,673 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,691 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,708 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,724 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,741 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,765 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,777 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-07 13:16:32,778 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,794 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,810 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,827 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,843 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,887 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,903 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,920 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,937 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,954 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,971 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:32,988 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,005 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,022 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,038 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,055 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,072 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,089 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,106 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,123 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,140 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,157 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,173 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,190 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,207 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,224 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,241 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,258 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,275 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,291 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,308 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,325 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,342 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,359 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,376 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,392 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,409 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,426 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,443 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,460 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,477 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,628 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:16:33,629 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,645 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,662 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,679 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:33,696 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:41,036 [ 1] INFO  Unity: SetDirection:(100, -7, 0)
+2021-09-07 13:16:41,037 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(100,-7,0) Speed:0
+2021-09-07 13:16:41,102 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:16:41,103 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3075,4012,800) Dir:(100,-7,0) Speed:300
+2021-09-07 13:16:41,154 [ 1] INFO  Unity: SetDirection:(97, -26, 0)
+2021-09-07 13:16:41,154 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3090,4012,800) Dir:(97,-26,0) Speed:300
+2021-09-07 13:16:41,237 [ 1] INFO  Unity: SetDirection:(91, -43, 0)
+2021-09-07 13:16:41,238 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3115,4007,800) Dir:(91,-43,0) Speed:300
+2021-09-07 13:16:41,338 [ 1] INFO  Unity: SetDirection:(80, -60, 0)
+2021-09-07 13:16:41,339 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3145,3995,800) Dir:(80,-60,0) Speed:300
+2021-09-07 13:16:41,439 [ 1] INFO  Unity: SetDirection:(67, -74, 0)
+2021-09-07 13:16:41,440 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3169,3977,800) Dir:(67,-74,0) Speed:300
+2021-09-07 13:16:42,400 [ 1] INFO  Unity: SetDirection:(53, -85, 0)
+2021-09-07 13:16:42,400 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3343,3745,800) Dir:(53,-85,0) Speed:300
+2021-09-07 13:16:42,603 [ 1] INFO  Unity: SetDirection:(37, -93, 0)
+2021-09-07 13:16:42,603 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3379,3697,800) Dir:(37,-93,0) Speed:300
+2021-09-07 13:16:42,703 [ 1] INFO  Unity: SetDirection:(19, -98, 0)
+2021-09-07 13:16:42,704 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3391,3667,800) Dir:(19,-98,0) Speed:300
+2021-09-07 13:16:42,804 [ 1] INFO  Unity: SetDirection:(-1, -100, 0)
+2021-09-07 13:16:42,805 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3397,3637,800) Dir:(-1,-100,0) Speed:300
+2021-09-07 13:16:42,923 [ 1] INFO  Unity: SetDirection:(-19, -98, 0)
+2021-09-07 13:16:42,924 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3397,3602,800) Dir:(-19,-98,0) Speed:300
+2021-09-07 13:16:43,445 [ 1] INFO  Unity: SetDirection:(-37, -93, 0)
+2021-09-07 13:16:43,446 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3366,3447,800) Dir:(-37,-93,0) Speed:300
+2021-09-07 13:16:43,580 [ 1] INFO  Unity: SetDirection:(-54, -84, 0)
+2021-09-07 13:16:43,580 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3350,3407,800) Dir:(-54,-84,0) Speed:300
+2021-09-07 13:16:43,681 [ 1] INFO  Unity: SetDirection:(-70, -71, 0)
+2021-09-07 13:16:43,681 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3332,3383,800) Dir:(-70,-71,0) Speed:300
+2021-09-07 13:16:43,781 [ 1] INFO  Unity: SetDirection:(-83, -55, 0)
+2021-09-07 13:16:43,782 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3308,3359,800) Dir:(-83,-55,0) Speed:300
+2021-09-07 13:16:43,883 [ 1] INFO  Unity: SetDirection:(-93, -37, 0)
+2021-09-07 13:16:43,884 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3284,3341,800) Dir:(-93,-37,0) Speed:300
+2021-09-07 13:16:43,967 [ 1] INFO  Unity: SetDirection:(-98, -18, 0)
+2021-09-07 13:16:43,968 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3254,3329,800) Dir:(-98,-18,0) Speed:300
+2021-09-07 13:16:44,102 [ 1] INFO  Unity: SetDirection:(-100, 0, 0)
+2021-09-07 13:16:44,103 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3214,3321,800) Dir:(-100,0,0) Speed:300
+2021-09-07 13:16:44,388 [ 1] INFO  Unity: SetDirection:(-98, -20, 0)
+2021-09-07 13:16:44,388 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3129,3321,800) Dir:(-98,-20,0) Speed:300
+2021-09-07 13:16:44,496 [ 1] INFO  Unity: SetDirection:(-92, -38, 0)
+2021-09-07 13:16:44,497 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3099,3315,800) Dir:(-92,-38,0) Speed:300
+2021-09-07 13:16:44,575 [ 1] INFO  Unity: SetDirection:(-84, -54, 0)
+2021-09-07 13:16:44,575 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3074,3305,800) Dir:(-84,-54,0) Speed:300
+2021-09-07 13:16:44,676 [ 1] INFO  Unity: SetDirection:(-71, -70, 0)
+2021-09-07 13:16:44,677 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3050,3287,800) Dir:(-71,-70,0) Speed:300
+2021-09-07 13:16:44,778 [ 1] INFO  Unity: SetDirection:(-55, -83, 0)
+2021-09-07 13:16:44,779 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3026,3263,800) Dir:(-55,-83,0) Speed:300
+2021-09-07 13:16:44,862 [ 1] INFO  Unity: SetDirection:(-40, -92, 0)
+2021-09-07 13:16:44,863 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3011,3243,800) Dir:(-40,-92,0) Speed:300
+2021-09-07 13:16:44,945 [ 1] INFO  Unity: SetDirection:(-23, -97, 0)
+2021-09-07 13:16:44,946 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3001,3218,800) Dir:(-23,-97,0) Speed:300
+2021-09-07 13:16:45,046 [ 1] INFO  Unity: SetDirection:(-3, -100, 0)
+2021-09-07 13:16:45,047 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2995,3188,800) Dir:(-3,-100,0) Speed:300
+2021-09-07 13:16:45,131 [ 1] INFO  Unity: SetDirection:(15, -99, 0)
+2021-09-07 13:16:45,132 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2995,3163,800) Dir:(15,-99,0) Speed:300
+2021-09-07 13:16:45,232 [ 1] INFO  Unity: SetDirection:(35, -94, 0)
+2021-09-07 13:16:45,233 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3001,3133,800) Dir:(35,-94,0) Speed:300
+2021-09-07 13:16:45,317 [ 1] INFO  Unity: SetDirection:(51, -86, 0)
+2021-09-07 13:16:45,318 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3011,3108,800) Dir:(51,-86,0) Speed:300
+2021-09-07 13:16:45,417 [ 1] INFO  Unity: SetDirection:(68, -74, 0)
+2021-09-07 13:16:45,418 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3029,3084,800) Dir:(68,-74,0) Speed:300
+2021-09-07 13:16:45,518 [ 1] INFO  Unity: SetDirection:(81, -58, 0)
+2021-09-07 13:16:45,519 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3047,3060,800) Dir:(81,-58,0) Speed:300
+2021-09-07 13:16:45,603 [ 1] INFO  Unity: SetDirection:(90, -43, 0)
+2021-09-07 13:16:45,603 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3067,3045,800) Dir:(90,-43,0) Speed:300
+2021-09-07 13:16:45,670 [ 1] INFO  Unity: SetDirection:(96, -27, 0)
+2021-09-07 13:16:45,671 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3092,3035,800) Dir:(96,-27,0) Speed:300
+2021-09-07 13:16:45,755 [ 1] INFO  Unity: SetDirection:(100, -10, 0)
+2021-09-07 13:16:45,756 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3117,3030,800) Dir:(100,-10,0) Speed:300
+2021-09-07 13:16:45,839 [ 1] INFO  Unity: SetDirection:(100, 8, 0)
+2021-09-07 13:16:45,840 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3142,3025,800) Dir:(100,8,0) Speed:300
+2021-09-07 13:16:45,906 [ 1] INFO  Unity: Stop
+2021-09-07 13:16:45,906 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:16:45,907 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(100,8,0) Speed:0
+2021-09-07 13:16:45,940 [ 1] INFO  Unity: SetDirection:(96, 28, 0)
+2021-09-07 13:16:45,941 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(96,28,0) Speed:0
+2021-09-07 13:16:46,024 [ 1] INFO  Unity: SetDirection:(89, 45, 0)
+2021-09-07 13:16:46,025 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(89,45,0) Speed:0
+2021-09-07 13:16:46,125 [ 1] INFO  Unity: SetDirection:(78, 62, 0)
+2021-09-07 13:16:46,126 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(78,62,0) Speed:0
+2021-09-07 13:16:46,209 [ 1] INFO  Unity: SetDirection:(66, 75, 0)
+2021-09-07 13:16:46,209 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(66,75,0) Speed:0
+2021-09-07 13:16:46,311 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2021-09-07 13:16:46,312 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(49,87,0) Speed:0
+2021-09-07 13:16:46,411 [ 1] INFO  Unity: SetDirection:(30, 95, 0)
+2021-09-07 13:16:46,412 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(30,95,0) Speed:0
+2021-09-07 13:16:46,495 [ 1] INFO  Unity: SetDirection:(13, 99, 0)
+2021-09-07 13:16:46,496 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(13,99,0) Speed:0
+2021-09-07 13:16:46,598 [ 1] INFO  Unity: SetDirection:(-7, 100, 0)
+2021-09-07 13:16:46,598 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(-7,100,0) Speed:0
+2021-09-07 13:16:46,749 [ 1] INFO  Unity: SetDirection:(-25, 97, 0)
+2021-09-07 13:16:46,750 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(-25,97,0) Speed:0
+2021-09-07 13:16:50,231 [ 1] INFO  Unity: SendFriendRemoveRequesty
+2021-09-07 13:16:50,485 [ 1] INFO  Unity: OnFriendList
+2021-09-07 13:16:54,252 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:16:54,253 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:55,398 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:16:55,399 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:16:58,308 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:16:58,308 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3162,3025,800) Dir:(-25,97,0) Speed:300
+2021-09-07 13:17:00,179 [ 1] INFO  Unity: SetDirection:(-7, 100, 0)
+2021-09-07 13:17:00,180 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3050,3585,800) Dir:(-7,100,0) Speed:300
+2021-09-07 13:17:00,803 [ 1] INFO  Unity: SetDirection:(13, 99, 0)
+2021-09-07 13:17:00,804 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3050,3775,800) Dir:(13,99,0) Speed:300
+2021-09-07 13:17:00,938 [ 1] INFO  Unity: SetDirection:(31, 95, 0)
+2021-09-07 13:17:00,939 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3058,3815,800) Dir:(31,95,0) Speed:300
+2021-09-07 13:17:01,746 [ 1] INFO  Unity: SetDirection:(48, 88, 0)
+2021-09-07 13:17:01,747 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3154,4055,800) Dir:(48,88,0) Speed:300
+2021-09-07 13:17:01,864 [ 1] INFO  Unity: SetDirection:(63, 77, 0)
+2021-09-07 13:17:01,865 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3168,4083,800) Dir:(63,77,0) Speed:300
+2021-09-07 13:17:01,966 [ 1] INFO  Unity: SetDirection:(78, 63, 0)
+2021-09-07 13:17:01,966 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3186,4107,800) Dir:(78,63,0) Speed:300
+2021-09-07 13:17:02,100 [ 1] INFO  Unity: SetDirection:(88, 47, 0)
+2021-09-07 13:17:02,101 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3218,4131,800) Dir:(88,47,0) Speed:300
+2021-09-07 13:17:02,892 [ 1] INFO  Unity: SetDirection:(77, 64, 0)
+2021-09-07 13:17:02,893 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3410,4227,800) Dir:(77,64,0) Speed:300
+2021-09-07 13:17:03,027 [ 1] INFO  Unity: SetDirection:(65, 76, 0)
+2021-09-07 13:17:03,028 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3442,4251,800) Dir:(65,76,0) Speed:300
+2021-09-07 13:17:05,133 [ 1] INFO  Unity: SetDirection:(77, 64, 0)
+2021-09-07 13:17:05,134 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3820,4755,800) Dir:(77,64,0) Speed:300
+2021-09-07 13:17:05,235 [ 1] INFO  Unity: SetDirection:(88, 47, 0)
+2021-09-07 13:17:05,236 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3844,4773,800) Dir:(88,47,0) Speed:300
+2021-09-07 13:17:05,336 [ 1] INFO  Unity: SetDirection:(95, 30, 0)
+2021-09-07 13:17:05,337 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3868,4785,800) Dir:(95,30,0) Speed:300
+2021-09-07 13:17:05,538 [ 1] INFO  Unity: SetDirection:(99, 13, 0)
+2021-09-07 13:17:05,539 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3928,4809,800) Dir:(99,13,0) Speed:300
+2021-09-07 13:17:05,824 [ 1] INFO  Unity: SetDirection:(100, -5, 0)
+2021-09-07 13:17:05,825 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4013,4826,800) Dir:(100,-5,0) Speed:300
+2021-09-07 13:17:06,919 [ 1] INFO  Unity: SetDirection:(97, -22, 0)
+2021-09-07 13:17:06,920 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4343,4826,800) Dir:(97,-22,0) Speed:300
+2021-09-07 13:17:07,020 [ 1] INFO  Unity: SetDirection:(92, -39, 0)
+2021-09-07 13:17:07,021 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4373,4820,800) Dir:(92,-39,0) Speed:300
+2021-09-07 13:17:07,121 [ 1] INFO  Unity: SetDirection:(82, -57, 0)
+2021-09-07 13:17:07,122 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4403,4808,800) Dir:(82,-57,0) Speed:300
+2021-09-07 13:17:07,239 [ 1] INFO  Unity: SetDirection:(70, -71, 0)
+2021-09-07 13:17:07,240 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4431,4787,800) Dir:(70,-71,0) Speed:300
+2021-09-07 13:17:09,077 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:09,078 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,094 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,111 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,128 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,145 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,162 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,178 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,195 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,212 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,229 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,230 [ 1] INFO  Unity: SetPosition:(4880, 4354, 800)
+2021-09-07 13:17:09,230 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4880,4354,800) Dir:(70,-71,0) Speed:300
+2021-09-07 13:17:09,246 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,263 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,279 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,296 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,314 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,331 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,347 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,363 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,380 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,397 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,414 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,431 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,448 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,465 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,482 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,498 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,515 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,532 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,549 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,566 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,583 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,599 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,616 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,633 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,650 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:09,667 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:10,037 [ 1] INFO  Unity: SetDirection:(83, -56, 0)
+2021-09-07 13:17:10,038 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5076,4158,800) Dir:(83,-56,0) Speed:300
+2021-09-07 13:17:10,139 [ 1] INFO  Unity: SetDirection:(93, -38, 0)
+2021-09-07 13:17:10,139 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5100,4140,800) Dir:(93,-38,0) Speed:300
+2021-09-07 13:17:10,239 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2021-09-07 13:17:10,240 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5130,4128,800) Dir:(98,-18,0) Speed:300
+2021-09-07 13:17:10,324 [ 1] INFO  Unity: SetDirection:(100, -1, 0)
+2021-09-07 13:17:10,325 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5155,4123,800) Dir:(100,-1,0) Speed:300
+2021-09-07 13:17:10,442 [ 1] INFO  Unity: SetDirection:(98, 17, 0)
+2021-09-07 13:17:10,443 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5190,4123,800) Dir:(98,17,0) Speed:300
+2021-09-07 13:17:10,695 [ 1] INFO  Unity: SetDirection:(100, -1, 0)
+2021-09-07 13:17:10,695 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5265,4138,800) Dir:(100,-1,0) Speed:300
+2021-09-07 13:17:10,796 [ 1] INFO  Unity: SetDirection:(98, -19, 0)
+2021-09-07 13:17:10,797 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5295,4138,800) Dir:(98,-19,0) Speed:300
+2021-09-07 13:17:10,880 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2021-09-07 13:17:10,880 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5320,4133,800) Dir:(93,-36,0) Speed:300
+2021-09-07 13:17:10,981 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2021-09-07 13:17:10,982 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5350,4121,800) Dir:(84,-55,0) Speed:300
+2021-09-07 13:17:11,082 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2021-09-07 13:17:11,083 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5374,4103,800) Dir:(71,-71,0) Speed:300
+2021-09-07 13:17:11,166 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2021-09-07 13:17:11,167 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5394,4083,800) Dir:(57,-82,0) Speed:300
+2021-09-07 13:17:11,268 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2021-09-07 13:17:11,268 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5412,4059,800) Dir:(39,-92,0) Speed:300
+2021-09-07 13:17:11,351 [ 1] INFO  Unity: SetDirection:(22, -97, 0)
+2021-09-07 13:17:11,352 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5422,4034,800) Dir:(22,-97,0) Speed:300
+2021-09-07 13:17:11,453 [ 1] INFO  Unity: SetDirection:(2, -100, 0)
+2021-09-07 13:17:11,454 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5428,4004,800) Dir:(2,-100,0) Speed:300
+2021-09-07 13:17:11,537 [ 1] INFO  Unity: SetDirection:(-16, -99, 0)
+2021-09-07 13:17:11,538 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5428,3979,800) Dir:(-16,-99,0) Speed:300
+2021-09-07 13:17:11,622 [ 1] INFO  Unity: SetDirection:(-36, -93, 0)
+2021-09-07 13:17:11,623 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5422,3949,800) Dir:(-36,-93,0) Speed:300
+2021-09-07 13:17:11,723 [ 1] INFO  Unity: SetDirection:(-55, -84, 0)
+2021-09-07 13:17:11,724 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5410,3919,800) Dir:(-55,-84,0) Speed:300
+2021-09-07 13:17:11,823 [ 1] INFO  Unity: SetDirection:(-71, -71, 0)
+2021-09-07 13:17:11,824 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5392,3895,800) Dir:(-71,-71,0) Speed:300
+2021-09-07 13:17:11,857 [ 1] INFO  Unity: Stop
+2021-09-07 13:17:11,857 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:17:11,858 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5384,3887,800) Dir:(-71,-71,0) Speed:0
+2021-09-07 13:17:11,908 [ 1] INFO  Unity: SetDirection:(-82, -57, 0)
+2021-09-07 13:17:11,908 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5384,3887,800) Dir:(-82,-57,0) Speed:0
+2021-09-07 13:17:12,009 [ 1] INFO  Unity: SetDirection:(-92, -39, 0)
+2021-09-07 13:17:12,010 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5384,3887,800) Dir:(-92,-39,0) Speed:0
+2021-09-07 13:17:12,060 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:17:12,061 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5384,3887,800) Dir:(-92,-39,0) Speed:300
+2021-09-07 13:17:12,110 [ 1] INFO  Unity: SetDirection:(-98, -20, 0)
+2021-09-07 13:17:12,111 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5369,3881,800) Dir:(-98,-20,0) Speed:300
+2021-09-07 13:17:12,228 [ 1] INFO  Unity: SetDirection:(-100, -3, 0)
+2021-09-07 13:17:12,228 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5334,3874,800) Dir:(-100,-3,0) Speed:300
+2021-09-07 13:17:12,516 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:12,517 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,533 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,549 [ 1] INFO  Unity: Stop
+2021-09-07 13:17:12,550 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:17:12,550 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5239,3874,800) Dir:(-100,-3,0) Speed:0
+2021-09-07 13:17:12,551 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,566 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,583 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,600 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,617 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,634 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,651 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,668 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,685 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,701 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,718 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,735 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,752 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,769 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,786 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,803 [ 1] INFO  Unity: 点我干嘛！我是Elise
+2021-09-07 13:17:12,803 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,819 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,837 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,853 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,870 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,886 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,903 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,920 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,938 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,954 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,970 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:12,987 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,004 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,033 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,049 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,066 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,083 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,100 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,117 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,134 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,150 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,167 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,184 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,201 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,218 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,235 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,252 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,268 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,285 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,302 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,319 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,336 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,353 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,369 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,387 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,403 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,420 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,437 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,454 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,471 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,488 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,505 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,521 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,538 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:13,555 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,212 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:14,212 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,229 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,246 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,263 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,280 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,297 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,314 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,330 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,347 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,364 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,381 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,397 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,414 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,431 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,448 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,464 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,616 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:14,617 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,634 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,651 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:14,667 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,527 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:15,528 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,544 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,560 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,576 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,593 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,617 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,627 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,644 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,661 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,678 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,695 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,712 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,729 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,746 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,763 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,779 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,796 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,813 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,830 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,847 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,864 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,881 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,898 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,915 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,932 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,948 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,964 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,981 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:15,998 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,015 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,032 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,049 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,066 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,082 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,099 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,116 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,133 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,150 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,167 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,184 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,201 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,218 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,234 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,251 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,268 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,285 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,302 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,319 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,336 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,352 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,369 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,385 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,403 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,419 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,437 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,454 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,471 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,487 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,504 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,521 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,538 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,555 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,571 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,588 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,605 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,621 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,638 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,655 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,672 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,689 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,706 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,723 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,740 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,756 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,773 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,790 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,807 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,824 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,841 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,858 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,874 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,891 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,908 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,925 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,942 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,959 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,976 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:16,993 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,010 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,027 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,044 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,060 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,076 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,093 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,110 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,127 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,144 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,161 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,178 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,195 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,212 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,229 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,245 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,262 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,279 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:17,296 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,458 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:18,459 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,475 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,492 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,610 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:18,611 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,627 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,644 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,661 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,678 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,695 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,711 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,728 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,745 [ 1] INFO  Unity: 点我干嘛！我是Elise
+2021-09-07 13:17:18,746 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,762 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,786 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,798 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,815 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,832 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,849 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,866 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,883 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,898 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,915 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,932 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,949 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,966 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:18,983 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,000 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,017 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,034 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,051 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,067 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,084 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,102 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,118 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:19,675 [ 1] INFO  Unity: SendQuestSubmit
+2021-09-07 13:17:19,762 [ 1] INFO  Unity: 
+2021-09-07 13:17:19,764 [ 1] INFO  Unity: OnQuestSubmit:Success, ERR:
+2021-09-07 13:17:22,674 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:22,675 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,690 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,708 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,724 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,748 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,760 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,777 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,794 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,811 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,828 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,845 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,862 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,878 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,895 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,912 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,929 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,946 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,963 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,980 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:22,997 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,014 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,030 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,046 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,063 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,080 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,097 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,114 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,131 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,148 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,165 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,182 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,198 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,216 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,232 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,249 [ 1] INFO  Unity: 点我干嘛！我是Elise
+2021-09-07 13:17:23,250 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,266 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,283 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,300 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,317 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,334 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,350 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,368 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,384 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,401 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,805 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:23,805 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:23,822 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:25,136 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:25,137 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:25,153 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:25,170 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:25,187 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:25,204 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,181 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:26,182 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,198 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,215 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,232 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,249 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,266 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,282 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,299 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,316 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,339 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,349 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,366 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,383 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,400 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,417 [ 1] INFO  Unity: 点我干嘛！我是Elise
+2021-09-07 13:17:26,417 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,434 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,451 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,468 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,484 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,501 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,518 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,535 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,552 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,569 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,586 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,603 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,620 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,636 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,653 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:26,670 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:28,204 [ 1] INFO  Unity: SendQuestAccept
+2021-09-07 13:17:28,306 [ 1] INFO  Unity: OnQuestAccept:Success, ERR:
+2021-09-07 13:17:29,905 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:17:29,906 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5239,3874,800) Dir:(-100,-3,0) Speed:300
+2021-09-07 13:17:29,938 [ 1] INFO  Unity: SetDirection:(-99, 16, 0)
+2021-09-07 13:17:29,939 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5229,3874,800) Dir:(-99,16,0) Speed:300
+2021-09-07 13:17:30,073 [ 1] INFO  Unity: SetDirection:(-94, 35, 0)
+2021-09-07 13:17:30,074 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5189,3882,800) Dir:(-94,35,0) Speed:300
+2021-09-07 13:17:30,157 [ 1] INFO  Unity: SetDirection:(-86, 51, 0)
+2021-09-07 13:17:30,158 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5164,3892,800) Dir:(-86,51,0) Speed:300
+2021-09-07 13:17:30,242 [ 1] INFO  Unity: SetDirection:(-74, 68, 0)
+2021-09-07 13:17:30,242 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5140,3910,800) Dir:(-74,68,0) Speed:300
+2021-09-07 13:17:30,326 [ 1] INFO  Unity: SetDirection:(-61, 79, 0)
+2021-09-07 13:17:30,327 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5120,3925,800) Dir:(-61,79,0) Speed:300
+2021-09-07 13:17:30,410 [ 1] INFO  Unity: SetDirection:(-46, 89, 0)
+2021-09-07 13:17:30,411 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5105,3945,800) Dir:(-46,89,0) Speed:300
+2021-09-07 13:17:30,511 [ 1] INFO  Unity: SetDirection:(-27, 96, 0)
+2021-09-07 13:17:30,512 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5093,3969,800) Dir:(-27,96,0) Speed:300
+2021-09-07 13:17:30,630 [ 1] INFO  Unity: SetDirection:(-9, 100, 0)
+2021-09-07 13:17:30,631 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5086,4004,800) Dir:(-9,100,0) Speed:300
+2021-09-07 13:17:31,320 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:31,321 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,322 [ 1] INFO  Unity: SetPosition:(5042, 4234, 800)
+2021-09-07 13:17:31,322 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5042,4234,800) Dir:(-9,100,0) Speed:300
+2021-09-07 13:17:31,337 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,354 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,371 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,388 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,405 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,422 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,439 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,456 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,472 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,489 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,505 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,522 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,539 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,556 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,573 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,590 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,607 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,624 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,640 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:31,860 [ 1] INFO  Unity: SetDirection:(-27, 96, 0)
+2021-09-07 13:17:31,861 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5042,4394,800) Dir:(-27,96,0) Speed:300
+2021-09-07 13:17:32,298 [ 1] INFO  Unity: SetDirection:(-8, 100, 0)
+2021-09-07 13:17:32,298 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5015,4529,800) Dir:(-8,100,0) Speed:300
+2021-09-07 13:17:32,332 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:32,333 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,348 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,366 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,382 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,399 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,416 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,433 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,450 [ 1] INFO  Unity: SetDirection:(9, 100, 0)
+2021-09-07 13:17:32,451 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5015,4574,800) Dir:(9,100,0) Speed:300
+2021-09-07 13:17:32,451 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,466 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:32,483 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,291 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:33,292 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,308 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,325 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,342 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,359 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,376 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,393 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,410 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,427 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,444 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,460 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,477 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,494 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,510 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,527 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,544 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,561 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,578 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,595 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,612 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,629 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,646 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,663 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,680 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,697 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,713 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,730 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,753 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,763 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,780 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,797 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,814 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,831 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,848 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,865 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,882 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,898 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,915 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,932 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,949 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,966 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:33,984 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,000 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,017 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,033 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,050 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,067 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,084 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,101 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,118 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,135 [ 1] INFO  Unity: 点我干嘛！我是Bron
+2021-09-07 13:17:34,135 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,151 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,168 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,184 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,201 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,218 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,235 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,265 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,281 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,298 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,315 [ 1] INFO  Unity: Stop
+2021-09-07 13:17:34,315 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:17:34,316 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5015,5129,800) Dir:(9,100,0) Speed:0
+2021-09-07 13:17:34,317 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,332 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,349 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,366 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,383 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,399 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,416 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,433 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,450 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,467 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,484 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,501 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,517 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,534 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,551 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,568 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,585 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,602 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,619 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,636 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,653 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,670 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,686 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:34,703 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:35,394 [ 1] INFO  Unity: SendQuestSubmit
+2021-09-07 13:17:35,428 [ 1] INFO  Unity: 
+2021-09-07 13:17:35,428 [ 1] INFO  Unity: OnQuestSubmit:Success, ERR:
+2021-09-07 13:17:36,455 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:36,456 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,472 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,489 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,505 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,523 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,539 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,556 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,573 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,590 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,607 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,623 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,640 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,657 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,674 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,691 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,708 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,725 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:36,742 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:45,621 [ 1] INFO  Unity: SetDirection:(-9, 100, 0)
+2021-09-07 13:17:45,622 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5015,5129,800) Dir:(-9,100,0) Speed:0
+2021-09-07 13:17:45,789 [ 1] INFO  Unity: SetDirection:(-27, 96, 0)
+2021-09-07 13:17:45,790 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5015,5129,800) Dir:(-27,96,0) Speed:0
+2021-09-07 13:17:45,857 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:17:45,858 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5015,5129,800) Dir:(-27,96,0) Speed:300
+2021-09-07 13:17:45,893 [ 1] INFO  Unity: SetDirection:(-44, 90, 0)
+2021-09-07 13:17:45,894 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5013,5139,800) Dir:(-44,90,0) Speed:300
+2021-09-07 13:17:45,977 [ 1] INFO  Unity: SetDirection:(-59, 80, 0)
+2021-09-07 13:17:45,978 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(5003,5164,800) Dir:(-59,80,0) Speed:300
+2021-09-07 13:17:46,060 [ 1] INFO  Unity: SetDirection:(-72, 69, 0)
+2021-09-07 13:17:46,061 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4988,5184,800) Dir:(-72,69,0) Speed:300
+2021-09-07 13:17:46,145 [ 1] INFO  Unity: SetDirection:(-83, 55, 0)
+2021-09-07 13:17:46,146 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4968,5199,800) Dir:(-83,55,0) Speed:300
+2021-09-07 13:17:46,247 [ 1] INFO  Unity: SetDirection:(-92, 38, 0)
+2021-09-07 13:17:46,248 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4944,5217,800) Dir:(-92,38,0) Speed:300
+2021-09-07 13:17:46,415 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:46,416 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,432 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,718 [ 1] INFO  Unity: Stop
+2021-09-07 13:17:46,719 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:17:46,719 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-92,38,0) Speed:0
+2021-09-07 13:17:46,752 [ 1] INFO  Unity: SetDirection:(-83, 56, 0)
+2021-09-07 13:17:46,753 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-83,56,0) Speed:0
+2021-09-07 13:17:46,803 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:46,803 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,820 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,836 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,853 [ 1] INFO  Unity: SetDirection:(-70, 72, 0)
+2021-09-07 13:17:46,854 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-70,72,0) Speed:0
+2021-09-07 13:17:46,854 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,870 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,887 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,904 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,921 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,938 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,953 [ 1] INFO  Unity: SetDirection:(-54, 84, 0)
+2021-09-07 13:17:46,954 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-54,84,0) Speed:0
+2021-09-07 13:17:46,955 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,971 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:46,988 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,004 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,021 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,038 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,055 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,072 [ 1] INFO  Unity: SetDirection:(-38, 92, 0)
+2021-09-07 13:17:47,073 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-38,92,0) Speed:0
+2021-09-07 13:17:47,073 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,089 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,106 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,123 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,140 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,156 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,173 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,190 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,207 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,224 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,241 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,258 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,275 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,291 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,308 [ 1] INFO  Unity: 点我干嘛！我是Bron
+2021-09-07 13:17:47,309 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,325 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,342 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,359 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,376 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,393 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,409 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,426 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,443 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,460 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,477 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,493 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,510 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,527 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,544 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,561 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,578 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,595 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,612 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,629 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,644 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,661 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,678 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,695 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,712 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,729 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,747 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,763 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,780 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,797 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,814 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:47,830 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:49,516 [ 1] INFO  Unity: SendQuestAccept
+2021-09-07 13:17:49,550 [ 1] INFO  Unity: OnQuestAccept:Success, ERR:
+2021-09-07 13:17:50,593 [ 1] INFO  Unity: SetDirection:(-54, 84, 0)
+2021-09-07 13:17:50,594 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-54,84,0) Speed:0
+2021-09-07 13:17:50,728 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:17:50,729 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-54,84,0) Speed:300
+2021-09-07 13:17:50,729 [ 1] INFO  Unity: SetDirection:(-68, 73, 0)
+2021-09-07 13:17:50,730 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4804,5273,800) Dir:(-68,73,0) Speed:300
+2021-09-07 13:17:50,829 [ 1] INFO  Unity: SetDirection:(-81, 58, 0)
+2021-09-07 13:17:50,830 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4786,5297,800) Dir:(-81,58,0) Speed:300
+2021-09-07 13:17:50,913 [ 1] INFO  Unity: SetDirection:(-90, 43, 0)
+2021-09-07 13:17:50,914 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4766,5312,800) Dir:(-90,43,0) Speed:300
+2021-09-07 13:17:51,015 [ 1] INFO  Unity: SetDirection:(-97, 25, 0)
+2021-09-07 13:17:51,015 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4736,5324,800) Dir:(-97,25,0) Speed:300
+2021-09-07 13:17:51,183 [ 1] INFO  Unity: SetDirection:(-100, 7, 0)
+2021-09-07 13:17:51,183 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4686,5334,800) Dir:(-100,7,0) Speed:300
+2021-09-07 13:17:52,700 [ 1] INFO  Unity: SetPosition:(4251, 5380, 800)
+2021-09-07 13:17:52,700 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(4251,5380,800) Dir:(-100,7,0) Speed:300
+2021-09-07 13:17:53,712 [ 1] INFO  Unity: SetDirection:(-99, -11, 0)
+2021-09-07 13:17:53,713 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3946,5380,800) Dir:(-99,-11,0) Speed:300
+2021-09-07 13:17:54,505 [ 1] INFO  Unity: SetDirection:(-100, 9, 0)
+2021-09-07 13:17:54,506 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3711,5333,800) Dir:(-100,9,0) Speed:300
+2021-09-07 13:17:54,623 [ 1] INFO  Unity: SetDirection:(-96, 28, 0)
+2021-09-07 13:17:54,624 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3676,5333,800) Dir:(-96,28,0) Speed:300
+2021-09-07 13:17:54,775 [ 1] INFO  Unity: SetPosition:(3619, 5393, 800)
+2021-09-07 13:17:54,776 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3619,5393,800) Dir:(-96,28,0) Speed:300
+2021-09-07 13:17:55,246 [ 1] INFO  Unity: SetDirection:(-89, 45, 0)
+2021-09-07 13:17:55,246 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3479,5421,800) Dir:(-89,45,0) Speed:300
+2021-09-07 13:17:55,431 [ 1] INFO  Unity: SetDirection:(-79, 61, 0)
+2021-09-07 13:17:55,432 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3435,5443,800) Dir:(-79,61,0) Speed:300
+2021-09-07 13:17:55,532 [ 1] INFO  Unity: SetDirection:(-66, 75, 0)
+2021-09-07 13:17:55,533 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3411,5461,800) Dir:(-66,75,0) Speed:300
+2021-09-07 13:17:55,583 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:55,583 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,600 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,616 [ 1] INFO  Unity: SetDirection:(-52, 85, 0)
+2021-09-07 13:17:55,617 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3396,5481,800) Dir:(-52,85,0) Speed:300
+2021-09-07 13:17:55,618 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,634 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,651 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,667 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,684 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,701 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,718 [ 1] INFO  Unity: SetDirection:(-35, 94, 0)
+2021-09-07 13:17:55,718 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3378,5505,800) Dir:(-35,94,0) Speed:300
+2021-09-07 13:17:55,719 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,735 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,752 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,769 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,786 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,802 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,819 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,836 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:55,870 [ 1] INFO  Unity: SetDirection:(-18, 98, 0)
+2021-09-07 13:17:55,871 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3360,5550,800) Dir:(-18,98,0) Speed:300
+2021-09-07 13:17:55,971 [ 1] INFO  Unity: Stop
+2021-09-07 13:17:55,971 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:17:55,971 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3354,5580,800) Dir:(-18,98,0) Speed:0
+2021-09-07 13:17:56,678 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:56,679 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,695 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,712 [ 1] INFO  Unity: SetDirection:(-35, 94, 0)
+2021-09-07 13:17:56,712 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3354,5580,800) Dir:(-35,94,0) Speed:0
+2021-09-07 13:17:56,713 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,729 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,746 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,763 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,779 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:56,897 [ 1] INFO  Unity: MoveBack
+2021-09-07 13:17:56,898 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3354,5580,800) Dir:(-35,94,0) Speed:-300
+2021-09-07 13:17:57,571 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:17:57,572 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,588 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,605 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,622 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,639 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,656 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,673 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,690 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,707 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,723 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,740 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,757 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,774 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,791 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,808 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,825 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,841 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,858 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,875 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,892 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,893 [ 1] INFO  Unity: SetPosition:(3451, 5331, 800)
+2021-09-07 13:17:57,894 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3451,5331,800) Dir:(-35,94,0) Speed:-300
+2021-09-07 13:17:57,909 [ 1] INFO  Unity: Stop
+2021-09-07 13:17:57,910 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:17:57,910 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3453,5326,800) Dir:(-35,94,0) Speed:0
+2021-09-07 13:17:57,911 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,926 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,942 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,959 [ 1] INFO  Unity: 点我干嘛！我是Thresh
+2021-09-07 13:17:57,960 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,976 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:57,993 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,010 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,027 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,044 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,060 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,077 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,094 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,111 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,128 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,145 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,161 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,178 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,195 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,225 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,242 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,259 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,276 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,293 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,310 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,327 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,343 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,360 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,377 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,394 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,410 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,427 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,444 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,461 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,478 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,495 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,511 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,528 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,545 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,562 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,579 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,596 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,612 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:17:58,629 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:07,709 [ 1] INFO  Unity: SendQuestSubmit
+2021-09-07 13:18:07,742 [ 1] INFO  Unity: 
+2021-09-07 13:18:07,742 [ 1] INFO  Unity: OnQuestSubmit:Success, ERR:
+2021-09-07 13:18:09,173 [ 1] INFO  Unity: RGBA(0.749, 0.749, 0.749, 0.000)
+2021-09-07 13:18:09,174 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,190 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,207 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,224 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,241 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,258 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,274 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,299 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,309 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,326 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,343 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,360 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,377 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,394 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,411 [ 1] INFO  Unity: 点我干嘛！我是Thresh
+2021-09-07 13:18:09,411 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,427 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,444 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,461 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,477 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,495 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,512 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,529 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,546 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,562 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,579 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,596 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,613 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,630 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,646 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,663 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,679 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,696 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,713 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,730 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,747 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,764 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,781 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,798 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,815 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:09,832 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:11,029 [ 1] INFO  Unity: SendQuestAccept
+2021-09-07 13:18:11,096 [ 1] INFO  Unity: OnQuestAccept:Success, ERR:
+2021-09-07 13:18:12,561 [ 1] INFO  Unity: SetDirection:(-51, 86, 0)
+2021-09-07 13:18:12,562 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3453,5326,800) Dir:(-51,86,0) Speed:0
+2021-09-07 13:18:12,679 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:18:12,680 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3453,5326,800) Dir:(-51,86,0) Speed:300
+2021-09-07 13:18:12,680 [ 1] INFO  Unity: SetDirection:(-67, 74, 0)
+2021-09-07 13:18:12,680 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3453,5326,800) Dir:(-67,74,0) Speed:300
+2021-09-07 13:18:12,763 [ 1] INFO  Unity: SetDirection:(-79, 61, 0)
+2021-09-07 13:18:12,763 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3438,5346,800) Dir:(-79,61,0) Speed:300
+2021-09-07 13:18:12,847 [ 1] INFO  Unity: SetDirection:(-89, 46, 0)
+2021-09-07 13:18:12,848 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3418,5361,800) Dir:(-89,46,0) Speed:300
+2021-09-07 13:18:12,949 [ 1] INFO  Unity: SetDirection:(-96, 27, 0)
+2021-09-07 13:18:12,950 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3394,5373,800) Dir:(-96,27,0) Speed:300
+2021-09-07 13:18:13,033 [ 1] INFO  Unity: SetDirection:(-100, 10, 0)
+2021-09-07 13:18:13,034 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3369,5378,800) Dir:(-100,10,0) Speed:300
+2021-09-07 13:18:13,119 [ 1] INFO  Unity: SetDirection:(-100, -8, 0)
+2021-09-07 13:18:13,119 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3344,5383,800) Dir:(-100,-8,0) Speed:300
+2021-09-07 13:18:13,220 [ 1] INFO  Unity: SetDirection:(-96, -28, 0)
+2021-09-07 13:18:13,220 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3314,5383,800) Dir:(-96,-28,0) Speed:300
+2021-09-07 13:18:13,304 [ 1] INFO  Unity: SetDirection:(-90, -45, 0)
+2021-09-07 13:18:13,305 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3289,5378,800) Dir:(-90,-45,0) Speed:300
+2021-09-07 13:18:13,405 [ 1] INFO  Unity: SetDirection:(-78, -62, 0)
+2021-09-07 13:18:13,406 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3259,5366,800) Dir:(-78,-62,0) Speed:300
+2021-09-07 13:18:13,507 [ 1] INFO  Unity: SetDirection:(-64, -77, 0)
+2021-09-07 13:18:13,508 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3235,5348,800) Dir:(-64,-77,0) Speed:300
+2021-09-07 13:18:13,591 [ 1] INFO  Unity: SetDirection:(-49, -87, 0)
+2021-09-07 13:18:13,591 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3220,5328,800) Dir:(-49,-87,0) Speed:300
+2021-09-07 13:18:13,691 [ 1] INFO  Unity: SetDirection:(-32, -95, 0)
+2021-09-07 13:18:13,692 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3208,5304,800) Dir:(-32,-95,0) Speed:300
+2021-09-07 13:18:13,860 [ 1] INFO  Unity: SetDirection:(-14, -99, 0)
+2021-09-07 13:18:13,861 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3188,5254,800) Dir:(-14,-99,0) Speed:300
+2021-09-07 13:18:14,500 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:14,501 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:14,517 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:14,534 [ 1] INFO  Unity: SetDirection:(4, -100, 0)
+2021-09-07 13:18:14,535 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3147,5049,800) Dir:(4,-100,0) Speed:300
+2021-09-07 13:18:14,535 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:14,551 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:14,669 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
+2021-09-07 13:18:14,670 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3147,5009,800) Dir:(23,-97,0) Speed:300
+2021-09-07 13:18:15,495 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:15,496 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,511 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,528 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,545 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,562 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,579 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,596 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,613 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,630 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,646 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,663 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,680 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,697 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,714 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,731 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,748 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,765 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-07 13:18:15,765 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,781 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,798 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,815 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,832 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,849 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,866 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,883 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,900 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,917 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,933 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,950 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,967 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:15,983 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,000 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,017 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,034 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,051 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,068 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,084 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,101 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,118 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,135 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,152 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,169 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,186 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,203 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,220 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,237 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,253 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,270 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,287 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,304 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,333 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,349 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,366 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,382 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,399 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,416 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,433 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,452 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,469 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,486 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,503 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,520 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,537 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,554 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,570 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,587 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,604 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,621 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,638 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,655 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,672 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:16,772 [ 1] INFO  Unity: Stop
+2021-09-07 13:18:16,773 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:18:16,773 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3273,4379,800) Dir:(23,-97,0) Speed:0
+2021-09-07 13:18:18,054 [ 1] INFO  Unity: SendQuestSubmit
+2021-09-07 13:18:18,088 [ 1] INFO  Unity: 
+2021-09-07 13:18:18,088 [ 1] INFO  Unity: OnQuestSubmit:Success, ERR:
+2021-09-07 13:18:44,561 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:44,562 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,578 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,595 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,612 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,629 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,646 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,662 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,679 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,696 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-07 13:18:44,696 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,713 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,737 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,753 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,770 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,787 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,804 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,821 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,838 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,855 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,871 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,888 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,905 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,922 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,939 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,955 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,973 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:44,989 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:45,006 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:45,023 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:45,040 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:45,057 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:45,074 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:46,017 [ 1] INFO  Unity: SendQuestAccept
+2021-09-07 13:18:46,051 [ 1] INFO  Unity: OnQuestAccept:Success, ERR:
+2021-09-07 13:18:47,483 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:47,484 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,500 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,517 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,534 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,551 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,567 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,584 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,601 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,618 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,635 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,652 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,669 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,686 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,703 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,719 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,736 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,754 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,770 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,787 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,804 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,821 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,838 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,854 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,871 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,888 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,904 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,921 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:18:47,922 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3273,4379,800) Dir:(23,-97,0) Speed:300
+2021-09-07 13:18:47,922 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,938 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,955 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,972 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:47,989 [ 1] INFO  Unity: SetDirection:(41, -91, 0)
+2021-09-07 13:18:47,990 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3277,4359,800) Dir:(41,-91,0) Speed:300
+2021-09-07 13:18:47,990 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,006 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,022 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,124 [ 1] INFO  Unity: SetDirection:(58, -81, 0)
+2021-09-07 13:18:48,125 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3293,4319,800) Dir:(58,-81,0) Speed:300
+2021-09-07 13:18:48,224 [ 1] INFO  Unity: SetDirection:(74, -67, 0)
+2021-09-07 13:18:48,225 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3311,4295,800) Dir:(74,-67,0) Speed:300
+2021-09-07 13:18:48,309 [ 1] INFO  Unity: Stop
+2021-09-07 13:18:48,309 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:18:48,310 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(74,-67,0) Speed:0
+2021-09-07 13:18:48,326 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2021-09-07 13:18:48,327 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(86,-51,0) Speed:0
+2021-09-07 13:18:48,410 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2021-09-07 13:18:48,411 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(94,-35,0) Speed:0
+2021-09-07 13:18:48,511 [ 1] INFO  Unity: SetDirection:(99, -17, 0)
+2021-09-07 13:18:48,512 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(99,-17,0) Speed:0
+2021-09-07 13:18:48,764 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:48,765 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,781 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,798 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,815 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,832 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,849 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,865 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,882 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,898 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,915 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,932 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,949 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,966 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:48,983 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-07 13:18:48,983 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,000 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,017 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,033 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,050 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,067 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,084 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,101 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,118 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,135 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,152 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,169 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,185 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,202 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,219 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,236 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,253 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,269 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,286 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,303 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,320 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,337 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:49,354 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:50,333 [ 1] INFO  Unity: SendQuestAccept
+2021-09-07 13:18:50,365 [ 1] INFO  Unity: OnQuestAccept:Success, ERR:
+2021-09-07 13:18:51,881 [ 1] INFO  Unity: SetDirection:(100, 1, 0)
+2021-09-07 13:18:51,882 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(100,1,0) Speed:0
+2021-09-07 13:18:52,083 [ 1] INFO  Unity: SetDirection:(98, 21, 0)
+2021-09-07 13:18:52,084 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(98,21,0) Speed:0
+2021-09-07 13:18:52,185 [ 1] INFO  Unity: SetDirection:(92, 39, 0)
+2021-09-07 13:18:52,186 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(92,39,0) Speed:0
+2021-09-07 13:18:52,269 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
+2021-09-07 13:18:52,269 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(84,55,0) Speed:0
+2021-09-07 13:18:52,370 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
+2021-09-07 13:18:52,371 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(71,71,0) Speed:0
+2021-09-07 13:18:52,455 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2021-09-07 13:18:52,455 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(57,82,0) Speed:0
+2021-09-07 13:18:52,556 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
+2021-09-07 13:18:52,557 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(39,92,0) Speed:0
+2021-09-07 13:18:52,640 [ 1] INFO  Unity: SetDirection:(21, 98, 0)
+2021-09-07 13:18:52,641 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(21,98,0) Speed:0
+2021-09-07 13:18:52,808 [ 1] INFO  Unity: SetDirection:(3, 100, 0)
+2021-09-07 13:18:52,809 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(3,100,0) Speed:0
+2021-09-07 13:18:53,162 [ 1] INFO  Unity: SetDirection:(22, 98, 0)
+2021-09-07 13:18:53,162 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(22,98,0) Speed:0
+2021-09-07 13:18:53,263 [ 1] INFO  Unity: SetDirection:(40, 92, 0)
+2021-09-07 13:18:53,263 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(40,92,0) Speed:0
+2021-09-07 13:18:53,347 [ 1] INFO  Unity: SetDirection:(55, 83, 0)
+2021-09-07 13:18:53,348 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(55,83,0) Speed:0
+2021-09-07 13:18:53,431 [ 1] INFO  Unity: SetDirection:(69, 72, 0)
+2021-09-07 13:18:53,432 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(69,72,0) Speed:0
+2021-09-07 13:18:53,533 [ 1] INFO  Unity: SetDirection:(83, 56, 0)
+2021-09-07 13:18:53,534 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(83,56,0) Speed:0
+2021-09-07 13:18:53,634 [ 1] INFO  Unity: SetDirection:(92, 38, 0)
+2021-09-07 13:18:53,635 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(92,38,0) Speed:0
+2021-09-07 13:18:53,717 [ 1] INFO  Unity: SetDirection:(98, 21, 0)
+2021-09-07 13:18:53,718 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(98,21,0) Speed:0
+2021-09-07 13:18:53,819 [ 1] INFO  Unity: SetDirection:(100, 1, 0)
+2021-09-07 13:18:53,819 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(100,1,0) Speed:0
+2021-09-07 13:18:53,906 [ 1] INFO  Unity: SetDirection:(99, -17, 0)
+2021-09-07 13:18:53,907 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(99,-17,0) Speed:0
+2021-09-07 13:18:54,007 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
+2021-09-07 13:18:54,008 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(93,-37,0) Speed:0
+2021-09-07 13:18:54,109 [ 1] INFO  Unity: SetDirection:(83, -55, 0)
+2021-09-07 13:18:54,110 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(83,-55,0) Speed:0
+2021-09-07 13:18:54,193 [ 1] INFO  Unity: SetDirection:(70, -71, 0)
+2021-09-07 13:18:54,194 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(70,-71,0) Speed:0
+2021-09-07 13:18:54,194 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:54,195 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,210 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,227 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,244 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,261 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,278 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,294 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,311 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,328 [ 1] INFO  Unity: SetDirection:(56, -83, 0)
+2021-09-07 13:18:54,329 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(56,-83,0) Speed:0
+2021-09-07 13:18:54,329 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,345 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,362 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,497 [ 1] INFO  Unity: RGBA(0.745, 0.745, 0.745, 0.000)
+2021-09-07 13:18:54,498 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,514 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,530 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,547 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,563 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,580 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,597 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,614 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,631 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,648 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,665 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,682 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,698 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,715 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-07 13:18:54,716 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,732 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,749 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,766 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,783 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,800 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,816 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,833 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,850 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,867 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,884 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,901 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,918 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,935 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,951 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,969 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:54,985 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,001 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,019 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,036 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,053 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,069 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,086 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,102 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,119 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,136 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,153 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,170 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,187 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,204 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,221 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,238 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,254 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,272 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,288 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,304 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,321 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,338 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,355 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,372 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,389 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,406 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,423 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,440 [ 1] INFO  Unity: 点我干嘛！我是Kinks
+2021-09-07 13:18:55,441 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,457 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,474 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,491 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,508 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,525 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,541 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,557 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,574 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,591 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,608 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,625 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,642 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,658 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,675 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,692 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,709 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,726 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,743 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,760 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,777 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,793 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,810 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,827 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,844 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:55,861 [ 1] INFO  Unity: RGBA(1.000, 1.000, 1.000, 1.000)
+2021-09-07 13:18:56,198 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2021-09-07 13:18:56,199 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(39,-92,0) Speed:0
+2021-09-07 13:18:56,316 [ 1] INFO  Unity: MoveForward
+2021-09-07 13:18:56,316 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(39,-92,0) Speed:300
+2021-09-07 13:18:56,317 [ 1] INFO  Unity: SetDirection:(22, -98, 0)
+2021-09-07 13:18:56,317 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3331,4280,800) Dir:(22,-98,0) Speed:300
+2021-09-07 13:18:56,400 [ 1] INFO  Unity: SetDirection:(4, -100, 0)
+2021-09-07 13:18:56,401 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3336,4255,800) Dir:(4,-100,0) Speed:300
+2021-09-07 13:18:56,501 [ 1] INFO  Unity: SetDirection:(-16, -99, 0)
+2021-09-07 13:18:56,502 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3336,4225,800) Dir:(-16,-99,0) Speed:300
+2021-09-07 13:18:56,602 [ 1] INFO  Unity: SetDirection:(-33, -94, 0)
+2021-09-07 13:18:56,603 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3330,4195,800) Dir:(-33,-94,0) Speed:300
+2021-09-07 13:18:57,631 [ 1] INFO  Unity: SetPosition:(3256, 3907, 800)
+2021-09-07 13:18:57,631 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3256,3907,800) Dir:(-33,-94,0) Speed:300
+2021-09-07 13:18:57,747 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
+2021-09-07 13:18:57,748 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3242,3872,800) Dir:(-15,-99,0) Speed:300
+2021-09-07 13:19:00,039 [ 1] INFO  Unity: SetDirection:(-32, -95, 0)
+2021-09-07 13:19:00,040 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3104,3182,800) Dir:(-32,-95,0) Speed:300
+2021-09-07 13:19:00,731 [ 1] INFO  Unity: SetPosition:(3072, 2979, 800)
+2021-09-07 13:19:00,731 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3072,2979,800) Dir:(-32,-95,0) Speed:300
+2021-09-07 13:19:00,966 [ 1] INFO  Unity: SetDirection:(-48, -88, 0)
+2021-09-07 13:19:00,966 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3044,2909,800) Dir:(-48,-88,0) Speed:300
+2021-09-07 13:19:01,101 [ 1] INFO  Unity: SetDirection:(-63, -78, 0)
+2021-09-07 13:19:01,102 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3028,2877,800) Dir:(-63,-78,0) Speed:300
+2021-09-07 13:19:01,202 [ 1] INFO  Unity: SetDirection:(-77, -64, 0)
+2021-09-07 13:19:01,203 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(3010,2853,800) Dir:(-77,-64,0) Speed:300
+2021-09-07 13:19:01,286 [ 1] INFO  Unity: SetDirection:(-87, -49, 0)
+2021-09-07 13:19:01,287 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2990,2838,800) Dir:(-87,-49,0) Speed:300
+2021-09-07 13:19:01,390 [ 1] INFO  Unity: SetDirection:(-95, -30, 0)
+2021-09-07 13:19:01,391 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2966,2826,800) Dir:(-95,-30,0) Speed:300
+2021-09-07 13:19:01,474 [ 1] INFO  Unity: SetDirection:(-99, -13, 0)
+2021-09-07 13:19:01,475 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2941,2816,800) Dir:(-99,-13,0) Speed:300
+2021-09-07 13:19:01,558 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
+2021-09-07 13:19:01,559 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2911,2810,800) Dir:(-100,8,0) Speed:300
+2021-09-07 13:19:01,659 [ 1] INFO  Unity: SetDirection:(-96, 28, 0)
+2021-09-07 13:19:01,660 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2881,2810,800) Dir:(-96,28,0) Speed:300
+2021-09-07 13:19:01,743 [ 1] INFO  Unity: SetDirection:(-89, 45, 0)
+2021-09-07 13:19:01,743 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2856,2815,800) Dir:(-89,45,0) Speed:300
+2021-09-07 13:19:01,845 [ 1] INFO  Unity: SetDirection:(-78, 62, 0)
+2021-09-07 13:19:01,845 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2832,2827,800) Dir:(-78,62,0) Speed:300
+2021-09-07 13:19:01,928 [ 1] INFO  Unity: SetDirection:(-66, 75, 0)
+2021-09-07 13:19:01,929 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2812,2842,800) Dir:(-66,75,0) Speed:300
+2021-09-07 13:19:02,029 [ 1] INFO  Unity: SetDirection:(-49, 87, 0)
+2021-09-07 13:19:02,030 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2794,2866,800) Dir:(-49,87,0) Speed:300
+2021-09-07 13:19:02,130 [ 1] INFO  Unity: SetDirection:(-30, 95, 0)
+2021-09-07 13:19:02,131 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2782,2890,800) Dir:(-30,95,0) Speed:300
+2021-09-07 13:19:02,215 [ 1] INFO  Unity: SetDirection:(-13, 99, 0)
+2021-09-07 13:19:02,216 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2772,2915,800) Dir:(-13,99,0) Speed:300
+2021-09-07 13:19:02,316 [ 1] INFO  Unity: SetDirection:(8, 100, 0)
+2021-09-07 13:19:02,317 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2766,2945,800) Dir:(8,100,0) Speed:300
+2021-09-07 13:19:02,417 [ 1] INFO  Unity: SetDirection:(28, 96, 0)
+2021-09-07 13:19:02,418 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2766,2975,800) Dir:(28,96,0) Speed:300
+2021-09-07 13:19:02,502 [ 1] INFO  Unity: SetDirection:(45, 89, 0)
+2021-09-07 13:19:02,502 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2771,3000,800) Dir:(45,89,0) Speed:300
+2021-09-07 13:19:02,603 [ 1] INFO  Unity: SetDirection:(62, 78, 0)
+2021-09-07 13:19:02,604 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2783,3024,800) Dir:(62,78,0) Speed:300
+2021-09-07 13:19:02,687 [ 1] INFO  Unity: SetDirection:(75, 66, 0)
+2021-09-07 13:19:02,687 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2798,3044,800) Dir:(75,66,0) Speed:300
+2021-09-07 13:19:02,720 [ 1] INFO  Unity: Stop
+2021-09-07 13:19:02,721 [ 1] WARN  Unity: Parameter 'Idle' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+EntityController:OnEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/EntityController.cs:86)
+PlayerInputController:SendEntityEvent(EntityEvent) (at Assets/Scripts/GameObject/PlayerInputController.cs:135)
+PlayerInputController:FixedUpdate() (at Assets/Scripts/GameObject/PlayerInputController.cs:84)
+
+2021-09-07 13:19:02,721 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2806,3050,800) Dir:(75,66,0) Speed:0
+2021-09-07 13:19:02,788 [ 1] INFO  Unity: SetDirection:(87, 49, 0)
+2021-09-07 13:19:02,788 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2806,3050,800) Dir:(87,49,0) Speed:0
+2021-09-07 13:19:02,889 [ 1] INFO  Unity: SetDirection:(95, 30, 0)
+2021-09-07 13:19:02,890 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2806,3050,800) Dir:(95,30,0) Speed:0
+2021-09-07 13:19:02,991 [ 1] INFO  Unity: SetDirection:(99, 12, 0)
+2021-09-07 13:19:02,992 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 Pos:(2806,3050,800) Dir:(99,12,0) Speed:0
+2021-09-07 13:19:05,935 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-09-07 13:19:05,936 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2021-09-06 17:15:54,321 [ 1] INFO  Unity: Character_1_哈哈 OnDestroy :ID:7 POS:(2877, 3108, 795) DIR:(-45, 89, 0) SPD:0 
+2021-09-07 13:19:05,941 [ 1] INFO  Unity: Character_1003_龙王 OnDestroy :ID:1 POS:(2806, 3050, 800) DIR:(99, 12, 0) SPD:0 

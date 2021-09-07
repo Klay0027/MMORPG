@@ -92,7 +92,7 @@ namespace GameServer.Managers
             }
             else
             {
-                friendInfo.friendInfo = getBasicInfo(character.Info);
+                friendInfo.friendInfo = GetBasicInfo(character.Info);
                 friendInfo.friendInfo.Name = character.Info.Name;
                 friendInfo.friendInfo.Class = character.Info.Class;
                 friendInfo.friendInfo.Level = character.Info.Level;
@@ -102,7 +102,7 @@ namespace GameServer.Managers
             return friendInfo;
         }
 
-        private NCharacterInfo getBasicInfo(NCharacterInfo info)
+        private NCharacterInfo GetBasicInfo(NCharacterInfo info)
         {
             return new NCharacterInfo()
             {

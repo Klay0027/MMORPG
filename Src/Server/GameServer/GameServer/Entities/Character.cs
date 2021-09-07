@@ -7,10 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Network;
 
 namespace GameServer.Entities
 {
-    class Character : CharacterBase
+    class Character : CharacterBase, IPostResponser
     {       
         public TCharacter Data;
 
@@ -26,6 +27,7 @@ namespace GameServer.Entities
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
         {
             this.Data = cha;
+            this.Id = cha.ID;
             this.Info = new NCharacterInfo();
             this.Info.Type = type;
             this.Info.Id = cha.ID;
