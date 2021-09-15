@@ -26,7 +26,7 @@ public class Loading_Handler : MonoBehaviour
         Start_Bg.SetActive(true);
         TipsGame_Bg.SetActive(false);
         Loading_Group.SetActive(false);
-
+        
         StartCoroutine(Load());
 
     }
@@ -47,6 +47,7 @@ public class Loading_Handler : MonoBehaviour
         TestManager.Instance.Init();
         FriendService.Instance.Init();
         TeamService.Instance.Init();
+        GuildService.Instance.Init();
     }
 
     private void Update()

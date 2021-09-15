@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 1747691786175898558}
   - component: {fileID: 1931632265321257224}
   - component: {fileID: 1931577093936712148}
-  - component: {fileID: 2227724033910641435}
+  - component: {fileID: 5489207767218452}
   m_Layer: 5
   m_Name: UIInputBox
   m_TagString: Untagged
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2227724033910641435
+--- !u!114 &5489207767218452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972227633046476226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79ed230572e86fd4ebc83ac898729a76, type: 3}
+  m_Script: {fileID: 11500000, guid: 285d29dcbc23d284f81ce97dcd607fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   title: {fileID: 1931492600552269090}

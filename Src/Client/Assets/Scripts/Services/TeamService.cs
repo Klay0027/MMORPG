@@ -19,13 +19,19 @@ namespace Services
         }
 
         public TeamService()
-        { 
-        
+        {
+            MessageDistributer.Instance.Subscribe<TeamInviteRequest>(this.OnTeamInviteRequest);
+            MessageDistributer.Instance.Subscribe<TeamInviteResponse>(this.OnTeamInviteResponse);
+            MessageDistributer.Instance.Subscribe<TeamInfoResponse>(this.OnTeamInfo);
+            MessageDistributer.Instance.Subscribe<TeamLeaveResponse>(this.OnTeamLeave);
         }
 
         public void Dispose()
         {
-            
+            MessageDistributer.Instance.Unsubscribe<TeamInviteRequest>(this.OnTeamInviteRequest);
+            MessageDistributer.Instance.Unsubscribe<TeamInviteResponse>(this.OnTeamInviteResponse);
+            MessageDistributer.Instance.Unsubscribe<TeamInfoResponse>(this.OnTeamInfo);
+            MessageDistributer.Instance.Unsubscribe<TeamLeaveResponse>(this.OnTeamLeave);
         }
 
         public void SendTeamInviteRequest(int friendId, string friendName)

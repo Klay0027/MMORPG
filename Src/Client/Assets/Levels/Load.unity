@@ -4937,14 +4937,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2115864931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1307b8dc0008764fa4ac6cae27c24d2, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd91a111dc88a948a3b7e6dfa93f839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   global: 1
-  classIcons:
-  - {fileID: 21300000, guid: 55bcee0786735284a8d2c7c84c461e08, type: 3}
-  - {fileID: 21300000, guid: 7b6f301ed56e68041be951f00b9eb961, type: 3}
-  - {fileID: 21300000, guid: c470d18307cf22b488b50cc1c3df1d89, type: 3}
+  classIcons: []
 --- !u!1 &2139822551
 GameObject:
   m_ObjectHideFlags: 0

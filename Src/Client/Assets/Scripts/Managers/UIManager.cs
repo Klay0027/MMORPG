@@ -17,13 +17,17 @@ public class UIManager : Singleton<UIManager>
 
     public UIManager()
     {
-        this.UIResources.Add(typeof(UITest), new UIElement() { Resources = "PreFabs/UI_Test", Cache = true });
         this.UIResources.Add(typeof(UIBag), new UIElement() { Resources = "PreFabs/UI/Bag/UI_Bag", Cache = false });
         this.UIResources.Add(typeof(UIShop), new UIElement() { Resources = "PreFabs/UI/Shop/UI_Shop", Cache = false });
         this.UIResources.Add(typeof(UICharEquip), new UIElement() { Resources = "PreFabs/UI/Equip/UI_ChatEquip", Cache = false });
         this.UIResources.Add(typeof(UIQuestSystem), new UIElement() { Resources = "PreFabs/UI/Quest/UI_QuestSystem", Cache = false });
         this.UIResources.Add(typeof(UIQuestDialog), new UIElement() { Resources = "PreFabs/UI/Quest/UIQuestDialog", Cache = false });
         this.UIResources.Add(typeof(UIFriends), new UIElement() { Resources = "PreFabs/UI/Friend/UI_Friends", Cache = false });
+        this.UIResources.Add(typeof(UIGuild), new UIElement() { Resources = "PreFabs/UI/Guild/UI_Guild", Cache = false });
+        this.UIResources.Add(typeof(UIGuildList), new UIElement() { Resources = "PreFabs/UI/Guild/UI_GuildList", Cache = false });
+        this.UIResources.Add(typeof(UIGuildPopNoGuild), new UIElement() { Resources = "PreFabs/UI/Guild/UIGuildPopNoGuild", Cache = false });
+        this.UIResources.Add(typeof(UIGuildPopCreate), new UIElement() { Resources = "PreFabs/UI/Guild/UIGuildPopCreate", Cache = false });
+        this.UIResources.Add(typeof(UIGuildApplyList), new UIElement() { Resources = "PreFabs/UI/Guild/UIGuildApplyList", Cache = false });
     }
 
     ~UIManager()

@@ -181,7 +181,6 @@ namespace GameServer.Services
         private void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest request)
         {
             TCharacter dbchar = sender.Session.User.Player.Characters.ElementAt(request.characterIdx);
-
             Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
 
             Character character = CharacterManager.Instance.AddCharacter(dbchar);
@@ -190,11 +189,12 @@ namespace GameServer.Services
             sender.Session.Response.gameEnter.Result = Result.Success;
             sender.Session.Response.gameEnter.Errormsg = "Login Success!";
 
-            sender.Session.Response.gameEnter.Character = character.Info;
-
-            sender.SendResponse();
             sender.Session.Character = character;
             sender.Session.PostResponser = character;
+
+            sender.Session.Response.gameEnter.Character = character.Info;
+            sender.SendResponse();
+
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
 
@@ -222,9 +222,9 @@ namespace GameServer.Services
             //根据角色ID在角色管理器中从字典Characters移除
             CharacterManager.Instance.RemoveCharacter(character.Id);
 
+            character.Clear();
             //根据角色信息在地图管理器中从当前地图字典中移除
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
-            character.Clear();
         }
     }
 }

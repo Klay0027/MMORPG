@@ -264,6 +264,11 @@ namespace Services
             NetClient.Instance.SendMessage(message);
         }
 
+        /// <summary>
+        /// 进入游戏
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
         private void OnEnterGame(object sender, UserGameEnterResponse response)
         {
             Debug.LogFormat("OnEnterGame:{0} [{1}]", response.Result, response.Errormsg);
@@ -278,6 +283,7 @@ namespace Services
                     EquipManager.Instance.Init(response.Character.Equips);
                     QuestManager.Instance.Init(response.Character.Quests);
                     FriendManager.Instance.Init(response.Character.Friends);
+                    GuildManager.Instance.Init(response.Character.Guild);
                 }
             }
         }

@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Network;
-
+using GameServer.Models;
+using Common;
+using Common.Utils;
 namespace GameServer.Entities
 {
     class Character : CharacterBase, IPostResponser
@@ -23,6 +25,11 @@ namespace GameServer.Entities
 
         public FriendManager FriendManager;
 
+        public Team Team;
+        public double TeamUpdateTS;
+
+        public Guild Guild;
+        public double GuildUpdateTS;
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
         {
@@ -53,6 +60,8 @@ namespace GameServer.Entities
             this.StatusManager = new StatusManager(this);
             this.FriendManager = new FriendManager(this);
             this.FriendManager.GetFriendInfos(this.Info.Friends);
+
+            this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
         }
 
         public long Gold
@@ -71,7 +80,36 @@ namespace GameServer.Entities
 
         public void PostProcess(NetMessageResponse message)
         {
+            Log.InfoFormat("PostProcess > Character : characterID:{0} Name:{1}", this.Id, this.Info.Name);
             this.FriendManager.PostProcess(message);
+
+            if (this.Team != null)
+            {
+                //Log.InfoFormat("PostProcess > Character : characterID:{0}:{1}", this.Id, this.Info.Name);
+                if (TeamUpdateTS < this.Team.timestamp)
+                {
+                    TeamUpdateTS = Time.timestamp;
+                    this.Team.PostProcess(message);
+                }
+            }
+
+            if (this.Guild != null)
+            {
+                if (this.Info.Guild == null)
+                {
+                    this.Info.Guild = this.Guild.GuildInfo(this);
+                    if (message.mapCharacterEnter != null)
+                    {
+                        GuildUpdateTS = Guild.timestamp;
+                    }
+                }
+                if (GuildUpdateTS < this.Guild.timestamp && message.mapCharacterEnter == null)
+                {
+                    GuildUpdateTS = Guild.timestamp;
+                    this.Guild.PostProcess(this, message);
+                }
+            }
+
             if (this.StatusManager.HasStatus)
             {
                 this.StatusManager.PostProcess(message);
@@ -80,7 +118,18 @@ namespace GameServer.Entities
 
         public void Clear()
         {
-            this.FriendManager.UpdateFriendInfo(this.Info, 0);
+            this.FriendManager.OfflineNotify();
+        }
+
+        public NCharacterInfo GetBasicInfo()
+        {
+            return new NCharacterInfo()
+            {
+                Id = this.Id,
+                Name = this.Info.Name,
+                Class = this.Info.Class,
+                Level = this.Info.Level
+            };
         }
     }
 }

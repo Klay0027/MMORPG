@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4217146225155170452}
   - component: {fileID: 4037992741799008802}
   - component: {fileID: 4037771101743352574}
-  - component: {fileID: 2722154538028958466}
+  - component: {fileID: 3427521530059124250}
   m_Layer: 5
   m_Name: UIMessageBox
   m_TagString: Untagged
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2722154538028958466
+--- !u!114 &3427521530059124250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4150523198193063656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 330a3c02acece7e4b8a2aa53405ede47, type: 3}
+  m_Script: {fileID: 11500000, guid: d1119a510270ba644aefe96f495a24e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   title: {fileID: 4037853132763932168}
