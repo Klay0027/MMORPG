@@ -75,7 +75,7 @@ namespace Services
             message.Request = new NetMessageRequest();
             message.Request.itemEquip = new ItemEquipRequest();
             message.Request.itemEquip.Slot = (int)equip.EquipInfo.slot;
-            message.Request.itemEquip.itermId = equip.Id;
+            message.Request.itemEquip.itemId = equip.Id;
             message.Request.itemEquip.isEquip = isEquip;
             NetClient.Instance.SendMessage(message);
             return true;

@@ -143,7 +143,7 @@ namespace GameServer.Models
                 Id = this.Id,
                 GuildName = this.Name,
                 Notice = this.Data.Notice,
-                leaderID = this.Data.LeaderID,
+                leaderId = this.Data.LeaderID,
                 leaderName = this.Data.LeaderName,
                 createTime = (long)TimeUtil.GetTimestamp(this.Data.CreateTime),
                 memberCount = this.Data.GuildMember.Count

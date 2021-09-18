@@ -207,8 +207,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
-
-            SessionManager.Instance.RemoveSession(character.Id);
+           
             CharacterLeave(character);
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
             sender.Session.Response.gameLeave.Result = Result.Success;
@@ -219,6 +218,9 @@ namespace GameServer.Services
 
         public void CharacterLeave(Character character)
         {
+            Log.InfoFormat("CharacterLeave:character:{0}离开游戏", character.Name);
+            //玩家离开 从Session管理器中移除
+            SessionManager.Instance.RemoveSession(character.Id);
             //根据角色ID在角色管理器中从字典Characters移除
             CharacterManager.Instance.RemoveCharacter(character.Id);
 

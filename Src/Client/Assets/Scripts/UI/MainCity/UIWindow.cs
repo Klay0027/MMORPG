@@ -13,6 +13,8 @@ public abstract class UIWindow : MonoBehaviour
         No,
     }
 
+    public GameObject Root;
+
     public delegate void CloseHandler(UIWindow sender, WindowResult result);
 
     public event CloseHandler OnClose;

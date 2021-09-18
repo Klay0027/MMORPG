@@ -19,6 +19,7 @@ namespace Services
 
         NetMessage pendingMessage = null;
         bool connected = true;
+        bool isQuitGame = false;
 
         public UserServices()
         {
@@ -291,8 +292,9 @@ namespace Services
         /// <summary>
         /// 向服务端发送离开游戏的请求
         /// </summary>
-        public void SendLeaveGame()
+        public void SendLeaveGame(bool isQuitGame = false)
         {
+            this.isQuitGame = isQuitGame;
             Debug.Log("UserGameLeaveRequest");
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
@@ -300,12 +302,24 @@ namespace Services
             NetClient.Instance.SendMessage(message);
         }
 
+        /// <summary>
+        /// 收到离开游戏的响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
         private void OnLeaveGame(object sender, UserGameLeaveResponse response)
         {
             MapService.Instance.CurrentMapId = 0;
             User.Instance.CurrentCharacter = null;
             Debug.LogFormat("OnLeaveGame:{0} [{1}]", response.Result, response.Errormsg);
-
+            if (this.isQuitGame)
+            {
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#else
+                Application.Quit();
+#endif
+            }
         }
     }
 }
