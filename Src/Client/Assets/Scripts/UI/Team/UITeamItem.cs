@@ -33,7 +33,7 @@ public class UITeamItem : ListView.ListViewItem
         }
         if (this.classIcon != null)
         {
-            this.classIcon.overrideSprite = SpriteManager.Instance.classIcons[(int)this.info.Class -1];
+            this.classIcon.overrideSprite = SpriteManager.Instance.classIcons[(int)this.info.Class - 1];
         }
         if (this.leaderIcon != null)
         {

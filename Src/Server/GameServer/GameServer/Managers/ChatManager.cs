@@ -21,7 +21,7 @@ namespace GameServer.Managers
 
         public void Init()
         { 
-        
+           
         }
 
         public void AddMessage(Character from, ChatMessage message)
@@ -138,7 +138,7 @@ namespace GameServer.Managers
                 }
             }
 
-            for (int i = 0; i < messages.Count; i++)
+            for (; idx < messages.Count; idx++)
             {
                 result.Add(messages[idx]);
             }

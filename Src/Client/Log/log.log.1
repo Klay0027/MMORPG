@@ -1,130 +1,229 @@
-2021-09-15 16:47:51,768 [ 1] INFO  Unity: LoadingManager start
-2021-09-15 16:47:51,776 [ 1] INFO  Unity: DataManager > DataManager()
-2021-09-15 16:48:26,442 [ 1] INFO  Unity: UserLoginRequest::user :zz psw:zz
-2021-09-15 16:48:26,443 [ 1] INFO  Unity: ConnectToServer Start
-2021-09-15 16:48:26,444 [ 1] INFO  Unity: DoConnect
-2021-09-15 16:48:26,446 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-15 16:48:26,447 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-09-23 16:55:06,799 [ 1] INFO  Unity: LoadingManager start
+2021-09-23 16:55:06,808 [ 1] INFO  Unity: DataManager > DataManager()
+2021-09-23 16:55:17,743 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-09-23 16:55:17,745 [ 1] INFO  Unity: ConnectToServer Start
+2021-09-23 16:55:17,746 [ 1] INFO  Unity: DoConnect
+2021-09-23 16:55:17,747 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-09-23 16:55:17,749 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-09-15 16:48:28,461 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Services.UserServices:ConnectToServer() (at Assets/Scripts/Services/UserServices.cs:63)
-Services.UserServices:SendLogin(String, String) (at Assets/Scripts/Services/UserServices.cs:182)
-Login_Handler:OnLoginClick() (at Assets/Scripts/UI/Start/Login_Handler.cs:67)
-UnityEngine.EventSystems.EventSystem:Update()
-
-2021-09-15 16:48:28,478 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Services.UserServices:ConnectToServer() (at Assets/Scripts/Services/UserServices.cs:63)
-Services.UserServices:SendLogin(String, String) (at Assets/Scripts/Services/UserServices.cs:182)
-Login_Handler:OnLoginClick() (at Assets/Scripts/UI/Start/Login_Handler.cs:67)
-UnityEngine.EventSystems.EventSystem:Update()
-
-2021-09-15 16:48:28,482 [ 1] INFO  Unity: DoConnect
-2021-09-15 16:48:28,484 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-15 16:48:28,490 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2021-09-15 16:48:30,493 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2021-09-15 16:48:30,495 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2021-09-15 16:48:30,545 [ 1] INFO  Unity: DoConnect
-2021-09-15 16:48:30,547 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-15 16:48:30,553 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2021-09-15 16:48:32,563 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2021-09-15 16:48:32,564 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2021-09-15 16:48:32,566 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2021-09-15 16:49:03,611 [ 1] INFO  Unity: UserLoginRequest::user :zz psw:zz
-2021-09-15 16:49:03,612 [ 1] INFO  Unity: ConnectToServer Start
-2021-09-15 16:49:03,613 [ 1] INFO  Unity: DoConnect
-2021-09-15 16:49:03,614 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-09-15 16:49:03,615 [ 1] INFO  Unity: Connect[3] to server 127.0.0.1:8000
-
-2021-09-15 16:49:03,616 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-09-15 16:49:04,420 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
-2021-09-15 16:49:05,390 [ 1] INFO  Unity: LoadLevel: Start
-2021-09-15 16:49:05,603 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-15 16:49:07,496 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
-2021-09-15 16:50:52,290 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
-2021-09-15 16:50:52,292 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
-2021-09-15 16:50:52,293 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
-2021-09-15 16:50:52,302 [ 1] INFO  Unity: OnGuild:Success 2 拿笔记本
-2021-09-15 16:50:52,303 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2021-09-15 16:50:52,305 [ 1] INFO  Unity: AddCharacter:3:拉克丝 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-09-15 16:50:52,308 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-09-15 16:50:52,309 [ 1] INFO  Unity: AddCharacter:3:拉克丝 Map:1 Entity:(1:pos:(2200,1900,800),dir:(100,0,0),spd:0
-2021-09-15 16:50:52,750 [ 1] WARN  Unity: MainPlayerCamera  -184928 Awake
+2021-09-23 16:55:17,752 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-09-23 16:55:17,889 [ 1] INFO  Unity: OnUserRegister:Success [登录成功，欢迎来到声闻世界！]
+2021-09-23 16:55:18,840 [ 1] INFO  Unity: LoadLevel: Start
+2021-09-23 16:55:19,089 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-23 16:55:20,956 [ 1] INFO  Unity: UserGameEnterRequest: 进入游戏的角色ID :0
+2021-09-23 16:55:21,006 [ 1] INFO  Unity: OnEnterGame:Success [Login Success!]
+2021-09-23 16:55:21,008 [ 1] INFO  Unity: ItemManager:Init,ItemId:1, itemCount:20
+2021-09-23 16:55:21,009 [ 1] INFO  Unity: ItemManager:Init,ItemId:2, itemCount:20
+2021-09-23 16:55:21,018 [ 1] INFO  Unity: OnGuild:Success 1 hhhh
+2021-09-23 16:55:21,020 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-09-23 16:55:21,022 [ 1] INFO  Unity: AddCharacter:1:hh Map:1 Entity:(9:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-23 16:55:21,025 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-09-23 16:55:21,026 [ 1] INFO  Unity: AddCharacter:1:hh Map:1 Entity:(9:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-23 16:55:21,490 [ 1] WARN  Unity: MainPlayerCamera  -106770 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-15 16:50:52,751 [ 1] WARN  Unity: GameObjectManager  -180520 Awake
+2021-09-23 16:55:21,491 [ 1] WARN  Unity: GameObjectManager  -102362 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-15 16:50:52,758 [ 1] WARN  Unity: UIWorldElementManager  162768 Awake
+2021-09-23 16:55:21,499 [ 1] WARN  Unity: UIWorldElementManager  132012 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-15 16:50:52,759 [ 1] WARN  Unity: UIMainCity  164666 Awake
+2021-09-23 16:55:21,505 [ 1] WARN  Unity: UIMainCity  134102 Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2021-09-15 16:50:52,791 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-09-15 16:51:09,178 [ 1] INFO  Unity: SendGuildListRequest
-2021-09-15 16:53:44,078 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+2021-09-23 16:55:21,543 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-09-23 16:55:21,616 [ 1] INFO  Unity: Set Channel : Local
+2021-09-23 16:55:23,640 [ 1] INFO  Unity: MoveForward
+2021-09-23 16:55:23,641 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2200,1900,800) Dir:(100,0,0) Speed:300
+2021-09-23 16:55:25,039 [ 1] INFO  Unity: SetDirection:(98, -20, 0)
+2021-09-23 16:55:25,040 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2620,1900,800) Dir:(98,-20,0) Speed:300
+2021-09-23 16:55:25,140 [ 1] INFO  Unity: SetDirection:(92, -40, 0)
+2021-09-23 16:55:25,141 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2650,1894,800) Dir:(92,-40,0) Speed:300
+2021-09-23 16:55:25,241 [ 1] INFO  Unity: SetDirection:(82, -58, 0)
+2021-09-23 16:55:25,242 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2680,1882,800) Dir:(82,-58,0) Speed:300
+2021-09-23 16:55:25,326 [ 1] INFO  Unity: SetDirection:(70, -71, 0)
+2021-09-23 16:55:25,327 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2700,1867,800) Dir:(70,-71,0) Speed:300
+2021-09-23 16:55:25,360 [ 1] INFO  Unity: Stop
+2021-09-23 16:55:25,361 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(70,-71,0) Speed:0
+2021-09-23 16:55:25,426 [ 1] INFO  Unity: SetDirection:(54, -84, 0)
+2021-09-23 16:55:25,427 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(54,-84,0) Speed:0
+2021-09-23 16:55:25,511 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2021-09-23 16:55:25,512 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(39,-92,0) Speed:0
+2021-09-23 16:55:25,595 [ 1] INFO  Unity: SetDirection:(22, -98, 0)
+2021-09-23 16:55:25,596 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(22,-98,0) Speed:0
+2021-09-23 16:55:25,696 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2021-09-23 16:55:25,697 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(1,-100,0) Speed:0
+2021-09-23 16:55:25,797 [ 1] INFO  Unity: SetDirection:(-20, -98, 0)
+2021-09-23 16:55:25,798 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-20,-98,0) Speed:0
+2021-09-23 16:55:25,882 [ 1] INFO  Unity: SetDirection:(-40, -92, 0)
+2021-09-23 16:55:25,882 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-40,-92,0) Speed:0
+2021-09-23 16:55:25,983 [ 1] INFO  Unity: SetDirection:(-58, -82, 0)
+2021-09-23 16:55:25,983 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-58,-82,0) Speed:0
+2021-09-23 16:55:26,067 [ 1] INFO  Unity: SetDirection:(-71, -70, 0)
+2021-09-23 16:55:26,068 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-71,-70,0) Speed:0
+2021-09-23 16:55:26,168 [ 1] INFO  Unity: SetDirection:(-84, -54, 0)
+2021-09-23 16:55:26,168 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-84,-54,0) Speed:0
+2021-09-23 16:55:26,252 [ 1] INFO  Unity: SetDirection:(-92, -39, 0)
+2021-09-23 16:55:26,253 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-92,-39,0) Speed:0
+2021-09-23 16:55:26,337 [ 1] INFO  Unity: SetDirection:(-98, -22, 0)
+2021-09-23 16:55:26,337 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-98,-22,0) Speed:0
+2021-09-23 16:55:26,438 [ 1] INFO  Unity: SetDirection:(-100, -2, 0)
+2021-09-23 16:55:26,439 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-100,-2,0) Speed:0
+2021-09-23 16:55:26,572 [ 1] INFO  Unity: SetDirection:(-99, 17, 0)
+2021-09-23 16:55:26,573 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-99,17,0) Speed:0
+2021-09-23 16:55:41,474 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2021-09-23 16:55:41,475 [ 1] INFO  Unity: AddCharacter:4:艾希 Map:1 Entity:(10:pos:(2200,1900,800),dir:(100,0,0),spd:0
+2021-09-23 16:55:48,639 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2200, 1900, 800) Dir:(98, 18, 0) Speed:0
+2021-09-23 16:55:48,640 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2200,1900,800),dir:(98,18,0),spd:0]
 
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+2021-09-23 16:55:48,739 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2200, 1900, 800) Dir:(93, 36, 0) Speed:0
+2021-09-23 16:55:48,739 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2200,1900,800),dir:(93,36,0),spd:0]
 
-2021-09-15 16:53:44,078 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+2021-09-23 16:55:50,321 [ 1] INFO  Unity: SetDirection:(-94, 34, 0)
+2021-09-23 16:55:50,322 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-94,34,0) Speed:0
+2021-09-23 16:55:50,962 [ 1] INFO  Unity: SetDirection:(-99, 17, 0)
+2021-09-23 16:55:50,963 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-99,17,0) Speed:0
+2021-09-23 16:55:51,062 [ 1] INFO  Unity: SetDirection:(-100, -2, 0)
+2021-09-23 16:55:51,063 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-100,-2,0) Speed:0
+2021-09-23 16:55:51,231 [ 1] INFO  Unity: SetDirection:(-98, -20, 0)
+2021-09-23 16:55:51,232 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-98,-20,0) Speed:0
+2021-09-23 16:56:07,059 [ 1] INFO  Unity: SendFriendAddRequest
+2021-09-23 16:56:09,574 [ 1] INFO  Unity: OnFriendList
+2021-09-23 16:56:11,592 [ 1] INFO  Unity: MoveForward
+2021-09-23 16:56:11,592 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2708,1859,800) Dir:(-98,-20,0) Speed:300
+2021-09-23 16:56:11,777 [ 1] INFO  Unity: Stop
+2021-09-23 16:56:11,778 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2653,1848,800) Dir:(-98,-20,0) Speed:0
+2021-09-23 16:56:13,952 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2200, 1900, 800) Dir:(93, 36, 0) Speed:300
+2021-09-23 16:56:13,953 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:MoveFwd entity:(10:pos:(2200,1900,800),dir:(93,36,0),spd:300]
 
-2021-09-15 16:53:53,710 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-09-15 16:53:53,711 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-09-23 16:56:13,954 [ 1] INFO  Unity: OnFriendList
+2021-09-23 16:56:14,196 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2275, 1930, 800) Dir:(93, 36, 0) Speed:0
+2021-09-23 16:56:14,196 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:Idle entity:(10:pos:(2275,1930,800),dir:(93,36,0),spd:0]
+
+2021-09-23 16:56:14,667 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2275, 1930, 800) Dir:(93, 36, 0) Speed:-300
+2021-09-23 16:56:14,668 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:MoveBack entity:(10:pos:(2275,1930,800),dir:(93,36,0),spd:-300]
+
+2021-09-23 16:56:15,324 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2080, 1852, 800) Dir:(93, 36, 0) Speed:0
+2021-09-23 16:56:15,325 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:Idle entity:(10:pos:(2080,1852,800),dir:(93,36,0),spd:0]
+
+2021-09-23 16:56:21,610 [ 1] INFO  Unity: SendTeamInviteRequest
+2021-09-23 16:56:23,516 [ 1] INFO  Unity: OnFriendList
+2021-09-23 16:56:23,518 [ 1] INFO  Unity: OnTeamInfo
+2021-09-23 16:56:23,522 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., UITeamItem.SetMemberInfo (Int32 idx, SkillBridge.Message.NCharacterInfo item, Boolean isLeader) (at Assets/Scripts/UI/Team/UITeamItem.cs:36)
+UITeam.UpdateTeamUI () (at Assets/Scripts/UI/Team/UITeam.cs:54)
+UITeam.OnEnable () (at Assets/Scripts/UI/Team/UITeam.cs:31)
+UnityEngine.GameObject:SetActive(Boolean)
+UITeam:ShowTeam(Boolean) (at Assets/Scripts/UI/Team/UITeam.cs:36)
+UIMainCity:ShowTeamUI(Boolean) (at Assets/Scripts/UI/MainCity/UIMainCity.cs:66)
+TeamManager:ShowTeamUI(Boolean) (at Assets/Scripts/Managers/TeamManager.cs:23)
+TeamManager:UpdateTeamInfo(NTeamInfo) (at Assets/Scripts/Managers/TeamManager.cs:16)
+Services.TeamService:OnTeamInfo(Object, TeamInfoResponse) (at Assets/Scripts/Services/TeamService.cs:88)
+Network.MessageDistributer`1:RaiseEvent(Object, TeamInfoResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:29)
+Network.MessageDistributer`1:Distribute() (at F:/Fighting/Work/KlayStudy/MMORPG/Klay_mmorpg/MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2021-09-23 16:56:23,527 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at UITeamItem.SetMemberInfo (Int32 idx, SkillBridge.Message.NCharacterInfo item, Boolean isLeader) [0x00084] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Team\UITeamItem.cs:36 
+  at UITeam.UpdateTeamUI () [0x000b0] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Team\UITeam.cs:54 
+  at UITeam.ShowTeam (Boolean show) [0x00015] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Team\UITeam.cs:39 
+  at UIMainCity.ShowTeamUI (Boolean show) [0x00008] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\MainCity\UIMainCity.cs:66 
+  at TeamManager.ShowTeamUI (Boolean show) [0x00018] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:23 
+  at TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) [0x00014] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:16 
+  at Services.TeamService.OnTeamInfo (System.Object sender, SkillBridge.Message.TeamInfoResponse message) [0x00016] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\TeamService.cs:88 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[TeamInfoResponse] (System.Object sender, SkillBridge.Message.TeamInfoResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2021-09-23 16:56:39,339 [ 1] INFO  Unity: SendChat
+2021-09-23 16:56:39,372 [ 1] INFO  Unity: OnFriendList
+2021-09-23 16:56:39,373 [ 1] INFO  Unity: OnTeamInfo
+2021-09-23 16:56:39,373 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at UITeamItem.SetMemberInfo (Int32 idx, SkillBridge.Message.NCharacterInfo item, Boolean isLeader) [0x00084] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Team\UITeamItem.cs:36 
+  at UITeam.UpdateTeamUI () [0x000b0] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Team\UITeam.cs:54 
+  at UITeam.ShowTeam (Boolean show) [0x00015] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Team\UITeam.cs:39 
+  at UIMainCity.ShowTeamUI (Boolean show) [0x00008] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\MainCity\UIMainCity.cs:66 
+  at TeamManager.ShowTeamUI (Boolean show) [0x00018] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:23 
+  at TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) [0x00014] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:16 
+  at Services.TeamService.OnTeamInfo (System.Object sender, SkillBridge.Message.TeamInfoResponse message) [0x00016] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\TeamService.cs:88 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[TeamInfoResponse] (System.Object sender, SkillBridge.Message.TeamInfoResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2021-09-23 16:57:03,864 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2080, 1852, 800) Dir:(93, 36, 0) Speed:300
+2021-09-23 16:57:03,865 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:MoveFwd entity:(10:pos:(2080,1852,800),dir:(93,36,0),spd:300]
+
+2021-09-23 16:57:03,866 [ 1] INFO  Unity: OnFriendList
+2021-09-23 16:57:03,866 [ 1] ERROR Unity: Message handler exception:, The object of type 'UIFriendItem' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.Component:get_gameObject ()
+  at ListView.RemoveAll () [0x0001d] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\ListView\ListView.cs:71 
+  at UIFriends.ClearFriendList () [0x00007] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Friend\UIFriends.cs:114 
+  at UIFriends.RefreshUI () [0x00002] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Friend\UIFriends.cs:94 
+  at Services.FriendService.OnFriendList (System.Object sender, SkillBridge.Message.FriendListResponse message) [0x0002d] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\FriendService.cs:121 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[FriendListResponse] (System.Object sender, SkillBridge.Message.FriendListResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2021-09-23 16:57:04,150 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(93, 36, 0) Speed:0
+2021-09-23 16:57:04,151 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:Idle entity:(10:pos:(2165,1886,800),dir:(93,36,0),spd:0]
+
+2021-09-23 16:57:06,374 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(99, 17, 0) Speed:0
+2021-09-23 16:57:06,375 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(99,17,0),spd:0]
+
+2021-09-23 16:57:06,476 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(100, -2, 0) Speed:0
+2021-09-23 16:57:06,477 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(100,-2,0),spd:0]
+
+2021-09-23 16:57:06,645 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(98, -20, 0) Speed:0
+2021-09-23 16:57:06,646 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(98,-20,0),spd:0]
+
+2021-09-23 16:57:07,115 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(100, -2, 0) Speed:0
+2021-09-23 16:57:07,116 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(100,-2,0),spd:0]
+
+2021-09-23 16:57:07,217 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(99, 17, 0) Speed:0
+2021-09-23 16:57:07,218 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(99,17,0),spd:0]
+
+2021-09-23 16:57:07,319 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(93, 37, 0) Speed:0
+2021-09-23 16:57:07,320 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(93,37,0),spd:0]
+
+2021-09-23 16:57:07,416 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(83, 55, 0) Speed:0
+2021-09-23 16:57:07,417 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(83,55,0),spd:0]
+
+2021-09-23 16:57:07,549 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:10 Pos:(2165, 1886, 800) Dir:(72, 70, 0) Speed:0
+2021-09-23 16:57:07,550 [ 1] INFO  Unity: MapEntityUpdateResponse: Entity:1
+[10evt:None entity:(10:pos:(2165,1886,800),dir:(72,70,0),spd:0]
+
+2021-09-23 16:57:21,550 [ 1] INFO  Unity: MoveForward
+2021-09-23 16:57:21,551 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2653,1848,800) Dir:(-98,-20,0) Speed:300
+2021-09-23 16:57:21,769 [ 1] INFO  Unity: Stop
+2021-09-23 16:57:21,770 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2588,1835,800) Dir:(-98,-20,0) Speed:0
+2021-09-23 16:57:23,776 [ 1] INFO  Unity: SendTeamLeaveRequest
+2021-09-23 16:57:23,809 [ 1] INFO  Unity: OnFriendList
+2021-09-23 16:57:23,810 [ 1] ERROR Unity: Message handler exception:, The object of type 'UIFriendItem' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.Component:get_gameObject ()
+  at ListView.RemoveAll () [0x0001d] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\ListView\ListView.cs:71 
+  at UIFriends.ClearFriendList () [0x00007] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Friend\UIFriends.cs:114 
+  at UIFriends.RefreshUI () [0x00002] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\UI\Friend\UIFriends.cs:94 
+  at Services.FriendService.OnFriendList (System.Object sender, SkillBridge.Message.FriendListResponse message) [0x0002d] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Client\Assets\Scripts\Services\FriendService.cs:121 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[FriendListResponse] (System.Object sender, SkillBridge.Message.FriendListResponse msg) [0x00044] in F:\Fighting\Work\KlayStudy\MMORPG\Klay_mmorpg\MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2021-09-23 16:57:29,297 [ 1] INFO  Unity: MoveForward
+2021-09-23 16:57:29,298 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2588,1835,800) Dir:(-98,-20,0) Speed:300
+2021-09-23 16:57:29,483 [ 1] INFO  Unity: Stop
+2021-09-23 16:57:29,484 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9 Pos:(2533,1824,800) Dir:(-98,-20,0) Speed:0
+2021-09-23 16:58:45,646 [ 1] INFO  Unity: Character_1_hh OnDestroy :ID:9 POS:(2533, 1824, 800) DIR:(-98, -20, 0) SPD:0 
+2021-09-23 16:58:45,647 [ 1] INFO  Unity: Character_4_艾希 OnDestroy :ID:10 POS:(2165, 1886, 800) DIR:(72, 70, 0) SPD:0 
+2021-09-23 16:58:45,651 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-09-23 16:58:45,651 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2021-09-15 16:53:53,714 [ 1] INFO  Unity: Character_3_拉克丝 OnDestroy :ID:1 POS:(2200, 1900, 800) DIR:(100, 0, 0) SPD:0 

@@ -48,6 +48,7 @@ public class Loading_Handler : MonoBehaviour
         FriendService.Instance.Init();
         TeamService.Instance.Init();
         GuildService.Instance.Init();
+        ChatService.Instance.Init();
     }
 
     private void Update()

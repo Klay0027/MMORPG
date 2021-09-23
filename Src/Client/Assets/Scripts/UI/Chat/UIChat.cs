@@ -12,10 +12,13 @@ public class UIChat : MonoBehaviour
     public InputField chatText;
     public Text chatTarget;
     public Dropdown channelSelect;
+    public Button send_btn;
 
     private void Start()
     {
         this.cannelTab.OnTabSelect += OnDisplayChannelSelected;
+        ChatManager.Instance.OnChat += RefreshUI;
+        send_btn.onClick.AddListener(OnClickSend);
     }
 
     private void OnDestroy()
@@ -67,7 +70,8 @@ public class UIChat : MonoBehaviour
             string[] strs = link.Name.Split(":".ToCharArray());
             UIPopCharMenu menu = UIManager.Instance.Show<UIPopCharMenu>();
             menu.targetId = int.Parse(strs[1]);
-            menu.targetName = strs[2];        
+            menu.targetName = strs[2];
+            //menu.Root = this.gameObject;
         }
     }
 

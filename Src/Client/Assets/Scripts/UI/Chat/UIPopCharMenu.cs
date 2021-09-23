@@ -9,6 +9,14 @@ public class UIPopCharMenu : UIWindow, IDeselectHandler
 {
     public int targetId;
     public string targetName;
+    public Button chat_btn, addFriend_btn, inviteTeam_btn;
+
+    private void Start()
+    {
+        chat_btn.onClick.AddListener(OnChat);
+        addFriend_btn.onClick.AddListener(OnAddFriend);
+        inviteTeam_btn.onClick.AddListener(OnInviteTeam);
+    }
 
     public void OnDeselect(BaseEventData eventData)
     {
@@ -28,7 +36,7 @@ public class UIPopCharMenu : UIWindow, IDeselectHandler
 
     public void OnChat() 
     {
-        
+        ChatManager.Instance.StartPrivateChat(targetId, targetName);
         this.Close(WindowResult.No);
     }
 

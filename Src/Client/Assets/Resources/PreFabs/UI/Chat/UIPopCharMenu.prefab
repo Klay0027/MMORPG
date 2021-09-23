@@ -866,6 +866,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52e28123b4202f498a93958f36fd5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Root: {fileID: 0}
+  Root: {fileID: 219301853487079829}
   targetId: 0
   targetName: 
+  chat_btn: {fileID: 219301852894505125}
+  addFriend_btn: {fileID: 219301853620965680}
+  inviteTeam_btn: {fileID: 219301854439331965}

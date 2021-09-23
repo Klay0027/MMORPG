@@ -14,8 +14,8 @@ namespace GameServer.Services
     class ChatService : Singleton<ChatService>
     {
         public ChatService()
-        { 
-        
+        {
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ChatRequest>(this.OnChat);
         }
 
         public void Init()
