@@ -17,7 +17,7 @@ public class Start_Handler : MonoBehaviour
     //create character panel
     public Button createBtn, back2Create;
     public InputField nickNameInput;//角色昵称输入框
-    public Image[] occupationImages;//角色职业显示图片
+    //public Image[] occupationImages;//角色职业显示图片
     public Button[] occupationBtns;// 创建角色--切换职业按钮
     public Text characterDescText;//角色描述文本
     //select character panel
@@ -122,14 +122,14 @@ public class Start_Handler : MonoBehaviour
             if (i == index)
             {
                 charactersPrefabs[i].SetActive(true);
-                occupationImages[i].gameObject.SetActive(true);
+                //occupationImages[i].gameObject.SetActive(true);
                 characterDescText.text = DataManager.Instance.Characters[index + 1].Description;
 
             }
             else
             {
                 charactersPrefabs[i].SetActive(false);
-                occupationImages[i].gameObject.SetActive(false);
+                //occupationImages[i].gameObject.SetActive(false);
             }
         }
     }

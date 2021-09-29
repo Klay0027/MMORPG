@@ -8,7 +8,7 @@ public class Login_Handler : MonoBehaviour
 {
     public GameObject Login_Panel, Register_Panel;
     public Button Register_Btn, Login_Btn;
-    public Toggle remberNumber_Tog, tips_Tog;
+    public Toggle tips_Tog;
     public InputField Number_Input, Password_Input;
 
     private string userName, password;
@@ -18,7 +18,6 @@ public class Login_Handler : MonoBehaviour
         Login_Btn.onClick.AddListener(OnLoginClick);
         Register_Btn.onClick.AddListener(OnRegisterClick);
         UserServices.Instance.OnLogin = this.OnLogin;
-
     }
 
     private void OnEnable()
@@ -50,6 +49,7 @@ public class Login_Handler : MonoBehaviour
     /// </summary>
     private void OnLoginClick()
     {
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         userName = Number_Input.text;
         password = Password_Input.text;
         if (tips_Tog.isOn)
@@ -80,6 +80,7 @@ public class Login_Handler : MonoBehaviour
     /// </summary>
     private void OnRegisterClick()
     {
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         Login_Panel.SetActive(false);
         Register_Panel.SetActive(true);
     }
@@ -92,7 +93,6 @@ public class Login_Handler : MonoBehaviour
     {
         Number_Input.text = "";
         Password_Input.text = "";
-        remberNumber_Tog.isOn = false;
         tips_Tog.isOn = false;
     }
 }

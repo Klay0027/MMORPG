@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Config.cs" />
     <Compile Include="Assets\Scripts\Entities\Character.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\GameObject\EntityController.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\Scripts\Managers\NpcManager.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TeamManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
@@ -109,6 +111,7 @@
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\TeamService.cs" />
     <Compile Include="Assets\Scripts\Services\UserServices.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundDefine.cs" />
     <Compile Include="Assets\Scripts\UI\Chat\UIChat.cs" />
     <Compile Include="Assets\Scripts\UI\Chat\UIPopCharMenu.cs" />
     <Compile Include="Assets\Scripts\UI\Equip\UICharEquip.cs" />
@@ -134,6 +137,7 @@
     <Compile Include="Assets\Scripts\UI\MainCity\UIInputBox.cs" />
     <Compile Include="Assets\Scripts\UI\MainCity\UIMainCity.cs" />
     <Compile Include="Assets\Scripts\UI\MainCity\UINameBar.cs" />
+    <Compile Include="Assets\Scripts\UI\MainCity\UISystemConfig.cs" />
     <Compile Include="Assets\Scripts\UI\MainCity\UIWindow.cs" />
     <Compile Include="Assets\Scripts\UI\MainCity\UIWorldElement.cs" />
     <Compile Include="Assets\Scripts\UI\MainCity\UIWorldElementManager.cs" />

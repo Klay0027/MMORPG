@@ -29,6 +29,7 @@ public class UIManager : Singleton<UIManager>
         this.UIResources.Add(typeof(UIGuildPopCreate), new UIElement() { Resources = "PreFabs/UI/Guild/UIGuildPopCreate", Cache = false });
         this.UIResources.Add(typeof(UIGuildApplyList), new UIElement() { Resources = "PreFabs/UI/Guild/UIGuildApplyList", Cache = false });
         this.UIResources.Add(typeof(UIPopCharMenu), new UIElement() { Resources = "PreFabs/UI/Chat/UIPopCharMenu", Cache = false });
+        this.UIResources.Add(typeof(UISystemConfig), new UIElement() { Resources = "PreFabs/Mian_City/UISystemConfig", Cache = false });
     }
 
     ~UIManager()
@@ -38,7 +39,7 @@ public class UIManager : Singleton<UIManager>
 
     public T Show<T>()
     {
-        //SoundManager.Instance.PlaySound("ui_open");
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Open);
         Type type = typeof(T); //当执行show方法时，取得调用脚本的类型 type
         //根据 type 判断是否存在字典中 
         if (this.UIResources.ContainsKey(type))
@@ -74,7 +75,7 @@ public class UIManager : Singleton<UIManager>
     /// <param name="type"></param>
     public void Close(Type type)
     {
-        //SoundManager.Instance.PlaySound("ui_close");
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Close);
         if (this.UIResources.ContainsKey(type))
         {
             UIElement info = this.UIResources[type];
